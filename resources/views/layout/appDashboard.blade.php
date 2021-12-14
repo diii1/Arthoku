@@ -11,6 +11,34 @@
     <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
 </head>
 <body class="body-app">
-    @yield('content')
+    <div class="container mt-5 bg-container">
+        <div class="row">
+            <div class="col-3 col-sidenav">
+                <div class="container px-5">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Logo <span>Arthoku</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/dashboard">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/addData">Add Data</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/history">History</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/recomendation">Recommendation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/setting">Setting</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            @yield('content')
+        </div>
+    </div>
 </body>
 </html>
