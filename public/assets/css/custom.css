@@ -1,0 +1,99 @@
+.body-app{
+    background-color: #EFECDA;
+}
+
+.bg-container{
+    height: 655px;
+    border-radius: 20px;
+}
+
+.col-sidenav{
+    background-color: #C4D3A5;
+    height: 655px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding-top: 24px;
+    font-size: 24px;
+}
+
+.col-sidenav-right{
+    background-color: #868E6C;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.card1{
+    height: 245px;
+    background-color: #E5DCC3;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+.card2{
+    height: 245px;
+    background-color: #F5CB64;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+.card3{
+    height: 245px;
+    background-color: #9A9483;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+.card4{
+    height: 245px;
+    background-color: #CEE5DE;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+.title-page{
+    margin-top: 10px;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.nav-item{
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
+.nav-link{
+    color: grey !important;
+}
+
+.nav-link:hover{
+    color: white !important;
+}
+
+.cards{
+    font-weight: bold;
+    color: white;
+}
+
+.card-title{
+    font-size: 24px;
+    padding-top: 10px;
+}
+
+.card-body{
+    font-size: 38px;
+    margin-top: 40px;
+}
+
+.form-income{
+    height: 500px;
+    background-color: #E5DCC3;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+.form-expense{
+    height: 500px;
+    background-color: #F5CB64;
+    margin-top: 20px;
+    border-radius: 20px;
+}
