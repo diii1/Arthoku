@@ -20,7 +20,7 @@
                             <a class="nav-link" href="#">Logo <span>Arthoku</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/dashboard">Dashboard</a>
+                            <a class="nav-link active" href="/dashboard">Dashboard</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/addData">Add Data</a>

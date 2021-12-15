@@ -3,7 +3,7 @@
 @section('content')
     <div class="col-9 col-sidenav-right">
         <div class="container">
-            <div class="text-white title-page">Add Data</div>
+            <div class="text-white title-page">{{ $routeName }}</div>
             <div class="row">
                 <div class="col">
                     <div class="container form-income">

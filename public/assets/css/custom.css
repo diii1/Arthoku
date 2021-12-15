@@ -69,6 +69,10 @@
     color: white !important;
 }
 
+.active {
+    color: white !important;
+}
+
 .cards{
     font-weight: bold;
     color: white;
