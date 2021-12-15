@@ -13,6 +13,7 @@ class DashboardController extends Controller
     }
 
     public function addData(){
-        return view('addData');
+        $routeName = "Add Data";
+        return view('addData', compact('routeName'));
     }
 }
