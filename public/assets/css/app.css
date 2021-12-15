@@ -18,6 +18,11 @@
     border-color: #C4D3A5 !important;
 }
 
+.signUp a{
+    text-decoration: none;
+    color: white;
+}
+
 .signIn:hover{
     font-weight: bold;
 }
@@ -37,4 +42,18 @@
 
 .nav-link:hover{
     font-weight: bold;
+}
+
+.modal-card{
+    background-color: #C4D3A5 !important;
+    border-color: #C4D3A5 !important;
+}
+
+.btn-signIn{
+    background-color: #868E6C !important;
+    border-color: #868E6C !important;
+}
+
+.btnClose{
+    margin-left: 217px;
 }
