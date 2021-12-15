@@ -10,4 +10,8 @@ class AppController extends Controller
     public function index(){
         return view('layout.app');
     }
+
+    public function register(){
+        return view('register');
+    }
 }

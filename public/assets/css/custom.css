@@ -7,6 +7,10 @@
     border-radius: 20px;
 }
 
+.logo{
+    width: 150px;
+}
+
 .col-sidenav{
     background-color: #C4D3A5;
     height: 655px;
@@ -62,15 +66,15 @@
 }
 
 .nav-link{
-    color: grey !important;
+    color: white !important;
 }
 
 .nav-link:hover{
-    color: white !important;
+    color: grey !important;
 }
 
 .active {
-    color: white !important;
+    color: grey !important;
 }
 
 .cards{
@@ -101,3 +105,9 @@
     margin-top: 20px;
     border-radius: 20px;
 }
+
+/* @media (min-width: 680px) and (max-width: 960px){
+    .col-sidenav{
+        display: none;
+    }
+} */

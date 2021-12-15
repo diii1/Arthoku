@@ -34,7 +34,7 @@
                                 <a class="nav-link" href="#">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Dashboard</a>
+                                <a class="nav-link" href="<?= URL::to('/'); ?>/dashboard">Dashboard</a>
                             </li>
                         </ul>
                         <div class="d-flex">
@@ -74,9 +74,12 @@
                     </div>
                 </div>
             </nav>
-
-            <div class="row">
-                <img src="{{ asset('assets/image/icon-feature-1.png') }}" alt="test">
+            @yield('content')
+            <div class="footer">
+                <div class="container">
+                    <div class="top-footer border border-2 border-top-0 border-start-0 border-end-0">top footer</div>
+                    <div class="bot-footer">bottom footer </div>
+                </div>
             </div>
         </div>
     </div>

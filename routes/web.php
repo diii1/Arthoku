@@ -19,5 +19,6 @@ use App\Http\Controllers\AppController;
 //     return view('welcome');
 // });
 Route::get('/', [AppController::class, 'index']);
+Route::get('/register', [AppController::class, 'register']);
 Route::get('/dashboard', [DashboardController::class, 'index']);
 Route::get('/addData', [DashboardController::class, 'addData']);
