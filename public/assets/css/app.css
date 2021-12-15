@@ -1,9 +1,40 @@
 .body{
     background-color: #EFECDA;
+    height: 100%;
 }
 
 .signIn{
     background-color: #EFECDA !important;
     border-color: #EFECDA !important;
-    color: black !important;
+    font-size: 24px;
+    color: grey !important;
+}
+
+.signUp{
+    font-size: 24px;
+    border-radius: 15px !important;
+    width: 150px;
+    background-color: #C4D3A5 !important;
+    border-color: #C4D3A5 !important;
+}
+
+.signIn:hover{
+    font-weight: bold;
+}
+
+.signUp:hover{
+    font-weight: bold;
+}
+
+.nav-item{
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+.nav-link{
+    color: grey;
+}
+
+.nav-link:hover{
+    font-weight: bold;
 }

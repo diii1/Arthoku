@@ -11,7 +11,7 @@
     <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
 </head>
 <body>
-    <div class="body vh-100">
+    <div class="body pt-3">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
@@ -37,10 +37,6 @@
                                 <a class="nav-link" href="#">Dashboard</a>
                             </li>
                         </ul>
-                        <!-- <form class="d-flex">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Search</button>
-                        </form> -->
                         <div class="d-flex">
                             <div class="signIn btn btn-primary me-3">Sign in</div>
                             <div class="signUp btn btn-primary">Sign Up</div>
@@ -49,8 +45,8 @@
                 </div>
             </nav>
 
-            <div class="highlight">
-                <div class="row"></div>
+            <div class="row">
+
             </div>
         </div>
     </div>
