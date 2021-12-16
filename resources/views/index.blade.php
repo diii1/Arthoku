@@ -2,7 +2,7 @@
 
 @section('content')
     <main>
-        <section class="hero-image mt-5" id="home">
+        <section class="hero-image mt-5 pt-5 vh-100" id="home">
           <div class="row mb-3">
               <div class="col d-flex justify-content-center align-items-center">
                 <div class="content">
@@ -19,7 +19,7 @@
           </div>
         </section>
 
-        <section class="feature mt-5 vh-100" id="feature">
+        <section class="feature pt-5 vh-100" id="feature">
           <h1 class="text-center">Why ArthoKu?</h1>
           <p class="text-center mb-5">You can easily manage your money</p>
           <div class="row mb-3 p-5 box-feature">
@@ -53,7 +53,7 @@
           </div>
         </section>
 
-        <section class="tips mt-5 vh-100" id="tips">
+        <section class="tips pt-5 vh-100" id="tips">
           <h1 class="text-center">Tips</h1>
           <p class="text-center mb-5">The 50/30/20 Rule of Thumb for Budgeting</p>
           <div class="row mb-3 p-5 box-tips">
