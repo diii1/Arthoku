@@ -39,6 +39,14 @@
     font-weight: bold;
 }
 
+.modal-header{
+    border-bottom: none !important;
+}
+
+.modal-title{
+    font-size: 36px !important;
+}
+
 .modal-card{
     background-color: #C4D3A5 !important;
     border-color: #C4D3A5 !important;

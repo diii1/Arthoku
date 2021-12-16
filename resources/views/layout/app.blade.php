@@ -47,10 +47,10 @@
                             <div class="modal-dialog">
                                 <div class="modal-content modal-card">
                                     <div class="modal-header d-flex justify-content-center">
-                                        <h5 class="modal-title text-white" id="exampleModalLabel">Sign In</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body text-white">
+                                        <h5 class="modal-title text-white text-center" id="exampleModalLabel">Sign In</h5>
                                         <form>
                                             <div class="mb-3">
                                                 <label class="form-label">Email Address</label>
@@ -78,10 +78,10 @@
                             <div class="modal-dialog">
                                 <div class="modal-content modal-card">
                                     <div class="modal-header d-flex justify-content-center">
-                                        <h5 class="modal-title text-white" id="exampleModalLabel">Sign Up</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body text-white">
+                                        <h5 class="modal-title text-white text-center" id="exampleModalLabel">Sign Up</h5>
                                         <form>
                                             <div class="mb-3">
                                                 <label class="form-label">Name</label>
