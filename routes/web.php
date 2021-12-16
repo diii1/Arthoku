@@ -21,3 +21,6 @@ use App\Http\Controllers\AppController;
 Route::get('/', [AppController::class, 'index']);
 Route::get('/dashboard', [DashboardController::class, 'index']);
 Route::get('/addData', [DashboardController::class, 'addData']);
+Route::get('/history', [DashboardController::class, 'history']);
+Route::get('/recommendation', [DashboardController::class, 'recommendation']);
+Route::get('/setting', [DashboardController::class, 'setting']);
