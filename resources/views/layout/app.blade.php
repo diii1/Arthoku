@@ -15,7 +15,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Arthoku</a>
+                    <a class="navbar-brand" href="#"><img class="logo" src="{{ asset('assets/image/logo-full.png') }}" alt="logo" style="max-width: 100px";></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -25,13 +25,13 @@
                                 <a class="nav-link active" aria-current="page" href="#">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Feature</a>
+                                <a class="nav-link" href="#feature">Feature</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Tips</a>
+                                <a class="nav-link" href="#tips">Tips</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">About</a>
+                                <a class="nav-link" href="#about">About</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="<?= URL::to('/'); ?>/dashboard">Dashboard</a>
