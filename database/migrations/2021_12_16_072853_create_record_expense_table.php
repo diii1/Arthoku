@@ -15,17 +15,13 @@ class CreateRecordExpenseTable extends Migration
     {
         Schema::create('record_expense', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('user_id');
+            $table->foreign('user_id')->references('id')->on('accounts')->onDelete('cascade')->onUpdate('cascade');
             $table->integer('amount');
+            $table->unsignedBigInteger('cat_expense_id');
+            $table->foreign('cat_expense_id')->references('id')->on('category_expense')->onDelete('cascade')->onUpdate('cascade');
             $table->date('date');
             $table->string('note');
-        });
-
-        Schema::table('record_income', function (Blueprint $table)
-        {
-            $table->integer('user_id')->unsigned();
-            $table->integer('cat_expense_id')->unsigned();
-            $table->foreign(['user_id','cat_expense_id'])->references(['id','id'])
-                  ->on(['accounts','category_expense'])->onDelete(['cascade','cascade'])->onUpdate(['cascade','cascade']);
         });
     }
 
