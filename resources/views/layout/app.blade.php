@@ -39,6 +39,7 @@
                         </ul>
                         <div class="d-flex">
                             <div class="signIn btn btn-primary me-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign in</div>
+                            <!-- Register with pop up (Modal) -->
                             <div class="signUp btn btn-primary"><a href="/register">Sign Up</a></div>
                         </div>
                         <!-- Modal -->
@@ -77,8 +78,7 @@
             @yield('content')
             <div class="footer">
                 <div class="container">
-                    <div class="top-footer border border-2 border-top-0 border-start-0 border-end-0">top footer</div>
-                    <div class="bot-footer">bottom footer </div>
+                    <div class="footer border border-2 border-bottom-0 border-start-0 border-end-0">bottom footer </div>
                 </div>
             </div>
         </div>

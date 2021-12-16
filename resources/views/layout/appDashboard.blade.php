@@ -20,19 +20,19 @@
                             <a class="nav-link" href="#"><img class="logo" src="{{ asset('assets/image/logo-full.png') }}" alt="logo"></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="/dashboard">Dashboard</a>
+                            <a class="nav-link active" href="<?= URL::to('/'); ?>/dashboard">Dashboard</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/addData">Add Data</a>
+                            <a class="nav-link" href="<?= URL::to('/'); ?>/addData">Add Data</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/history">History</a>
+                            <a class="nav-link" href="<?= URL::to('/'); ?>/history">History</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/recomendation">Recommendation</a>
+                            <a class="nav-link" href="<?= URL::to('/'); ?>/recommendation">Recommendation</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/setting">Setting</a>
+                            <a class="nav-link" href="<?= URL::to('/'); ?>/setting">Setting</a>
                         </li>
                     </ul>
                 </div>
