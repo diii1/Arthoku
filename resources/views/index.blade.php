@@ -22,7 +22,7 @@
         <section class="feature mt-5 vh-100" id="feature">
           <h1 class="text-center">Why ArthoKu?</h1>
           <p class="text-center mb-5">You can easily manage your money</p>
-          <div class="row mb-3 box-feature">
+          <div class="row mb-3 p-5 box-feature">
             <div class="col">
               <div class="feature1 d-flex justify-content-center align-items-center">
                 <img src="{{ asset('assets/image/icon-feature-1.png') }}" alt="ilustrasi fitur" style="max-width: 40%;">
@@ -56,7 +56,7 @@
         <section class="tips mt-5 vh-100" id="tips">
           <h1 class="text-center">Tips</h1>
           <p class="text-center mb-5">The 50/30/20 Rule of Thumb for Budgeting</p>
-          <div class="row mb-3 box-tips">
+          <div class="row mb-3 p-5 box-tips">
             <div class="col">
               <div class="feature1 d-flex justify-content-center align-items-center">
                 <img src="{{ asset('assets/image/tips-1.svg') }}" alt="ilustrasi tips" style="max-width: 80%;">
