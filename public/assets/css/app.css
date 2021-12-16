@@ -14,13 +14,8 @@
     font-size: 24px;
     border-radius: 15px !important;
     width: 150px;
-    background-color: #C4D3A5 !important;
-    border-color: #C4D3A5 !important;
-}
-
-.signUp a{
-    text-decoration: none;
-    color: white;
+    background-color: #F5CC63 !important;
+    border-color: #F5CC63 !important;
 }
 
 .signIn:hover{
@@ -52,8 +47,62 @@
 .btn-signIn{
     background-color: #868E6C !important;
     border-color: #868E6C !important;
+    width: 25%;
 }
 
-.btnClose{
-    margin-left: 217px;
+.btn-Try{
+    background-color: #F5CC63 !important;
+    border-color: #F5CC63 !important;
+    border-radius: 10px !important;
+    font-size: 24px;
+}
+
+.btn-Try:hover{
+    color: black !important;
+}
+
+.brand-arthoku{
+    font-size: 48px !important;
+}
+
+.slug-arthoku{
+    font-size: 24px !important;
+}
+
+/* .box-feature{
+    margin-top: 15%;
+} */
+
+/* .box-tips{
+    margin-top: 15%;
+} */
+
+.sosmedIcon{
+    font-size: 36px;
+}
+
+.sosmedIcon a{
+    color: grey !important;;
+}
+
+.sosmedIcon a:hover{
+    font-weight: bold;
+}
+
+.services{
+    font-size: 24px;
+    color: grey;
+}
+
+.services a{
+    color: grey !important;
+}
+
+.services a:hover{
+    font-weight: bold;
+}
+
+.copyright{
+    font-size: 24px;
+    color: grey;
 }

@@ -17,7 +17,7 @@
                 <div class="container px-5">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><img class="logo" src="{{ asset('assets/image/logo-full.png') }}" alt="logo"></a>
+                            <a class="nav-link" href="<?= URL::to('/'); ?>"><img class="logo" src="{{ asset('assets/image/logo-full.png') }}" alt="logo"></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" href="<?= URL::to('/'); ?>/dashboard">Dashboard</a>
