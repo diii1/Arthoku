@@ -18,60 +18,75 @@
               </div>
           </div>
         </section>
+
         <section class="feature mt-5 vh-100" id="feature">
-          <h1 class="text-center mb-5">Why ArthoKu?</h1>
+          <h1 class="text-center">Why ArthoKu?</h1>
+          <p class="text-center mb-5">You can easily manage your money</p>
           <div class="row mb-3 box-feature">
             <div class="col">
               <div class="feature1 d-flex justify-content-center align-items-center">
-                <img src="{{ asset('assets/image/icon-feature-1.png') }}" alt="ilustrasi fitur" style="max-width: 50%;">
+                <img src="{{ asset('assets/image/icon-feature-1.png') }}" alt="ilustrasi fitur" style="max-width: 40%;">
               </div>
               <div class="body-feature">
-                <p class="text-center">iki rencana ilustrasi</p>
+                <h3 class="text-center">Easy to Operate</h3>
+                <p class="text-center">It's simple to use for all ages</p>
               </div>
             </div>
             <div class="col">
               <div class="feature2 d-flex justify-content-center align-items-center">
-                <img src="{{ asset('assets/image/icon-feature-2.png') }}" alt="ilustrasi fitur" class="mx-auto" style="max-width: 50%;">
+                <img src="{{ asset('assets/image/icon-feature-2.png') }}" alt="ilustrasi fitur" class="mx-auto" style="max-width: 40%;">
               </div>
-              <p class="text-center">iki rencana ilustrasi</p>
+              <div class="body-feature">
+                <h3 class="text-center">Better Future Plans</h3>
+                <p class="text-center">With Monefy, You can plan your spending better</p>
+              </div>
             </div>
             <div class="col">
               <div class="feature3 d-flex justify-content-center align-items-center">
-                <img src="{{ asset('assets/image/icon-feature-3.png') }}" alt="ilustrasi fitur" style="max-width: 50%;">
+                <img src="{{ asset('assets/image/icon-feature-3.png') }}" alt="ilustrasi fitur" style="max-width: 40%;">
               </div>
-              <p class="text-center">iki rencana ilustrasi</p>
+              <div class="body-feature">
+                <h3 class="text-center">Budget Recommendation</h3>
+                <p class="text-center">we will give you some tips & recommendations for budgeting</p>
+              </div>
             </div>
           </div>
         </section>
+
         <section class="tips mt-5 vh-100" id="tips">
           <h1 class="text-center">Tips</h1>
+          <p class="text-center mb-5">The 50/30/20 Rule of Thumb for Budgeting</p>
           <div class="row mb-3 box-tips">
             <div class="col">
               <div class="feature1 d-flex justify-content-center align-items-center">
-                <img src="{{ asset('assets/image/tips-1.svg') }}" alt="ilustrasi tips" style="max-width: 50%;">
+                <img src="{{ asset('assets/image/tips-1.svg') }}" alt="ilustrasi tips" style="max-width: 80%;">
               </div>
               <div class="body-feature">
-                <p class="text-center">iki rencana ilustrasi</p>
+                <h3 class="text-center">50% to Needs</h3>
+                <p class="text-center">Needs are what you can’t live without, or at least very easily</p>
               </div>
             </div>
             <div class="col">
               <div class="feature1 d-flex justify-content-center align-items-center">
-                <img src="{{ asset('assets/image/tips-2.svg') }}" alt="ilustrasi tips" style="max-width: 50%;">
+                <img src="{{ asset('assets/image/tips-2.svg') }}" alt="ilustrasi tips" style="max-width: 80%;">
               </div>
               <div class="body-feature">
-                <p class="text-center">iki rencana ilustrasi</p>
+                <h3 class="text-center">30% to Wants</h3>
+                <p class="text-center">Wants are what you desire but don’t actually need to survive</p>
               </div>
             </div>
             <div class="col">
               <div class="feature1 d-flex justify-content-center align-items-center">
-                <img src="{{ asset('assets/image/tips-3.svg') }}" alt="ilustrasi tips" style="max-width: 50%;">
+                <img src="{{ asset('assets/image/tips-3.svg') }}" alt="ilustrasi tips" style="max-width: 80%;">
               </div>
               <div class="body-feature">
-                <p class="text-center">iki rencana ilustrasi</p>
+                <h3 class="text-center">20% to Financial Goals</h3>
+                <p class="text-center">All savings, such as retirement contributions, saving for a house, and setting money</p>
               </div>
             </div>
           </div>
         </section>
+
         <section class="about mt-5 py-5" id="about">
           <div class="text-center">
             <h1>About</h1>
