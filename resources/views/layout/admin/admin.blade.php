@@ -19,6 +19,7 @@
 
     <!-- Custom styles for this template-->
     <link href="{{ asset('template/css/sb-admin-2.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('template/vendor/datatables/dataTables.bootstrap4.min.css') }}" rel="stylesheet">
 
 </head>
 
@@ -393,7 +394,7 @@
             <!-- End of Main Content -->
             
             <!-- Footer -->
-            <footer class="sticky-footer bg-white fixed-bottom - relative">
+            <footer class="sticky-footer bg-white fixed-bottom position-relative">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
                         <span>Copyright &copy; Your Website 2021</span>
@@ -425,6 +426,13 @@
     <!-- Page level custom scripts -->
     <script src="{{ asset('template/js/demo/chart-area-demo.js') }}"></script>
     <script src="{{ asset('template/js/demo/chart-pie-demo.js') }}"></script>
+
+    <script src="{{ asset('template/vendor/datatables/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('template/vendor/datatables/dataTables.bootstrap4.min.js') }}"></script>
+
+    <script src="{{ asset('template/js/demo/datatables-demo.js') }}"></script>
+
+    <script src="{{ asset('template/vendor/jquery-easing/jquery.easing.min.js') }}"></script>
 
 </body>
 
