@@ -27,3 +27,4 @@ Route::get('/recommendation', [DashboardController::class, 'recommendation']);
 Route::get('/setting', [DashboardController::class, 'setting']);
 
 Route::get('/admin', [AdminController::class, 'index']);
+Route::get('/admin/add_catincome', [AdminController::class, 'add_catincome']);
