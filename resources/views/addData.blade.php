@@ -12,12 +12,12 @@
                         </div>
                         <div class="cards add-body">
                             <form action="">
-                                <div class="form-group">
+                                <div class="form-group mt-3 mb-3">
                                     <label for="ammount">Ammount</label>
                                     <input type="number" class="form-control" placeholder="100000">
                                 </div>
 
-                                <div class="form-group">
+                                <div class="form-group mb-3">
                                     <label for="category">Category</label>
                                     <select class="form-control" id="">
                                         <option value="" selected disabled hidden>Select</option>
@@ -28,17 +28,17 @@
                                     </select>
                                 </div>
 
-                                <div class="form-group">
+                                <div class="form-group mb-3">
                                     <label for="date">Date</label>
                                     <input type="text" class="form-control" placeholder="12/11/2021">
                                 </div>
 
-                                <div class="form-group">
+                                <div class="form-group mb-3">
                                     <label for="note">Note</label>
                                     <input type="text" class="form-control" placeholder="buy laptop">
                                 </div>
 
-                                <button type="submit" class="btn btn-success">Submit</button>
+                                <button type="submit" class="btn btn-success btn-add w-100">Submit</button>
                             </form>
                         </div>
                     </div>
@@ -50,12 +50,12 @@
                         </div>
                         <div class="cards add-body">
                             <form action="">
-                                <div class="form-group">
+                                <div class="form-group mt-3 mb-3">
                                     <label for="ammount">Ammount</label>
                                     <input type="number" class="form-control" placeholder="100000">
                                 </div>
 
-                                <div class="form-group">
+                                <div class="form-group mb-3">
                                     <label for="category">Category</label>
                                     <select class="form-control" id="">
                                         <option value="" selected disabled hidden>Select</option>
@@ -65,17 +65,17 @@
                                     </select>
                                 </div>
 
-                                <div class="form-group">
+                                <div class="form-group mb-3">
                                     <label for="date">Date</label>
                                     <input type="text" class="form-control" placeholder="12/11/2021">
                                 </div>
                                 
-                                <div class="form-group">
+                                <div class="form-group mb-3">
                                     <label for="note">Note</label>
                                     <input type="text" class="form-control" placeholder="wages">
                                 </div>
 
-                                <button type="submit" class="btn btn-success">Submit</button>
+                                <button type="submit" class="btn btn-success btn-add w-100">Submit</button>
                             </form>
                         </div>
                     </div>

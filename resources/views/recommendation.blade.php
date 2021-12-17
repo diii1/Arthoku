@@ -18,7 +18,7 @@
                 <div class="col">
                     <div class="container card2">
                         <div class="cards card-title text-center">
-                            Needs
+                            Needs (50%)
                         </div>
                         <div class="cards card-body text-center">
                             Ini Graph
@@ -30,7 +30,7 @@
                 <div class="col">
                     <div class="container card3">
                         <div class="cards card-title text-center">
-                            Wants
+                            Wants (30%)
                         </div>
                         <div class="cards card-body text-center">
                             12000
@@ -40,7 +40,7 @@
                 <div class="col">
                     <div class="container card4">
                         <div class="cards card-title text-center">
-                            Saving
+                            Saving (20%)
                         </div>
                         <div class="cards card-body text-center">
                             12000
