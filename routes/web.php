@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\AppController;
+use App\Http\Controllers\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,3 +25,5 @@ Route::get('/addData', [DashboardController::class, 'addData']);
 Route::get('/history', [DashboardController::class, 'history']);
 Route::get('/recommendation', [DashboardController::class, 'recommendation']);
 Route::get('/setting', [DashboardController::class, 'setting']);
+
+Route::get('/admin', [AdminController::class, 'index']);
