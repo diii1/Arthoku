@@ -19,16 +19,18 @@
     <div class="card-body">
         <div class="table-responsive">
             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-
-                    <div class="d-flex ml-auto">
-                    <a href="#" class="btn btn-info btn-icon-split">
-                        <span class="icon text-white-50">
-                                            <i class="fas fa-plus"></i>
-                                        </span>
-                                        <span class="text">Add Data Category Income</span>
-                    </a>
-                   </div>
-
+                <div class="row no-gutters">
+                    <div class="col-12">
+                        <div class="d-flex justify-content-end mb-3">
+                            <a href="#" class="btn btn-info btn-icon-split">
+                                <span class="icon text-white-50">
+                                    <i class="fas fa-plus"></i>
+                                </span>
+                                <span class="text">Add Data Category Income</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
                 <thead>
                     <tr>
                         <th>ID</th>
@@ -49,8 +51,8 @@
                                 <td>{{ $ci->name}}</td>
                                 <td>{{ $ci->description}}</td>
                                 <td> 
-                                    <a href="/income/edit/{{ $g->id }}" class="btn btn-warning">Edit</a>
-                                    <a href="/income/hapus/{{ $g->id }}" class="btn btn-danger">Hapus</a>
+                                    <a href="/income/edit/{{ $ci->id }}" class="btn btn-warning">Edit</a>
+                                    <a href="/income/hapus/{{ $ci->id }}" class="btn btn-danger">Hapus</a>
                                 </td>
                             </tr>
                 @endforeach
