@@ -15,14 +15,14 @@ class AdminController extends Controller
         return view('admin.index');
     }
 
-    public function add_catincome(){
+    public function view_catincome(){
     
 
         //mengambil data income
         $category_income = CategoryIncome::all();
 
         //mengirim data income ke vide income
-        return view('admin.add_catincome', ['category_income'=>$category_income]);
+        return view('admin.view_catincome', ['category_income'=>$category_income]);
 
     }
 }

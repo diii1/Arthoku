@@ -2,14 +2,8 @@
 
 @section('content')
     
-           <!-- Begin Page Content -->
-           <div class="container-fluid">
-
-<!-- Page Heading -->
-<h1 class="h3 mb-2 text-gray-800">Tables</h1>
-<p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below.
-    For more information about DataTables, please visit the <a target="_blank"
-        href="https://datatables.net">official DataTables documentation</a>.</p>
+<!-- Begin Page Content -->
+<div class="container-fluid">
 
 <!-- DataTales Example -->
 <div class="card shadow mb-4">
@@ -21,8 +15,8 @@
             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                 <div class="row no-gutters">
                     <div class="col-12">
-                        <div class="d-flex justify-content-end mb-3">
-                            <a href="#" class="btn btn-info btn-icon-split">
+                        <div class="d-flex justify-content-start mb-3">
+                            <a href="#" data-toggle="modal" data-target="#exampleModal" class="btn btn-info btn-icon-split">
                                 <span class="icon text-white-50">
                                     <i class="fas fa-plus"></i>
                                 </span>
@@ -58,6 +52,41 @@
                 @endforeach
                 </tbody>
             </table>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Add Data Category Income</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                <form>
+                <div class="form-group">
+                    <label for="name">NAME</label>
+                    <input type="name" class="form-control" id="name" aria-describedby="name" placeholder="Enter Name">
+                </div>
+                <div class="form-group">
+                    <label for="description">DESCRIPTION</label>
+                    <input type="description" class="form-control" id="description" placeholder="Enter Description">
+                </div>
+               
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Submit</button>
+                </div>
+                </div>
+                
+                </form>
+            </div>
+            </div>
+                        
+            
         </div>
     </div>
 </div>
