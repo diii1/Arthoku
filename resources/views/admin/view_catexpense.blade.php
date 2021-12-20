@@ -11,7 +11,7 @@
         <h6 class="m-0 font-weight-bold text-primary">Data Category Expense</h6>
     </div>
     <div class="card-body">
-    @if (session('pesan'))
+        @if (session('pesan'))
             <div class="alert alert-success alert-dismissible">
                 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
                 <h4><i class="icon fa fa-check"></i> Success!</h4>
@@ -37,6 +37,7 @@
                         <th>ID</th>
                         <th>Name</th>
                         <th>Description</th>
+                        <th>Action</th>
                     </tr>
                 </thead>
                 <tfoot>
@@ -44,28 +45,30 @@
                         <th>ID</th>
                         <th>Name</th>
                         <th>Description</th>
+                        <th>Action</th>
                     </tr>
                 </tfoot>
                 <tbody>
-                 @foreach($category_expense as $ce)
-                            <tr>
-                                <td>{{ $ce->name}}</td>
-                                <td>{{ $ce->description}}</td>
-                                <td> 
-                                    <a href="/catExpense/edit/{{ $ce->id }}" class="btn btn-warning">Edit</a>
-                                    <a href="/admin/categoryExpense/delete/{{ $ce->id }}" class="btn btn-danger">Hapus</a>
-                                </td>
-                            </tr>
-                @endforeach
+                    @foreach($category_expense as $ci)
+                        <tr>
+                            <td>{{ $ci->id}}</td>
+                            <td>{{ $ci->name}}</td>
+                            <td>{{ $ci->description}}</td>
+                            <td> 
+                                <button data-toggle="modal" data-target="#expenseModalEdit_{{ $ci->id }}" class="btn btn-warning">Edit</button>
+                                <a href="/admin/categoryExpense/delete/{{ $ci->id }}" class="btn btn-danger">Hapus</a>
+                            </td>
+                        </tr>
+                    @endforeach
                 </tbody>
             </table>
 
-            <!-- Modal -->
+            <!-- Modal Untuk Add Data Expense -->
             <div class="modal fade" id="expenseModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Add Data Category Income</h5>
+                            <h5 class="modal-title" id="exampleModalLabel">Add Data Category Expense</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -75,68 +78,52 @@
                                 @csrf
                                 <div class="form-group">
                                     <label for="name">NAME</label>
-                                    <input name="name" type="text" class="form-control" id="name" aria-describedby="name" placeholder="Enter Name">
+                                    <input name="name" type="text" class="form-control" id="name" aria-describedby="name" placeholder="Enter Name" >
                                 </div>
                                 <div class="form-group">
                                     <label for="description">DESCRIPTION</label>
                                     <input name="description" type="text" class="form-control" id="description" placeholder="Enter Description">
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                                     <button type="submit" class="btn btn-primary">Submit</button>
                                 </div>
-
-             <!-- Modal Untuk Edit  -->
-             <div class="modal fade " id="expenseModalEdit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Edit Data Category Expense</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <form action="categoryIncome/update/{id}" method="POST">
-                                @csrf
-                                <div class="form-group">
-                                    <label for="name">NAME</label>
-                                    <input name="name" type="text" class="form-control" id="name" aria-describedby="name" placeholder="Enter Name" value="{{ $category_income->name }}">
-                                </div>
-                                <div class="form-group">
-                                    <label for="description">DESCRIPTION</label>
-                                    <input name="description" type="text" class="form-control" id="description" placeholder="Enter Description" value="{{ $category_income->description }}">
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    <button type="submit" class="btn btn-primary">Submit</button>
-
-
-               
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
-                        
             
+             <!-- Modal Untuk Edit  -->
+            @foreach($category_expense as $data)
+                <div class="modal fade " id="expenseModalEdit_{{ $data->id }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Edit Data Category Expense</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form action="categoryExpense/update/{{ $data->id }}" method="POST">
+                                    @csrf
+                                    <div class="form-group">
+                                        <label for="name">NAME</label>
+                                        <input name="name" type="text" class="form-control" id="name" aria-describedby="name" placeholder="Enter Name" value="{{ $data->name }}">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="description">DESCRIPTION</label>
+                                        <input name="description" type="text" class="form-control" id="description" placeholder="Enter Description" value="{{ $data->description }}">
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </div>
+                                </form>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            @endforeach         
         </div>
     </div>
 </div>

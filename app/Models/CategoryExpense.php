@@ -27,4 +27,9 @@ class CategoryExpense extends Model
         return DB::table('category_expense')->get();
     }
 
+    public function editData($id, $data)
+    {
+        DB::table('category_expense')->where('id', $id)->update($data);
+    }
+
 }

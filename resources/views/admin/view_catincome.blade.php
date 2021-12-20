@@ -49,19 +49,6 @@
                     </tr>
                 </tfoot>
                 <tbody>
-<<<<<<< Updated upstream
-                 @foreach($category_income as $ci)
-                            <tr>
-                                <td>{{ $ci->id}}</td>
-                                <td>{{ $ci->name}}</td>
-                                <td>{{ $ci->description}}</td>
-                                <td> 
-                                    <a href="/update/{{ $ci->id }}"  data-toggle="modal" data-target="#incomeModalEdit" class="btn btn-warning">Edit</a>
-                                    <a href="/admin/categoryIncome/delete/{{ $ci->id }}" class="btn btn-danger">Hapus</a>
-                                </td>
-                            </tr>
-                @endforeach
-=======
                     @foreach($category_income as $ci)
                         <tr>
                             <td>{{ $ci->id}}</td>
@@ -73,7 +60,6 @@
                             </td>
                         </tr>
                     @endforeach
->>>>>>> Stashed changes
                 </tbody>
             </table>
 
@@ -99,7 +85,6 @@
                                     <input name="description" type="text" class="form-control" id="description" placeholder="Enter Description">
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                                     <button type="submit" class="btn btn-primary">Submit</button>
                                 </div>
                             </form>
@@ -131,7 +116,6 @@
                                         <input name="description" type="text" class="form-control" id="description" placeholder="Enter Description" value="{{ $data->description }}">
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                                         <button type="submit" class="btn btn-primary">Submit</button>
                                     </div>
                                 </form>    

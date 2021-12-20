@@ -43,7 +43,7 @@ class CategoryExpenseController extends Controller
         ];
 
         $this->CategoryExpense->editData($id, $data);
-        return redirect()->route('CategoryExpense')->with('pesan', 'Data Berhasil TerUpdate');
+        return redirect()->route('data_catexpense')->with('pesan', 'Data Berhasil TerUpdate');
     }
 }
 

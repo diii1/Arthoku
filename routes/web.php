@@ -44,6 +44,7 @@ Route::post('/admin/categoryIncome/update/{id}', [CategoryIncomeController::clas
 Route::get('/admin/categoryExpense', [CategoryExpenseController::class, 'view_catexpense'])->name('data_catexpense');
 Route::post('/admin/categoryExpense/insert', [CategoryExpenseController::class, 'insert']);
 Route::get('/admin/categoryExpense/delete/{id}', [CategoryExpenseController::class, 'delete']);
+Route::post('/admin/categoryExpense/update/{id}', [CategoryExpenseController::class, 'update']);
 
 Route::get('/admin/client', [AccountController::class, 'view_client'])->name('data_client');
 Route::get('/admin/client/delete/{id}', [AccountController::class, 'delete']);
