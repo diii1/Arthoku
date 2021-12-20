@@ -55,7 +55,7 @@
                                 <td>{{ $ci->name}}</td>
                                 <td>{{ $ci->description}}</td>
                                 <td> 
-                                    <a href="#update/{{ $ci->id }}"  data-toggle="modal" data-target="#incomeModalEdit" class="btn btn-warning">Edit</a>
+                                    <a href="/update/{{ $ci->id }}"  data-toggle="modal" data-target="#incomeModalEdit" class="btn btn-warning">Edit</a>
                                     <a href="/admin/categoryIncome/delete/{{ $ci->id }}" class="btn btn-danger">Hapus</a>
                                 </td>
                             </tr>

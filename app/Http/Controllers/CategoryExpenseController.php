@@ -26,11 +26,25 @@ class CategoryExpenseController extends Controller
         ];
         // die($data);
         $this->CategoryExpense->addCatExpense($data);
-        return redirect()->route('data_catexpense');
+        return redirect()->route('data_catexpense')->with('pesan', 'Data Berhasil Ditambahkan');
     }
 
     public function delete($id){
         $this->CategoryExpense->deleteData($id);
-        return redirect()->route('data_catexpense');
+        return redirect()->route('data_catexpense')->with('pesan', 'Data Berhasil Dihapus');
+    }
+
+    public function update($id)
+    {
+        $data = [
+            'name' => Request()->name,
+            'description' => Request()->description,
+        
+        ];
+
+        $this->CategoryExpense->editData($id, $data);
+        return redirect()->route('CategoryExpense')->with('pesan', 'Data Berhasil TerUpdate');
     }
 }
+
+

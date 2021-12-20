@@ -11,6 +11,13 @@
         <h6 class="m-0 font-weight-bold text-primary">Data Category Expense</h6>
     </div>
     <div class="card-body">
+    @if (session('pesan'))
+            <div class="alert alert-success alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                <h4><i class="icon fa fa-check"></i> Success!</h4>
+                {{ session('pesan') }}.
+            </div>
+        @endif
         <div class="table-responsive">
             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                 <div class="row no-gutters">
@@ -78,6 +85,51 @@
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                                     <button type="submit" class="btn btn-primary">Submit</button>
                                 </div>
+
+             <!-- Modal Untuk Edit  -->
+             <div class="modal fade " id="expenseModalEdit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Edit Data Category Expense</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="categoryIncome/update/{id}" method="POST">
+                                @csrf
+                                <div class="form-group">
+                                    <label for="name">NAME</label>
+                                    <input name="name" type="text" class="form-control" id="name" aria-describedby="name" placeholder="Enter Name" value="{{ $category_income->name }}">
+                                </div>
+                                <div class="form-group">
+                                    <label for="description">DESCRIPTION</label>
+                                    <input name="description" type="text" class="form-control" id="description" placeholder="Enter Description" value="{{ $category_income->description }}">
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+
+
+               
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                             </form>
                         </div>
                     </div>
