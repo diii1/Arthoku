@@ -21,15 +21,16 @@ class  AccountController extends Controller
         return view('admin.view_client', compact('accounts'));
     }
 
-    // public function insert(){
-    //     $data = [
-    //         'name' => Request()->name,
-    //         'description' => Request()->description,
-    //     ];
-    //     // die($data);
-    //     $this->CategoryIncome->addCatIncome($data);
-    //     return redirect()->route('data_catincome');
-    // }
+    public function insert(){
+        $data = [
+            'name' => Request()->name,
+            'email' => Request()->email,
+            'password' => Request()->password,
+        ];
+        // die($data);
+        $this->Account->addClient($data);
+        return redirect()->route('client');
+    }
 
     // public function delete($id){
     //     $this->CategoryIncome->deleteData($id);

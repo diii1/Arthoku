@@ -14,6 +14,10 @@ class Account extends Model
     protected $primaryKey = 'id';
     protected $fillable = ['name', 'email', 'password'];
 
+    public function addClient($data){
+        DB::table('accounts')->insert($data);
+    }
+
     public function deleteData($id)
     {
         DB::table('accounts')->where('id', $id)->delete();

@@ -22,7 +22,7 @@ use App\Http\Controllers\AccountController;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-Route::get('/', [AppController::class, 'index']);
+Route::get('/', [AppController::class, 'index'])->name('client');
 Route::get('/dashboard', [DashboardController::class, 'index']);
 Route::get('/addData', [DashboardController::class, 'addData']);
 Route::get('/history', [DashboardController::class, 'history']);
@@ -40,5 +40,6 @@ Route::post('/admin/categoryExpense/insert', [CategoryExpenseController::class, 
 Route::get('/admin/categoryExpense/delete/{id}', [CategoryExpenseController::class, 'delete']);
 
 Route::get('/admin/client', [AccountController::class, 'view_client'])->name('data_client');
-Route::post('/admin/client/insert', [AccountControllerr::class, 'insert']);
 Route::get('/admin/client/delete/{id}', [AccountController::class, 'delete']);
+
+Route::post('/client/insert', [AccountController::class, 'insert']);

@@ -39,8 +39,8 @@
                                 <td>{{ $ac->email}}</td>
                                 <td>{{ $ac->password}}</td>
                                 <td> 
-                                    <a href="#update/{{ $ci->id }}"  data-toggle="modal" data-target="#incomeModalEdit" class="btn btn-warning">Edit</a>
-                                    <a href="/admin/categoryIncome/delete/{{ $ci->id }}" class="btn btn-danger">Hapus</a>
+                                    <a href="#update/{{ $ac->id }}"  data-toggle="modal" data-target="#incomeModalEdit" class="btn btn-warning">Edit</a>
+                                    <a href="/admin/categoryIncome/delete/{{ $ac->id }}" class="btn btn-danger">Hapus</a>
                                 </td>
                             </tr>
                 @endforeach

@@ -83,18 +83,19 @@
                                     </div>
                                     <div class="modal-body text-white">
                                         <h5 class="modal-title text-white text-center" id="exampleModalLabel">Sign Up</h5>
-                                        <form>
+                                        <form action="/client/insert" method="POST">
+                                            @csrf
                                             <div class="mb-3">
                                                 <label class="form-label">Name</label>
-                                                <input type="text" class="form-control" placeholder="Full Name ..." required>
+                                                <input name="name" type="text" class="form-control" placeholder="Full Name ..." required>
                                             </div>
                                             <div class="mb-3">
                                                 <label class="form-label">Email Address</label>
-                                                <input type="email" class="form-control" placeholder="Email Address ..." required>
+                                                <input name="email" type="email" class="form-control" placeholder="Email Address ..." required>
                                             </div>
                                             <div class="mb-3">
                                                 <label class="form-label">Password</label>
-                                                <input type="password" class="form-control" placeholder="Password ..." required>
+                                                <input name="password" type="password" class="form-control" placeholder="Password ..." required>
                                             </div>
                                             <div class="mb-3">
                                                 <label class="form-label">Confirm Password</label>
@@ -103,24 +104,6 @@
                                             <div class="buttonSignIn d-flex justify-content-center">
                                                 <button type="submit" class="btn btn-primary btn-signIn">Sign Up</button>
                                             </div>
-                                            
-                                            <div class="buttonSignIn d-flex justify-content-center">
-                                                <button type="submit" class="btn btn-primary btn-signIn">Action</button>
-                                            </div>
-
-
-
-
-                                            <tbody>
-                                            <a href="#update/{{ $ci->id }}"  data-toggle="modal" data-target="#incomeModalEdit" class="btn btn-warning">Edit</a>
-                                            <a href="/admin/categoryIncome/delete/{{ $ci->id }}" class="btn btn-danger">Hapus</a>
-                                     </td>
-                                      </tr>
-              
-                                 </tbody>
-            </table>
-
-
                                         </form>
                                     </div>
                                 </div>
@@ -129,10 +112,6 @@
                     </div>
                 </div>
             </nav>
-
-
-
-
             @yield('content')
             <div class="footer">
                 <div class="container">
