@@ -64,18 +64,19 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            <form>
+                            <form action="catincome/insert" method="POST">
+                                @csrf
                                 <div class="form-group">
                                     <label for="name">NAME</label>
-                                    <input type="name" class="form-control" id="name" aria-describedby="name" placeholder="Enter Name">
+                                    <input name="name" type="name" class="form-control" id="name" aria-describedby="name" placeholder="Enter Name">
                                 </div>
                                 <div class="form-group">
                                     <label for="description">DESCRIPTION</label>
-                                    <input type="description" class="form-control" id="description" placeholder="Enter Description">
+                                    <input name="description" type="description" class="form-control" id="description" placeholder="Enter Description">
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Submit</button>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
                                 </div>
                             </form>
                         </div>

@@ -54,7 +54,7 @@
 
              <!-- Nav Item - Income-->
              <li class="nav-item active">
-                <a class="nav-link" href="<?= URL::to('/'); ?>/admin/view_catincome">
+                <a class="nav-link" href="<?= URL::to('/'); ?>/admin/categoryIncome">
                     <i class="fas fa-wallet"></i>
                     <span>Data Category Income</span></a>
             </li>
