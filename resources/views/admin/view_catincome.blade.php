@@ -46,7 +46,7 @@
                                 <td>{{ $ci->description}}</td>
                                 <td> 
                                     <a href="/catIncome/edit/{{ $ci->id }}" class="btn btn-warning">Edit</a>
-                                    <a href="/catIncome/hapus/{{ $ci->id }}" class="btn btn-danger">Hapus</a>
+                                    <a href="/admin/categoryIncome/delete/{{ $ci->id }}" class="btn btn-danger">Hapus</a>
                                 </td>
                             </tr>
                 @endforeach
@@ -64,15 +64,15 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            <form action="catincome/insert" method="POST">
+                            <form action="categoryIncome/insert" method="POST">
                                 @csrf
                                 <div class="form-group">
                                     <label for="name">NAME</label>
-                                    <input name="name" type="name" class="form-control" id="name" aria-describedby="name" placeholder="Enter Name">
+                                    <input name="name" type="text" class="form-control" id="name" aria-describedby="name" placeholder="Enter Name">
                                 </div>
                                 <div class="form-group">
                                     <label for="description">DESCRIPTION</label>
-                                    <input name="description" type="description" class="form-control" id="description" placeholder="Enter Description">
+                                    <input name="description" type="text" class="form-control" id="description" placeholder="Enter Description">
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

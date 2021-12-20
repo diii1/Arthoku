@@ -5,6 +5,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\AppController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\CategoryIncomeController;
+use App\Http\Controllers\CategoryExpenseController;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,7 +31,9 @@ Route::get('/setting', [DashboardController::class, 'setting']);
 Route::get('/admin', [AdminController::class, 'index']);
 
 Route::get('/admin/categoryIncome', [CategoryIncomeController::class, 'view_catincome'])->name('data_catincome');
-Route::post('/admin/catincome/insert', [CategoryIncomeController::class, 'insert']);
-Route::get('/catIncome/hapus/{id}', [CategoryIncomeController::class, 'delete']);
+Route::post('/admin/categoryIncome/insert', [CategoryIncomeController::class, 'insert']);
+Route::get('/admin/categoryIncome/delete/{id}', [CategoryIncomeController::class, 'delete']);
 
-Route::get('/admin/view_catexpense', [AdminController::class, 'view_catexpense']);
+Route::get('/admin/categoryExpense', [CategoryExpenseController::class, 'view_catexpense'])->name('data_catexpense');
+Route::post('/admin/categoryExpense/insert', [CategoryExpenseController::class, 'insert']);
+Route::get('/admin/categoryExpense/delete/{id}', [CategoryExpenseController::class, 'delete']);

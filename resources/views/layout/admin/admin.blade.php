@@ -61,7 +61,7 @@
 
             <!-- Nav Item - Expense -->
             <li class="nav-item active">
-                <a class="nav-link" href="<?= URL::to('/'); ?>/admin/view_catexpense">
+                <a class="nav-link" href="<?= URL::to('/'); ?>/admin/categoryExpense">
                     <i class="fas fa-file-invoice-dollar"></i>
                     <span>Data Category Expense</span></a>
             </li>
