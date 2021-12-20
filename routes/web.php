@@ -6,6 +6,7 @@ use App\Http\Controllers\AppController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\CategoryIncomeController;
 use App\Http\Controllers\CategoryExpenseController;
+use App\Http\Controllers\AccountController;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,3 +38,7 @@ Route::get('/admin/categoryIncome/delete/{id}', [CategoryIncomeController::class
 Route::get('/admin/categoryExpense', [CategoryExpenseController::class, 'view_catexpense'])->name('data_catexpense');
 Route::post('/admin/categoryExpense/insert', [CategoryExpenseController::class, 'insert']);
 Route::get('/admin/categoryExpense/delete/{id}', [CategoryExpenseController::class, 'delete']);
+
+Route::get('/admin/client', [AccountController::class, 'view_client'])->name('data_client');
+Route::post('/admin/client/insert', [AccountControllerr::class, 'insert']);
+Route::get('/admin/client/delete/{id}', [AccountController::class, 'delete']);

@@ -103,6 +103,24 @@
                                             <div class="buttonSignIn d-flex justify-content-center">
                                                 <button type="submit" class="btn btn-primary btn-signIn">Sign Up</button>
                                             </div>
+                                            
+                                            <div class="buttonSignIn d-flex justify-content-center">
+                                                <button type="submit" class="btn btn-primary btn-signIn">Action</button>
+                                            </div>
+
+
+
+
+                                            <tbody>
+                                            <a href="#update/{{ $ci->id }}"  data-toggle="modal" data-target="#incomeModalEdit" class="btn btn-warning">Edit</a>
+                                            <a href="/admin/categoryIncome/delete/{{ $ci->id }}" class="btn btn-danger">Hapus</a>
+                                     </td>
+                                      </tr>
+              
+                                 </tbody>
+            </table>
+
+
                                         </form>
                                     </div>
                                 </div>
@@ -111,6 +129,10 @@
                     </div>
                 </div>
             </nav>
+
+
+
+
             @yield('content')
             <div class="footer">
                 <div class="container">

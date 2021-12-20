@@ -52,6 +52,15 @@
                     <span>Dashboard</span></a>
             </li>
 
+
+             <!-- Nav Item - Akun -->
+             <li class="nav-item active">
+                <a class="nav-link" href="<?= URL::to('/'); ?>/admin/client">
+                    <i class="fas fa-user"></i>
+                    <span>Data User Account</span></a>
+            </li>
+
+            
              <!-- Nav Item - Income-->
              <li class="nav-item active">
                 <a class="nav-link" href="<?= URL::to('/'); ?>/admin/categoryIncome">
