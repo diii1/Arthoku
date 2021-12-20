@@ -27,4 +27,11 @@ class CategoryIncome extends Model
         return DB::table('category_income')->get();
     }
 
+    public function editData($id, $data)
+    {
+        DB::table('category_income')
+        ->where('id', $id)
+        ->update($data);
+    }
+
 }

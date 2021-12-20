@@ -34,6 +34,12 @@ Route::get('/admin', [AdminController::class, 'index']);
 Route::get('/admin/categoryIncome', [CategoryIncomeController::class, 'view_catincome'])->name('data_catincome');
 Route::post('/admin/categoryIncome/insert', [CategoryIncomeController::class, 'insert']);
 Route::get('/admin/categoryIncome/delete/{id}', [CategoryIncomeController::class, 'delete']);
+Route::post('/admin/categoryIncome/update/{id}', [CategoryIncomeController::class, 'update']);
+
+
+
+
+
 
 Route::get('/admin/categoryExpense', [CategoryExpenseController::class, 'view_catexpense'])->name('data_catexpense');
 Route::post('/admin/categoryExpense/insert', [CategoryExpenseController::class, 'insert']);

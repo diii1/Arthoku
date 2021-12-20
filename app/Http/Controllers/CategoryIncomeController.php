@@ -31,6 +31,33 @@ class CategoryIncomeController extends Controller
 
     public function delete($id){
         $this->CategoryIncome->deleteData($id);
-        return redirect()->route('data_catincome');
+        return redirect()->route('data_catincome')->with('pesan', 'Data Berhasil Dihapus');;
     }
+
+    public function update($id)
+    {
+        $data = [
+            'name' => Request()->name,
+            'description' => Request()->description,
+        
+        ];
+
+        $this->CategoryIncome->editData($id, $data);
+        return redirect()->route('CategoryIncome')->with('pesan', 'Data Berhasil TerUpdate');
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
