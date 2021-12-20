@@ -28,3 +28,4 @@ Route::get('/setting', [DashboardController::class, 'setting']);
 
 Route::get('/admin', [AdminController::class, 'index']);
 Route::get('/admin/view_catincome', [AdminController::class, 'view_catincome']);
+Route::get('/admin/view_catexpense', [AdminController::class, 'view_catexpense']);

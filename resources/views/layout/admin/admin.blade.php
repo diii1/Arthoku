@@ -8,8 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-
-    <title>SB Admin 2 - Dashboard</title>
+    
+    <link rel="icon" href="{{ asset('assets/image/logo.png') }}">
+    <title>Arthoku Admin - Dashboard</title>
 
     <!-- Custom fonts for this template-->
     <link href="{{ asset('template/vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css">
@@ -20,6 +21,9 @@
     <!-- Custom styles for this template-->
     <link href="{{ asset('template/css/sb-admin-2.min.css') }}" rel="stylesheet">
     <link href="{{ asset('template/vendor/datatables/dataTables.bootstrap4.min.css') }}" rel="stylesheet">
+
+    <!-- Custom styles for Admin Page-->
+    <!-- <link rel="stylesheet" href="{{ asset('assets/css/admin.css') }}"> -->
 
 </head>
 
@@ -43,21 +47,21 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="<?= URL::to('/admin'); ?>">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
 
              <!-- Nav Item - Income-->
              <li class="nav-item active">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="<?= URL::to('/'); ?>/admin/view_catincome">
                     <i class="fas fa-wallet"></i>
                     <span>Data Category Income</span></a>
             </li>
 
             <!-- Nav Item - Expense -->
             <li class="nav-item active">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="<?= URL::to('/'); ?>/admin/view_catexpense">
                     <i class="fas fa-file-invoice-dollar"></i>
                     <span>Data Category Expense</span></a>
             </li>
@@ -187,7 +191,7 @@
                                 </h6>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_1.svg"
+                                        <img class="rounded-circle" src="{{ asset('template/img/undraw_profile_1.svg') }}"
                                             alt="...">
                                         <div class="status-indicator bg-success"></div>
                                     </div>
@@ -199,7 +203,7 @@
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_2.svg"
+                                        <img class="rounded-circle" src="{{ asset('template/img/undraw_profile_2.svg') }}"
                                             alt="...">
                                         <div class="status-indicator"></div>
                                     </div>
@@ -211,7 +215,7 @@
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_3.svg"
+                                        <img class="rounded-circle" src="{{ asset('template/img/undraw_profile_3.svg') }}"
                                             alt="...">
                                         <div class="status-indicator bg-warning"></div>
                                     </div>
@@ -245,7 +249,7 @@
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
                                 <img class="img-profile rounded-circle"
-                                    src="img/undraw_profile.svg">
+                                    src="{{ asset('template/img/undraw_profile.svg') }}">
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"

@@ -8,7 +8,7 @@
 <!-- DataTales Example -->
 <div class="card shadow mb-4">
     <div class="card-header py-3">
-        <h6 class="m-0 font-weight-bold text-primary">Data Category Income</h6>
+        <h6 class="m-0 font-weight-bold text-primary">Data Category Expense</h6>
     </div>
     <div class="card-body">
         <div class="table-responsive">
@@ -16,11 +16,11 @@
                 <div class="row no-gutters">
                     <div class="col-12">
                         <div class="d-flex justify-content-start mb-3">
-                            <a href="#" data-toggle="modal" data-target="#incomeModal" class="btn btn-info btn-icon-split">
+                            <a href="#" data-toggle="modal" data-target="#expenseModal" class="btn btn-info btn-icon-split">
                                 <span class="icon text-white-50">
                                     <i class="fas fa-plus"></i>
                                 </span>
-                                <span class="text">Add Data Category Income</span>
+                                <span class="text">Add Data Category Expense</span>
                             </a>
                         </div>
                     </div>
@@ -40,13 +40,13 @@
                     </tr>
                 </tfoot>
                 <tbody>
-                 @foreach($category_income as $ci)
+                 @foreach($category_expense as $ce)
                             <tr>
-                                <td>{{ $ci->name}}</td>
-                                <td>{{ $ci->description}}</td>
+                                <td>{{ $ce->name}}</td>
+                                <td>{{ $ce->description}}</td>
                                 <td> 
-                                    <a href="/catIncome/edit/{{ $ci->id }}" class="btn btn-warning">Edit</a>
-                                    <a href="/catIncome/hapus/{{ $ci->id }}" class="btn btn-danger">Hapus</a>
+                                    <a href="/catExpense/edit/{{ $ce->id }}" class="btn btn-warning">Edit</a>
+                                    <a href="/catExpense/hapus/{{ $ce->id }}" class="btn btn-danger">Hapus</a>
                                 </td>
                             </tr>
                 @endforeach
@@ -54,7 +54,7 @@
             </table>
 
             <!-- Modal -->
-            <div class="modal fade" id="incomeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="expenseModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
