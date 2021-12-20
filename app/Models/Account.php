@@ -27,9 +27,8 @@ class Account extends Model
         return DB::table('accounts')->get();
     }
 
-    public function editData(){
-        return DB::table('accounts')->where('id', $id)->update();
+    public function editData($id, $data){
+        return DB::table('accounts')->where('id', $id)->update($data);
     }
-
 
 }

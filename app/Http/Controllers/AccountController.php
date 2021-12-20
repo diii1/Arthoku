@@ -32,10 +32,23 @@ class  AccountController extends Controller
         return redirect()->route('client');
     }
 
-    // public function delete($id){
-    //     $this->CategoryIncome->deleteData($id);
-    //     return redirect()->route('data_catincome');
-    // }
+    public function delete($id){
+        $this->Account->deleteData($id);
+        return redirect()->route('data_client')->with('pesan', 'Data Berhasil Dihapus');;
+    }
+
+    public function update($id)
+    {
+        $data = [
+            'name' => Request()->name,
+            'email' => Request()->email,
+            'password' => Request()->password,
+        ];
+
+        $this->Account->editData($id, $data);
+        return redirect()->route('data_client')->with('pesan', 'Data Berhasil Terupdate');
+    }
+ 
 
 
 

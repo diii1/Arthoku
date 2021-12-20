@@ -31,22 +31,26 @@ Route::get('/setting', [DashboardController::class, 'setting']);
 
 Route::get('/admin', [AdminController::class, 'index']);
 
+// Routing untuk kategori Income
+
 Route::get('/admin/categoryIncome', [CategoryIncomeController::class, 'view_catincome'])->name('data_catincome');
 Route::post('/admin/categoryIncome/insert', [CategoryIncomeController::class, 'insert']);
 Route::get('/admin/categoryIncome/delete/{id}', [CategoryIncomeController::class, 'delete']);
 Route::post('/admin/categoryIncome/update/{id}', [CategoryIncomeController::class, 'update']);
 
-
-
-
-
+// Routing untuk kategori Expense
 
 Route::get('/admin/categoryExpense', [CategoryExpenseController::class, 'view_catexpense'])->name('data_catexpense');
 Route::post('/admin/categoryExpense/insert', [CategoryExpenseController::class, 'insert']);
 Route::get('/admin/categoryExpense/delete/{id}', [CategoryExpenseController::class, 'delete']);
 Route::post('/admin/categoryExpense/update/{id}', [CategoryExpenseController::class, 'update']);
 
+// Routing untuk Data Client 
+
 Route::get('/admin/client', [AccountController::class, 'view_client'])->name('data_client');
 Route::get('/admin/client/delete/{id}', [AccountController::class, 'delete']);
+Route::post('/admin/client/update/{id}', [AccountController::class, 'update']);
 
+
+//  dipisah karna tidak berhubungan dengan admin alis di inputkan oleh user arthorku
 Route::post('/client/insert', [AccountController::class, 'insert']);
