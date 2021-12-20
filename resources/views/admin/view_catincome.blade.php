@@ -11,6 +11,13 @@
         <h6 class="m-0 font-weight-bold text-primary">Data Category Income</h6>
     </div>
     <div class="card-body">
+        @if (session('pesan'))
+            <div class="alert alert-success alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                <h4><i class="icon fa fa-check"></i> Success!</h4>
+                {{ session('pesan') }}.
+            </div>
+        @endif
         <div class="table-responsive">
             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                 <div class="row no-gutters">

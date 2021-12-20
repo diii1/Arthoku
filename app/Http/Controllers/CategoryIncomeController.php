@@ -26,7 +26,7 @@ class CategoryIncomeController extends Controller
         ];
         // die($data);
         $this->CategoryIncome->addCatIncome($data);
-        return redirect()->route('data_catincome');
+        return redirect()->route('data_catincome')->with('pesan', 'Data Berhasil Ditambahkan');
     }
 
     public function delete($id){
