@@ -29,9 +29,7 @@ class CategoryIncome extends Model
 
     public function editData($id, $data)
     {
-        DB::table('category_income')
-        ->where('id', $id)
-        ->update($data);
+        DB::table('category_income')->where('id', $id)->update($data);
     }
 
 }

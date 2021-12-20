@@ -43,21 +43,6 @@ class CategoryIncomeController extends Controller
         ];
 
         $this->CategoryIncome->editData($id, $data);
-        return redirect()->route('CategoryIncome')->with('pesan', 'Data Berhasil TerUpdate');
+        return redirect()->route('data_catincome')->with('pesan', 'Data Berhasil Terupdate');
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

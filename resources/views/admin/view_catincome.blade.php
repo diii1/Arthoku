@@ -49,6 +49,7 @@
                     </tr>
                 </tfoot>
                 <tbody>
+<<<<<<< Updated upstream
                  @foreach($category_income as $ci)
                             <tr>
                                 <td>{{ $ci->id}}</td>
@@ -60,6 +61,19 @@
                                 </td>
                             </tr>
                 @endforeach
+=======
+                    @foreach($category_income as $ci)
+                        <tr>
+                            <td>{{ $ci->id}}</td>
+                            <td>{{ $ci->name}}</td>
+                            <td>{{ $ci->description}}</td>
+                            <td> 
+                                <button data-toggle="modal" data-target="#incomeModalEdit_{{ $ci->id }}" class="btn btn-warning">Edit</button>
+                                <a href="/admin/categoryIncome/delete/{{ $ci->id }}" class="btn btn-danger">Hapus</a>
+                            </td>
+                        </tr>
+                    @endforeach
+>>>>>>> Stashed changes
                 </tbody>
             </table>
 
@@ -90,58 +104,42 @@
                                 </div>
                             </form>
                         </div>
-
-                        
                     </div>
                 </div>
             </div>
             
              <!-- Modal Untuk Edit  -->
-             <div class="modal fade " id="incomeModalEdit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Edit Data Category Income</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <form action="categoryIncome/update/{id}" method="POST">
-                                @csrf
-                                <div class="form-group">
-                                    <label for="name">NAME</label>
-                                    <input name="name" type="text" class="form-control" id="name" aria-describedby="name" placeholder="Enter Name" value="{{ $category_income->name }}">
-                                </div>
-                                <div class="form-group">
-                                    <label for="description">DESCRIPTION</label>
-                                    <input name="description" type="text" class="form-control" id="description" placeholder="Enter Description" value="{{ $category_income->description }}">
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    <button type="submit" class="btn btn-primary">Submit</button>
-
-
-
-
-
-                                </div>
-                            </form>
-           
+            @foreach($category_income as $data)
+                <div class="modal fade " id="incomeModalEdit_{{ $data->id }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Edit Data Category Income</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form action="categoryIncome/update/{{ $data->id }}" method="POST">
+                                    @csrf
+                                    <div class="form-group">
+                                        <label for="name">NAME</label>
+                                        <input name="name" type="text" class="form-control" id="name" aria-describedby="name" placeholder="Enter Name" value="{{ $data->name }}">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="description">DESCRIPTION</label>
+                                        <input name="description" type="text" class="form-control" id="description" placeholder="Enter Description" value="{{ $data->description }}">
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </div>
+                                </form>    
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-
-
-
-
-
-
-
-
-
-            
+            @endforeach         
         </div>
     </div>
 </div>
