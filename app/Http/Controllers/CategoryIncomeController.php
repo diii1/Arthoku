@@ -28,4 +28,9 @@ class CategoryIncomeController extends Controller
         $this->CategoryIncome->addCatIncome($data);
         return redirect()->route('data_catincome');
     }
+
+    public function delete($id){
+        $this->CategoryIncome->deleteData($id);
+        return redirect()->route('data_catincome');
+    }
 }

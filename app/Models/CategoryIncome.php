@@ -18,6 +18,11 @@ class CategoryIncome extends Model
         DB::table('category_income')->insert($data);
     }
 
+    public function deleteData($id)
+    {
+        DB::table('category_income')->where('id', $id)->delete();
+    }
+
     public function allData(){
         return DB::table('category_income')->get();
     }

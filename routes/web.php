@@ -31,5 +31,6 @@ Route::get('/admin', [AdminController::class, 'index']);
 
 Route::get('/admin/categoryIncome', [CategoryIncomeController::class, 'view_catincome'])->name('data_catincome');
 Route::post('/admin/catincome/insert', [CategoryIncomeController::class, 'insert']);
+Route::get('/catIncome/hapus/{id}', [CategoryIncomeController::class, 'delete']);
 
 Route::get('/admin/view_catexpense', [AdminController::class, 'view_catexpense']);
