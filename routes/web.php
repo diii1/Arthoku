@@ -21,7 +21,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::group(['client' => 'Dashboard', 'middleware' => ['auth:web','isClient'], 'prefix' => 'client'], function () {
-    Route::get('/home', [HomeController::class, 'indexClient'])->name('home');
+    Route::get('/', [HomeController::class, 'indexClient'])->name('home');
 });
 
 Route::group(['admin' => 'Dashboard', 'middleware' => ['auth:web','isAdmin'], 'prefix' => 'admin'], function () {
