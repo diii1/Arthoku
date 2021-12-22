@@ -59,9 +59,9 @@
 }
 
 .btn-Try{
-    background-color: #F5CC63 !important;
-    border-color: #F5CC63 !important;
-    border-radius: 10px !important;
+    background-color: #F5CC63;
+    border-color: #F5CC63;
+    border-radius: 10px;
     font-size: 24px;
 }
 
@@ -70,11 +70,11 @@
 }
 
 .brand-arthoku{
-    font-size: 48px !important;
+    font-size: 48px;
 }
 
 .slug-arthoku{
-    font-size: 24px !important;
+    font-size: 24px;
 }
 
 /* .box-feature{

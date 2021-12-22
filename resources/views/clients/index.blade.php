@@ -3,12 +3,12 @@
 @section('content')
     <main>
         <section class="hero-image mt-5 pt-5 vh-100" id="home">
-          <div class="row mb-3">
+          <div class="row mb-3 home">
               <div class="col d-flex justify-content-center align-items-center">
                 <div class="content">
                   <h2 class="brand-arthoku">ArthoKu</h2>
                   <p class="slug-arthoku">the best way to manage your money</p>
-                  <button type="button" class="btn btn-primary btn-Try px-4 d-flex ms-auto">Let's Try</button>
+                  <button type="button" class="btn btn-primary btn-Try px-4">Let's Try</button>
                 </div>
               </div>
               <div class="col d-flex justify-content-center align-items-center">

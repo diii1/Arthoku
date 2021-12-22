@@ -18,15 +18,10 @@ use App\Http\Controllers\Client\HomeController;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-
-Route::get('/', function () {
-        return view('admins');
-});
-
 Route::get('/history', function () {
         return view('clients.history');
 });
-
+Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 
 Auth::routes();
