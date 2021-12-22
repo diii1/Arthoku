@@ -27,3 +27,4 @@ Route::group(['client' => 'Dashboard', 'middleware' => ['auth:web','isClient'], 
 Route::group(['admin' => 'Dashboard', 'middleware' => ['auth:web','isAdmin'], 'prefix' => 'admin'], function () {
     Route::get('/', [HomeController::class, 'indexAdmin'])->name('admin');  
 });
+
