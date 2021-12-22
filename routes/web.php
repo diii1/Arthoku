@@ -23,6 +23,10 @@ Route::get('/', function () {
         return view('admins');
 });
 
+Route::get('/history', function () {
+        return view('clients.history');
+});
+
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 
 Auth::routes();
