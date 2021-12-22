@@ -19,6 +19,10 @@ use App\Http\Controllers\Client\HomeController;
 //     return view('welcome');
 // });
 
+Route::get('/', function () {
+        return view('admins');
+});
+
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 
 Auth::routes();
