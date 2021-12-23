@@ -19,6 +19,6 @@ class IsAdmin
             return $next($request);
         }
    
-        return redirect("client")->with("error","You don't have admin access.");
+        return redirect("")->with("error","You don't have admin access.");
     }
 }

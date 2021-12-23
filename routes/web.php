@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 // use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Client\HomeController;
+use App\Http\Controllers\Client\DashboardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,17 +22,18 @@ use App\Http\Controllers\Client\HomeController;
 Route::get('/history', function () {
         return view('clients.history');
 });
-Route::get('/', [HomeController::class, 'index'])->name('home');
-Route::get('/home', [HomeController::class, 'index'])->name('home');
+Route::get('/', [HomeController::class, 'viewIndex'])->name('home');
+// Route::get('/home', [HomeController::class, 'viewIndex'])->name('homeDashboard');
 
 Auth::routes();
 
-Route::group(['client' => 'Dashboard', 'middleware' => ['auth:web','isClient'], 'prefix' => 'client'], function () {
+Route::group(['client' => 'Dashboard', 'middleware' => ['auth:web','isClient'], 'prefix' => '/'], function () {
     // Route::get('/', [HomeController::class, 'indexClient'])->name('home');
     // Route::get('/home', [HomeController::class, 'indexClient'])->name('home');
 });
 
 Route::group(['admin' => 'Dashboard', 'middleware' => ['auth:web','isAdmin'], 'prefix' => 'admin'], function () {
-    Route::get('/', [HomeController::class, 'indexAdmin'])->name('admin');  
+    // Route::get('/', [HomeController::class, 'indexAdmin'])->name('admin');  
+    Route::get('/', [DashboardController::class, 'indexDashboard'])->name('admin');
 });
 

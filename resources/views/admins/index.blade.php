@@ -1,4 +1,4 @@
-@extends('layout.admin.admin')
+@extends('layout.admin')
 
 @section('content')
     <div class="container-fluid">
@@ -43,17 +43,5 @@
                 </div>
             </div>
         </div>   
-        <!-- Content Row -->
-        <div class="row">
-
-            <!-- Content Column -->
-            <div class="col-lg-6 mb-4">
-
-             
-
-
-            </div>
-        </div>
-
     </div>
 @endsection
