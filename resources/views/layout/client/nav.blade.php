@@ -22,7 +22,7 @@
                         </li>
                         @auth
                             <li class="nav-item">
-                                <a class="nav-link" href="<?= URL::to('/'); ?>/dashboard">Dashboard</a>
+                                <a class="nav-link" href="{{ route('clientDashboard') }}">Dashboard</a>
                             </li>
                         @else
                             <li class="nav-item">

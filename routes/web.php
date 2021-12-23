@@ -3,7 +3,8 @@
 use Illuminate\Support\Facades\Route;
 // use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Client\HomeController;
-use App\Http\Controllers\Client\DashboardController;
+use App\Http\Controllers\Client\DashboardClientController;
+use App\Http\Controllers\Admin\DashboardAdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,12 +29,17 @@ Route::get('/', [HomeController::class, 'viewIndex'])->name('home');
 Auth::routes();
 
 Route::group(['client' => 'Dashboard', 'middleware' => ['auth:web','isClient'], 'prefix' => '/'], function () {
-    // Route::get('/', [HomeController::class, 'indexClient'])->name('home');
     // Route::get('/home', [HomeController::class, 'indexClient'])->name('home');
+    Route::get('/home', [DashboardClientController::class, 'indexDashboardClient'])->name('clientHome');
+    Route::get('/dashboard', [DashboardClientController::class, 'viewDashboard'])->name('clientDashboard');
+    Route::get('/addData', [DashboardClientController::class, 'viewAddData'])->name('clientAddData');
+    Route::get('/history', [DashboardClientController::class, 'viewHistory'])->name('clientHistory');
+    Route::get('/recommendation', [DashboardClientController::class, 'viewRecomendation'])->name('clientRecommendation');
+    Route::get('/settings', [DashboardClientController::class, 'viewSetting'])->name('clientSetting');
 });
 
 Route::group(['admin' => 'Dashboard', 'middleware' => ['auth:web','isAdmin'], 'prefix' => 'admin'], function () {
     // Route::get('/', [HomeController::class, 'indexAdmin'])->name('admin');  
-    Route::get('/', [DashboardController::class, 'indexDashboard'])->name('admin');
+    Route::get('/', [DashboardAdminController::class, 'indexDashboardAdmin'])->name('admin');
 });
 

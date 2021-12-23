@@ -3,7 +3,7 @@
 @section('content')
     <div class="col-9 col-sidenav-right">
         <div class="container">
-            <div class="text-white title-page">History</div>
+            <div class="text-white title-page">{{ $routeName }}</div>
             <div class="text-white mt-5 mb-3">
                 <h1>12-11-2002</h1>
                 <div class="row">
