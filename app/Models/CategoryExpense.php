@@ -10,7 +10,6 @@ class CategoryExpense extends Model
 {
     use HasFactory;
 
-    
     protected $table ="category_expense";
     protected $primaryKey = 'id';
     protected $fillable = ['name', 'description'];

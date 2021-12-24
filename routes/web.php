@@ -9,7 +9,6 @@ use App\Http\Controllers\Admin\CategoryIncomeController;
 use App\Http\Controllers\Admin\CategoryExpenseController;
 use App\Http\Controllers\Admin\UserController;
 
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
