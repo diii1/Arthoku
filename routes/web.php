@@ -1,12 +1,13 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\DashboardController;
-use App\Http\Controllers\AppController;
-use App\Http\Controllers\AdminController;
-use App\Http\Controllers\CategoryIncomeController;
-use App\Http\Controllers\CategoryExpenseController;
-use App\Http\Controllers\AccountController;
+// use App\Http\Controllers\HomeController;
+use App\Http\Controllers\Client\HomeController;
+use App\Http\Controllers\Client\DashboardClientController;
+use App\Http\Controllers\Admin\DashboardAdminController;
+use App\Http\Controllers\Admin\CategoryIncomeController;
+use App\Http\Controllers\Admin\CategoryExpenseController;
+use App\Http\Controllers\Admin\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,35 +23,45 @@ use App\Http\Controllers\AccountController;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-Route::get('/', [AppController::class, 'index'])->name('client');
-Route::get('/dashboard', [DashboardController::class, 'index']);
-Route::get('/addData', [DashboardController::class, 'addData']);
-Route::get('/history', [DashboardController::class, 'history']);
-Route::get('/recommendation', [DashboardController::class, 'recommendation']);
-Route::get('/setting', [DashboardController::class, 'setting']);
+Route::get('/history', function () {
+        return view('clients.history');
+});
+Route::get('/', [HomeController::class, 'viewIndex'])->name('home');
+// Route::get('/home', [HomeController::class, 'viewIndex'])->name('homeDashboard');
 
-Route::get('/admin', [AdminController::class, 'index']);
+Auth::routes();
 
-// Routing untuk kategori Income
+Route::group(['client' => 'Dashboard', 'middleware' => ['auth:web','isClient'], 'prefix' => '/'], function () {
+    // Route::get('/home', [HomeController::class, 'indexClient'])->name('home');
+    Route::get('/home', [DashboardClientController::class, 'indexDashboardClient'])->name('clientHome');
+    Route::get('/dashboard', [DashboardClientController::class, 'viewDashboard'])->name('clientDashboard');
+    Route::get('/addData', [DashboardClientController::class, 'viewAddData'])->name('clientAddData');
+    Route::get('/history', [DashboardClientController::class, 'viewHistory'])->name('clientHistory');
+    Route::get('/recommendation', [DashboardClientController::class, 'viewRecomendation'])->name('clientRecommendation');
+    Route::get('/settings', [DashboardClientController::class, 'viewSetting'])->name('clientSetting');
+});
 
-Route::get('/admin/categoryIncome', [CategoryIncomeController::class, 'view_catincome'])->name('data_catincome');
-Route::post('/admin/categoryIncome/insert', [CategoryIncomeController::class, 'insert']);
-Route::get('/admin/categoryIncome/delete/{id}', [CategoryIncomeController::class, 'delete']);
-Route::post('/admin/categoryIncome/update/{id}', [CategoryIncomeController::class, 'update']);
+Route::group(['admin' => 'Dashboard', 'middleware' => ['auth:web','isAdmin'], 'prefix' => 'admin'], function () {
+    // Route::get('/', [HomeController::class, 'indexAdmin'])->name('admin');  
+    Route::get('/', [DashboardAdminController::class, 'indexDashboardAdmin'])->name('admin');
 
-// Routing untuk kategori Expense
-
-Route::get('/admin/categoryExpense', [CategoryExpenseController::class, 'view_catexpense'])->name('data_catexpense');
-Route::post('/admin/categoryExpense/insert', [CategoryExpenseController::class, 'insert']);
-Route::get('/admin/categoryExpense/delete/{id}', [CategoryExpenseController::class, 'delete']);
-Route::post('/admin/categoryExpense/update/{id}', [CategoryExpenseController::class, 'update']);
-
-// Routing untuk Data Client 
-
-Route::get('/admin/client', [AccountController::class, 'view_client'])->name('data_client');
-Route::get('/admin/client/delete/{id}', [AccountController::class, 'delete']);
-Route::post('/admin/client/update/{id}', [AccountController::class, 'update']);
+    //Routing untuk kategori Income di Admin
+    Route::get('/categoryIncome', [CategoryIncomeController::class, 'view_catincome'])->name('adminIncome');
+    Route::post('/categoryIncome/insert', [CategoryIncomeController::class, 'insert'])->name('adminAddDataCatIncome');
+    Route::post('/categoryIncome/update/{id}', [CategoryIncomeController::class, 'update'])->name('adminUpdateDataCatIncome');
+    Route::get('/categoryIncome/delete/{id}', [CategoryIncomeController::class, 'delete'])->name('adminDeleteDataCatIncome');
 
 
-//  dipisah karna tidak berhubungan dengan admin alis di inputkan oleh user arthorku
-Route::post('/client/insert', [AccountController::class, 'insert']);
+    //Routing untuk kategori Expense di Admin
+    Route::get('/categoryExpense', [CategoryExpenseController::class, 'view_catexpense'])->name('adminExpense');
+    Route::post('/categoryExpense/insert', [CategoryExpenseController::class, 'insert'])->name('adminAddDataCatExpense');
+    Route::post('/categoryExpense/update/{id}', [CategoryExpenseController::class, 'update'])->name('adminUpdateDataCatExpense');
+    Route::get('/categoryExpense/delete/{id}', [CategoryExpenseController::class, 'delete'])->name('adminDeleteDataCatExpense');
+  
+
+    //Routing untuk kategori User di Admin
+    Route::get('/client', [UserController::class, 'view_User'])->name('adminUser');
+    Route::post('/client/update/{id}', [UserController::class, 'update'])->name('updateAdminUser');
+    Route::get('/client/delete/{id}', [UserController::class, 'delete'])->name('deleteAdminUser');
+  
+});
