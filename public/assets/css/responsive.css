@@ -171,20 +171,20 @@
     }
 
     #tips {
-        margin-bottom: 500px;;
+        margin-bottom: 600px;
     }
 
     h2 {
-        font-size: 18px !important;
+        font-size: 40px !important;
     }
 
     p {
-        font-size: 12px !important;
+        font-size: 20px !important;
     }
 
     .btn-Try {
         border-radius: 5px;
-        font-size: 14px !important;
+        font-size: 20px !important;
     }
 
     img {
@@ -269,10 +269,38 @@
     }
 
     .signIn {
-        font-size: 21;
+        font-size: 21px !important;
     }
 
     .signUp {
-        font-size: 21;
+        font-size: 21px !important;
+    }
+
+    h2 {
+        font-size: 40px !important;
+    }
+
+    p {
+        font-size: 20px !important;
+    }
+
+    .btn-Try {
+        border-radius: 5px;
+        font-size: 20px !important;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    h2 {
+        font-size: 45px !important;
+    }
+
+    p {
+        font-size: 25px !important;
+    }
+
+    .btn-Try {
+        border-radius: 5px;
+        font-size: 20px !important;
     }
 }
