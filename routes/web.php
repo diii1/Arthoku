@@ -49,6 +49,11 @@ Route::group(['admin' => 'Dashboard', 'middleware' => ['auth:web','isAdmin'], 'p
     //Routing untuk kategori Income di Admin
     Route::get('/categoryIncome', [CategoryIncomeController::class, 'view_catincome'])->name('adminIncome');
     Route::post('/categoryIncome/insert', [CategoryIncomeController::class, 'insert'])->name('adminAddDataCatIncome');
+    Route::post('/categoryIncome/update/{id}', [CategoryIncomeController::class, 'update'])->name('adminUpdateDataCatIncome');
+    Route::get('/categoryIncome/delete/{id}', [CategoryIncomeController::class, 'delete'])->name('adminDeleteDataCatIncome');
+
+  
+   
     
  
 
