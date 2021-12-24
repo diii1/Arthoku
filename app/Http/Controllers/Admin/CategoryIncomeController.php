@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 use App\Models\CategoryIncome;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class CategoryIncomeController extends Controller
 {
@@ -16,7 +17,7 @@ class CategoryIncomeController extends Controller
         //mengambil data income
         $routeName = "CategoryIncome";
 
-        $category_income = CategoryIncome::all();
+        $category_income = CategoryIncome::paginate(15);
         //mengirim data income ke vide income
         return view('admins.view_catincome', compact('category_income', 'routeName'));
     }

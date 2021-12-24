@@ -18,7 +18,7 @@ class CategoryExpenseController extends Controller
 
          //mengambil data Expense
         $routeName = "CategoryExpense";
-        $category_expense = CategoryExpense::all();
+        $category_expense = CategoryExpense::paginate(15);
         //mengirim data expense ke view expense
         return view('admins.view_catexpense', compact('category_expense', 'routeName'));
     }

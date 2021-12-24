@@ -7,7 +7,7 @@ use App\Http\Controllers\Client\DashboardClientController;
 use App\Http\Controllers\Admin\DashboardAdminController;
 use App\Http\Controllers\Admin\CategoryIncomeController;
 use App\Http\Controllers\Admin\CategoryExpenseController;
-use App\Http\Controllers\Admin\UsersController;
+use App\Http\Controllers\Admin\UserController;
 
 
 /*
@@ -60,8 +60,9 @@ Route::group(['admin' => 'Dashboard', 'middleware' => ['auth:web','isAdmin'], 'p
     Route::get('/categoryExpense/delete/{id}', [CategoryExpenseController::class, 'delete'])->name('adminDeleteDataCatExpense');
   
 
-
-    
-    // Route::get('/', [UsersController::class, 'view_users'])->name('adminUsers');
+    //Routing untuk kategori User di Admin
+    Route::get('/client', [UserController::class, 'view_User'])->name('adminUser');
+    Route::post('/client/update/{id}', [UserController::class, 'update'])->name('updateAdminUser');
+    Route::get('/client/delete/{id}', [UserController::class, 'delete'])->name('deleteAdminUser');
+  
 });
-

@@ -1,7 +1,7 @@
 <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion navbar-sidenav" id="accordionSidebar">
 
     <!-- Sidebar - Brand -->
-    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{ route('admin') }}">
         <div class="sidebar-brand-icon ">
         <i class="fas fa-id-card-alt"></i>
         </div>
@@ -20,7 +20,7 @@
 
 
         <!-- Nav Item - Akun -->
-        <li class="nav-item active">
+    <li class="nav-item active">
         <a class="nav-link" href="<?= URL::to('/'); ?>/admin/client">
             <i class="fas fa-user"></i>
             <span>Data User Account</span></a>
