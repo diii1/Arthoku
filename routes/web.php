@@ -52,17 +52,15 @@ Route::group(['admin' => 'Dashboard', 'middleware' => ['auth:web','isAdmin'], 'p
     Route::post('/categoryIncome/update/{id}', [CategoryIncomeController::class, 'update'])->name('adminUpdateDataCatIncome');
     Route::get('/categoryIncome/delete/{id}', [CategoryIncomeController::class, 'delete'])->name('adminDeleteDataCatIncome');
 
-  
-   
-    
- 
 
-
-
-
-
-
+    //Routing untuk kategori Expense di Admin
     Route::get('/categoryExpense', [CategoryExpenseController::class, 'view_catexpense'])->name('adminExpense');
+    Route::post('/categoryExpense/insert', [CategoryExpenseController::class, 'insert'])->name('adminAddDataCatExpense');
+    Route::post('/categoryExpense/update/{id}', [CategoryExpenseController::class, 'update'])->name('adminUpdateDataCatExpense');
+    Route::get('/categoryExpense/delete/{id}', [CategoryExpenseController::class, 'delete'])->name('adminDeleteDataCatExpense');
+  
+
+
     
     // Route::get('/', [UsersController::class, 'view_users'])->name('adminUsers');
 });

@@ -16,10 +16,37 @@ class CategoryExpenseController extends Controller
 
     public function view_catexpense(){
 
-         //mengambil data income
+         //mengambil data Expense
         $routeName = "CategoryExpense";
         $category_expense = CategoryExpense::all();
         //mengirim data expense ke view expense
         return view('admins.view_catexpense', compact('category_expense', 'routeName'));
+    }
+
+    public function insert(){
+        $data = [
+            'name' => Request()->name,
+            'description' => Request()->description,
+        ];
+        // die($this->CategoryExpense);
+        $this->CategoryExpense->addCatExpense($data);
+        return redirect()->route('adminExpense')->with('pesan', 'Data Berhasil Ditambahkan');
+    }
+
+    public function delete($id){
+        $this->CategoryExpense->deleteData($id);
+        return redirect()->route('adminExpense')->with('pesan', 'Data Berhasil Dihapus');;
+    }
+
+    public function update($id)
+    {
+        $data = [
+            'name' => Request()->name,
+            'description' => Request()->description,
+        
+        ];
+
+        $this->CategoryExpense->editData($id, $data);
+        return redirect()->route('adminExpense')->with('pesan', 'Data Berhasil Terupdate');
     }
 }
