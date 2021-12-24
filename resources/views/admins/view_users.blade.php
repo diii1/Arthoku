@@ -1,4 +1,4 @@
-@extends('layout.admin.admin')
+@extends('layout.admin')
 
 @section('content')
     
@@ -8,7 +8,7 @@
 <!-- DataTales Example -->
 <div class="card shadow mb-4">
     <div class="card-header py-3">
-        <h6 class="m-0 font-weight-bold text-primary">Data User Accounts</h6>
+        <h6 class="m-0 font-weight-bold text-primary">{{ $routeName }}</h6>
     </div>
     <div class="card-body">
         <div class="table-responsive">
@@ -39,8 +39,8 @@
                                 <td>{{ $ac->email}}</td>
                                 <td>{{ $ac->password}}</td>
                                 <td> 
-                                    <button data-toggle="modal" data-target="#clientModalEdit_{{ $ac->id }}" class="btn btn-warning">Edit</button>
-                                    <a href="/admin/client/delete/{{ $ac->id }}" class="btn btn-danger">Hapus</a>
+                                    <button data-toggle="modal" data-target="#usersModalEdit_{{ $ac->id }}" class="btn btn-warning">Edit</button>
+                                    <a href="/admin/users/delete/{{ $ac->id }}" class="btn btn-danger">Hapus</a>
                                 </td>
                             </tr>
                 @endforeach
@@ -49,7 +49,7 @@
            
              <!-- Modal Untuk Edit  -->
              @foreach($accounts as $data)
-                <div class="modal fade " id="clientModalEdit_{{ $data->id }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade " id="usersModalEdit_{{ $data->id }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -59,7 +59,7 @@
                                 </button>
                             </div>
                             <div class="modal-body">
-                                <form action="client/update/{{ $data->id }}" method="POST">
+                                <form action="users/update/{{ $data->id }}" method="POST">
                                     @csrf
                                     <div class="form-group">
                                         <label for="name">NAME</label>

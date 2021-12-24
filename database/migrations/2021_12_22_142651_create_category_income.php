@@ -16,7 +16,7 @@ class CreateCategoryIncome extends Migration
         Schema::create('category_income', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('description');
+            $table->string('description')->nullable();
         });
     }
 

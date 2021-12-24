@@ -7,6 +7,7 @@ use App\Http\Controllers\Client\DashboardClientController;
 use App\Http\Controllers\Admin\DashboardAdminController;
 use App\Http\Controllers\Admin\CategoryIncomeController;
 use App\Http\Controllers\Admin\CategoryExpenseController;
+use App\Http\Controllers\Admin\UsersController;
 
 
 /*
@@ -44,10 +45,20 @@ Route::group(['client' => 'Dashboard', 'middleware' => ['auth:web','isClient'], 
 Route::group(['admin' => 'Dashboard', 'middleware' => ['auth:web','isAdmin'], 'prefix' => 'admin'], function () {
     // Route::get('/', [HomeController::class, 'indexAdmin'])->name('admin');  
     Route::get('/', [DashboardAdminController::class, 'indexDashboardAdmin'])->name('admin');
-    Route::get('/', [CategoryIncomeController::class, 'view_catincome'])->name('adminIncome');
 
-
+    //Routing untuk kategori Income di Admin
+    Route::get('/categoryIncome', [CategoryIncomeController::class, 'view_catincome'])->name('adminIncome');
+    Route::post('/categoryIncome/insert', [CategoryIncomeController::class, 'insert'])->name('adminAddDataCatIncome');
     
-    Route::get('/', [CategoryExpenseController::class, 'view_catexpense'])->name('adminExpense');
+ 
+
+
+
+
+
+
+    Route::get('/categoryExpense', [CategoryExpenseController::class, 'view_catexpense'])->name('adminExpense');
+    
+    // Route::get('/', [UsersController::class, 'view_users'])->name('adminUsers');
 });
 
