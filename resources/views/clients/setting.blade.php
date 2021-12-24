@@ -1,4 +1,4 @@
-@extends('layout.appDashboard')
+@extends('layout.clientDashboard')
 
 @section('content')
     <div class="col-9 col-sidenav-right">

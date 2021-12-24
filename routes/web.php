@@ -8,6 +8,8 @@ use App\Http\Controllers\Admin\DashboardAdminController;
 use App\Http\Controllers\Admin\CategoryIncomeController;
 use App\Http\Controllers\Admin\CategoryExpenseController;
 use App\Http\Controllers\Admin\UserController;
+use App\Http\Controllers\Client\RecordIncomeController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -36,10 +38,20 @@ Route::group(['client' => 'Dashboard', 'middleware' => ['auth:web','isClient'], 
     Route::get('/home', [DashboardClientController::class, 'indexDashboardClient'])->name('clientHome');
     Route::get('/dashboard', [DashboardClientController::class, 'viewDashboard'])->name('clientDashboard');
     Route::get('/addData', [DashboardClientController::class, 'viewAddData'])->name('clientAddData');
+    Route::post('/addData/income', [RecordIncomeController::class, 'insert'])->name('AddDataIncome');
     Route::get('/history', [DashboardClientController::class, 'viewHistory'])->name('clientHistory');
-    Route::get('/recommendation', [DashboardClientController::class, 'viewRecomendation'])->name('clientRecommendation');
+    Route::get('/recommendation', [DashboardClientController::class, 'viewRecommendation'])->name('clientRecommendation');
     Route::get('/settings', [DashboardClientController::class, 'viewSetting'])->name('clientSetting');
 });
+
+
+
+
+
+
+
+
+
 
 Route::group(['admin' => 'Dashboard', 'middleware' => ['auth:web','isAdmin'], 'prefix' => 'admin'], function () {
     // Route::get('/', [HomeController::class, 'indexAdmin'])->name('admin');  

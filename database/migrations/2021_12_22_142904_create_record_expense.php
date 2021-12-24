@@ -21,7 +21,7 @@ class CreateRecordExpense extends Migration
             $table->unsignedBigInteger('cat_expense_id');
             $table->foreign('cat_expense_id')->references('id')->on('category_expense')->onDelete('cascade')->onUpdate('cascade');
             $table->date('date');
-            $table->string('note');
+            $table->string('note')->nullable();
         });
     }
 

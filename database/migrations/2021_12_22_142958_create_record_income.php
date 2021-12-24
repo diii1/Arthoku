@@ -21,7 +21,7 @@ class CreateRecordIncome extends Migration
             $table->unsignedBigInteger('cat_income_id');
             $table->foreign('cat_income_id')->references('id')->on('category_income')->onDelete('cascade')->onUpdate('cascade');
             $table->date('date');
-            $table->string('note');
+            $table->string('note')->nullable();
         });
     }
 

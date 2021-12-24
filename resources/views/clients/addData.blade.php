@@ -10,35 +10,22 @@
                         <div class="cards card-title text-center">
                             Add Expense
                         </div>
-                        <div class="cards add-body">
-                            <form action="">
-                                <div class="form-group mt-3 mb-3">
-                                    <label for="ammount">Ammount</label>
-                                    <input type="number" class="form-control" placeholder="100000">
-                                </div>
+                        
 
-                                <div class="form-group mb-3">
-                                    <label for="category">Category</label>
-                                    <select class="form-control" id="">
-                                        <option value="" selected disabled hidden>Select</option>
-                                        <option value="">Investment</option>
-                                        <option value="">Education</option>
-                                        <option value="">Health</option>
-                                        <option value="">Hobby</option>
-                                    </select>
-                                </div>
 
-                                <div class="form-group mb-3">
-                                    <label for="date">Date</label>
-                                    <input type="text" class="form-control" placeholder="12/11/2021">
-                                </div>
 
-                                <div class="form-group mb-3">
-                                    <label for="note">Note</label>
-                                    <input type="text" class="form-control" placeholder="buy laptop">
-                                </div>
 
-                                <button type="submit" class="btn btn-success btn-add w-100">Submit</button>
+
+
+
+
+
+
+
+
+
+
+                        
                             </form>
                         </div>
                     </div>
@@ -49,30 +36,38 @@
                             Add Income
                         </div>
                         <div class="cards add-body">
-                            <form action="">
+                        @if (session('pesan'))
+                                <h6 class="text-success"><i class="icon fa fa-check"></i> Success!</h6>
+                                <h6 class="text-success"> {{ session('pesan') }}.</h6>
+                                
+                        @endif
+                     
+                            <form action="{{ route('AddDataIncome') }}" method = "POST">
+                                @csrf
                                 <div class="form-group mt-3 mb-3">
-                                    <label for="ammount">Ammount</label>
-                                    <input type="number" class="form-control" placeholder="100000">
+                                    <label for="amount">Amount</label>
+                                    <input name ="amount" type="number" class="form-control" placeholder="Input Your Income">
                                 </div>
 
                                 <div class="form-group mb-3">
                                     <label for="category">Category</label>
-                                    <select class="form-control" id="">
+                                    <select class="form-control" name="cat_income_id" id="">
                                         <option value="" selected disabled hidden>Select</option>
-                                        <option value="">Salary</option>
-                                        <option value="">Bonus</option>
-                                        <option value="">Gift</option>
+                                        @foreach($category_income as $ci)
+                                            <option value="{{ $ci->id }}">{{ $ci->name }}</option>
+                                        @endforeach
+
                                     </select>
                                 </div>
 
                                 <div class="form-group mb-3">
                                     <label for="date">Date</label>
-                                    <input type="text" class="form-control" placeholder="12/11/2021">
+                                    <input name ="date" type="date" class="form-control" placeholder="Chose Date ...">
                                 </div>
-                                
+
                                 <div class="form-group mb-3">
                                     <label for="note">Note</label>
-                                    <input type="text" class="form-control" placeholder="wages">
+                                    <input name ="note"  type="text" class="form-control" placeholder="Note ...">
                                 </div>
 
                                 <button type="submit" class="btn btn-success btn-add w-100">Submit</button>
