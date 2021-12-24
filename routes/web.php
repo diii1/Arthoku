@@ -6,6 +6,7 @@ use App\Http\Controllers\Client\HomeController;
 use App\Http\Controllers\Client\DashboardClientController;
 use App\Http\Controllers\Admin\DashboardAdminController;
 use App\Http\Controllers\Admin\CategoryIncomeController;
+use App\Http\Controllers\Admin\CategoryExpenseController;
 
 
 /*
@@ -44,5 +45,9 @@ Route::group(['admin' => 'Dashboard', 'middleware' => ['auth:web','isAdmin'], 'p
     // Route::get('/', [HomeController::class, 'indexAdmin'])->name('admin');  
     Route::get('/', [DashboardAdminController::class, 'indexDashboardAdmin'])->name('admin');
     Route::get('/', [CategoryIncomeController::class, 'view_catincome'])->name('adminIncome');
+
+
+    
+    Route::get('/', [CategoryExpenseController::class, 'view_catexpense'])->name('adminExpense');
 });
 
