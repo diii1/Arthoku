@@ -8,10 +8,10 @@ use Illuminate\Http\Request;
 class DashboardAdminController extends Controller
 {
     public function indexDashboardAdmin(){
-        return view('clients.index');
+        return view('admins.index');
     }
     public function dashboard(){
-        $routName = "Dashboard";
-        return view('clients.index', compact('routName'));
+        $routeName = "Dashboard";
+        return view('admins.index', compact('routeName'));
     }
 }

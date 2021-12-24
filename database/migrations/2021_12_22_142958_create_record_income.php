@@ -16,7 +16,7 @@ class CreateRecordIncome extends Migration
         Schema::create('record_income', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('user_id');
-            $table->foreign('user_id')->references('id')->on('accounts')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade')->onUpdate('cascade');
             $table->integer('amount');
             $table->unsignedBigInteger('cat_income_id');
             $table->foreign('cat_income_id')->references('id')->on('category_income')->onDelete('cascade')->onUpdate('cascade');

@@ -5,6 +5,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Client\HomeController;
 use App\Http\Controllers\Client\DashboardClientController;
 use App\Http\Controllers\Admin\DashboardAdminController;
+use App\Http\Controllers\Admin\CategoryIncomeController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -41,5 +43,6 @@ Route::group(['client' => 'Dashboard', 'middleware' => ['auth:web','isClient'], 
 Route::group(['admin' => 'Dashboard', 'middleware' => ['auth:web','isAdmin'], 'prefix' => 'admin'], function () {
     // Route::get('/', [HomeController::class, 'indexAdmin'])->name('admin');  
     Route::get('/', [DashboardAdminController::class, 'indexDashboardAdmin'])->name('admin');
+    Route::get('/', [CategoryIncomeController::class, 'view_catincome'])->name('adminIncome');
 });
 
