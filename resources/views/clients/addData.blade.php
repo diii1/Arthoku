@@ -10,22 +10,49 @@
                         <div class="cards card-title text-center">
                             Add Expense
                         </div>
-                        
+                        <div class="cards add-body">
+                        @if (session('pesanIncome'))
+                                <h6 class="text-success"><i class="icon fa fa-check"></i> Success!</h6>
+                                <h6 class="text-success"> {{ session('pesanIncome') }}.</h6>
+                                
+                        @endif
 
+                        @if (session('pesanExpense'))
+                                <h6 class="text-success"><i class="icon fa fa-check"></i> Success!</h6>
+                                <h6 class="text-success"> {{ session('pesanExpense') }}.</h6>
+                                
+                        @endif
+                     
+                            <form action="{{ route('AddDataExpense') }}" method = "POST">
+                                @csrf
+                                <div class="form-group mt-3 mb-3">
+                                    <label for="amount">Amount</label>
+                                    <input name ="amount" type="number" class="form-control" placeholder="Input Your Income">
+                                </div>
 
+                                <div class="form-group mb-3">
+                                    <label for="category">Category</label>
+                                    <select class="form-control" name="cat_expense_id" id="">
+                                        <option value="" selected disabled hidden>Select</option>
+                                        @foreach($category_expense as $ce)
+                                            <option value="{{ $ce->id }}">{{ $ce->name }}</option>
+                                        @endforeach
 
+                                    </select>
+                                </div>
 
+                                <div class="form-group mb-3">
+                                    <label for="date">Date</label>
+                                    <input name ="date" type="date" class="form-control" placeholder="Chose Date ...">
+                                </div>
 
+                                <div class="form-group mb-3">
+                                    <label for="note">Note</label>
+                                    <input name ="note"  type="text" class="form-control" placeholder="Note ...">
+                                </div>
 
+                                <button type="submit" class="btn btn-success btn-add w-100">Submit</button>
 
-
-
-
-
-
-
-
-                        
                             </form>
                         </div>
                     </div>

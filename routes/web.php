@@ -9,6 +9,7 @@ use App\Http\Controllers\Admin\CategoryIncomeController;
 use App\Http\Controllers\Admin\CategoryExpenseController;
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Client\RecordIncomeController;
+use App\Http\Controllers\Client\RecordExpenseController;
 use App\Http\Controllers\Client\SettingController;
 
 
@@ -38,8 +39,18 @@ Route::group(['client' => 'Dashboard', 'middleware' => ['auth:web','isClient'], 
     // Route::get('/home', [HomeController::class, 'indexClient'])->name('home');
     Route::get('/home', [DashboardClientController::class, 'indexDashboardClient'])->name('clientHome');
     Route::get('/dashboard', [DashboardClientController::class, 'viewDashboard'])->name('clientDashboard');
+
+    ///Routing untuk ADD DATA INCOME & EXPENSE
     Route::get('/addData', [DashboardClientController::class, 'viewAddData'])->name('clientAddData');
     Route::post('/addData/income', [RecordIncomeController::class, 'insert'])->name('AddDataIncome');
+    Route::post('/addData/expense', [RecordExpenseController::class, 'insert'])->name('AddDataExpense');
+
+
+
+
+
+
+
     Route::get('/history', [DashboardClientController::class, 'viewHistory'])->name('clientHistory');
     Route::get('/recommendation', [DashboardClientController::class, 'viewRecommendation'])->name('clientRecommendation');
     Route::get('/settings', [DashboardClientController::class, 'viewSetting'])->name('clientSetting');
@@ -64,6 +75,12 @@ Route::group(['admin' => 'Dashboard', 'middleware' => ['auth:web','isAdmin'], 'p
     Route::post('/categoryExpense/update/{id}', [CategoryExpenseController::class, 'update'])->name('adminUpdateDataCatExpense');
     Route::get('/categoryExpense/delete/{id}', [CategoryExpenseController::class, 'delete'])->name('adminDeleteDataCatExpense');
   
+
+
+
+
+
+
 
     //Routing untuk kategori User di Admin
     Route::get('/client', [UserController::class, 'view_User'])->name('adminUser');

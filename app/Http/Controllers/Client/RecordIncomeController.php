@@ -34,7 +34,7 @@ class RecordIncomeController extends Controller
 
         ];
         $this->RecordIncome->addRecordIncome($data);
-        return redirect()->route('clientAddData')->with('pesan', 'Data Berhasil Ditambahkan');
+        return redirect()->route('clientAddData')->with('pesanIncome', 'Data Berhasil Ditambahkan');
     }
 
     public function delete($id){

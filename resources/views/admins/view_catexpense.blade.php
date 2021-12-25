@@ -49,11 +49,11 @@
                     </tr>
                 </tfoot>
                 <tbody>
-                    @foreach($category_expense as $ci)
+                    @foreach($category_expense as $ce)
                         <tr>
-                            <td>{{ $ci->id}}</td>
-                            <td>{{ $ci->name}}</td>
-                            <td>{{ $ci->description}}</td>
+                            <td>{{ $ce->id}}</td>
+                            <td>{{ $ce->name}}</td>
+                            <td>{{ $ce->description}}</td>
                             <td> 
                                 <button data-toggle="modal" data-target="#expenseModalEdit_{{ $ci->id }}" class="btn btn-warning">Edit</button>
                                 <a href="/admin/categoryExpense/delete/{{ $ci->id }}" class="btn btn-danger">Hapus</a>
