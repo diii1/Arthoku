@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Client;
 use App\Models\RecordExpense;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use RealRashid\SweetAlert\Facades\Alert;
 use Auth;
 
 class RecordExpenseController extends Controller
@@ -35,7 +36,7 @@ class RecordExpenseController extends Controller
 
         ];
         $this->RecordExpense->addRecordExpense($data);
-        return redirect()->route('clientAddData')->with('pesanExpense', 'Data Berhasil Ditambahkan');
+        return redirect()->route('clientAddData')->withSuccess('Expense added!');
     }
 
     public function delete($id){

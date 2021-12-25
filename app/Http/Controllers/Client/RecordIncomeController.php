@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Client;
 use App\Models\RecordIncome;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use RealRashid\SweetAlert\Facades\Alert;
 use Auth;
 
 class RecordIncomeController extends Controller
@@ -34,7 +35,7 @@ class RecordIncomeController extends Controller
 
         ];
         $this->RecordIncome->addRecordIncome($data);
-        return redirect()->route('clientAddData')->with('pesanIncome', 'Data Berhasil Ditambahkan');
+        return redirect()->route('clientAddData')->withSuccess('Income added!');
     }
 
     public function delete($id){

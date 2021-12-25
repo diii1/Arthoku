@@ -11,23 +11,22 @@
                             Add Expense
                         </div>
                         <div class="cards add-body">
-                        @if (session('pesanIncome'))
+                        <!-- @if (session('pesanIncome'))
                                 <h6 class="text-success"><i class="icon fa fa-check"></i> Success!</h6>
                                 <h6 class="text-success"> {{ session('pesanIncome') }}.</h6>
-                                
                         @endif
 
                         @if (session('pesanExpense'))
                                 <h6 class="text-success"><i class="icon fa fa-check"></i> Success!</h6>
                                 <h6 class="text-success"> {{ session('pesanExpense') }}.</h6>
                                 
-                        @endif
+                        @endif -->
                      
                             <form action="{{ route('AddDataExpense') }}" method = "POST">
                                 @csrf
                                 <div class="form-group mt-3 mb-3">
                                     <label for="amount">Amount</label>
-                                    <input name ="amount" type="number" class="form-control" placeholder="Input Your Income">
+                                    <input name ="amount" type="number" class="form-control" placeholder="Input Your Income" required>
                                 </div>
 
                                 <div class="form-group mb-3">
@@ -43,12 +42,12 @@
 
                                 <div class="form-group mb-3">
                                     <label for="date">Date</label>
-                                    <input name ="date" type="date" class="form-control" placeholder="Chose Date ...">
+                                    <input name ="date" type="date" class="form-control" placeholder="Chose Date ..." required>
                                 </div>
 
                                 <div class="form-group mb-3">
                                     <label for="note">Note</label>
-                                    <input name ="note"  type="text" class="form-control" placeholder="Note ...">
+                                    <input name ="note"  type="text" class="form-control" placeholder="Note ..." required>
                                 </div>
 
                                 <button type="submit" class="btn btn-success btn-add w-100">Submit</button>
@@ -63,17 +62,16 @@
                             Add Income
                         </div>
                         <div class="cards add-body">
-                        @if (session('pesan'))
+                        <!-- @if (session('pesan'))
                                 <h6 class="text-success"><i class="icon fa fa-check"></i> Success!</h6>
                                 <h6 class="text-success"> {{ session('pesan') }}.</h6>
-                                
-                        @endif
+                        @endif -->
                      
                             <form action="{{ route('AddDataIncome') }}" method = "POST">
                                 @csrf
                                 <div class="form-group mt-3 mb-3">
                                     <label for="amount">Amount</label>
-                                    <input name ="amount" type="number" class="form-control" placeholder="Input Your Income">
+                                    <input name ="amount" type="number" class="form-control" placeholder="Input Your Income" required>
                                 </div>
 
                                 <div class="form-group mb-3">
@@ -89,12 +87,12 @@
 
                                 <div class="form-group mb-3">
                                     <label for="date">Date</label>
-                                    <input name ="date" type="date" class="form-control" placeholder="Chose Date ...">
+                                    <input name ="date" type="date" class="form-control" placeholder="Chose Date ..." required>
                                 </div>
 
                                 <div class="form-group mb-3">
                                     <label for="note">Note</label>
-                                    <input name ="note"  type="text" class="form-control" placeholder="Note ...">
+                                    <input name ="note"  type="text" class="form-control" placeholder="Note ..." required>
                                 </div>
 
                                 <button type="submit" class="btn btn-success btn-add w-100">Submit</button>

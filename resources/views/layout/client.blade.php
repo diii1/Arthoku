@@ -20,5 +20,6 @@
             @include('layout.client.footer')
         </div>
     </div>
+    @include('sweetalert::alert')
 </body>
 </html>

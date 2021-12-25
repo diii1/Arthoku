@@ -6,6 +6,14 @@
     .col-9 {
         width: 100% !important;
     }
+
+    .col-sidenav {
+        border-radius: 0 !important;
+    }
+    
+    .col-sidenav-right {
+        border-radius: 0 !important;
+    }
 }
 
 @media screen and (min-width: 370px) {
