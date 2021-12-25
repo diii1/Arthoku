@@ -45,13 +45,14 @@ Route::group(['client' => 'Dashboard', 'middleware' => ['auth:web','isClient'], 
     Route::post('/addData/income', [RecordIncomeController::class, 'insert'])->name('AddDataIncome');
     Route::post('/addData/expense', [RecordExpenseController::class, 'insert'])->name('AddDataExpense');
 
-
-
-
-
-
-
+    ///Routing untuk ADD DATA INCOME & EXPENSE
     Route::get('/history', [DashboardClientController::class, 'viewHistory'])->name('clientHistory');
+
+
+
+
+
+    
     Route::get('/recommendation', [DashboardClientController::class, 'viewRecommendation'])->name('clientRecommendation');
     Route::get('/settings', [DashboardClientController::class, 'viewSetting'])->name('clientSetting');
     Route::post('/settings/updateName/{id}', [SettingController::class, 'updateName'])->name('clientUpdateName');

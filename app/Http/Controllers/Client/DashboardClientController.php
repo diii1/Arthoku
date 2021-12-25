@@ -15,6 +15,7 @@ class DashboardClientController extends Controller
 {
     public function __construct(){
         $this->middleware('auth');
+        $this->RecordIncome = new RecordIncome();
     }
 
     public function indexDashboardClient(){
@@ -27,8 +28,15 @@ class DashboardClientController extends Controller
     }
 
     public function viewHistory(){
+        $id = Auth::id(); 
         $routeName = "History";
-        return view('clients.history', compact('routeName'));
+        $data = 
+        
+        
+        $this->RecordIncome->getIncomeById($id, $data);
+        dd($data);
+     
+        return view('clients.history', compact('routeName', 'data'));
     }
 
     public function viewAddData(){
@@ -52,4 +60,6 @@ class DashboardClientController extends Controller
         $routeName = "Setting";
         return view('clients.setting', compact('routeName'));
     }
+
+
 }

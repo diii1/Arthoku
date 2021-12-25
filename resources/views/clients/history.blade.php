@@ -5,13 +5,14 @@
         <div class="container">
             <div class="text-white title-page">{{ $routeName }}</div>
             <div class="text-white mt-5 mb-3">
-                <h1>12-11-2002</h1>
+            @foreach($data as $ci)               
+                <h1>{{ $ci->date }}</h1>
                 <div class="row">
                     <div class="col">
-                        <h2>Awkoww</h2>
+                        <h2>{{ $ci->date }}</h2>
                     </div>
                     <div class="col d-flex flex-row-reverse">
-                        <h2>1200000</h2>
+                        <h2>1200000</h2> 
                     </div>
                 </div>
                 <div class="row">
@@ -33,6 +34,7 @@
                     </div>
                 </div>
             </div>
+            @endforeach
 
             <div class="text-white mt-5 mb-3">
                 <h1>12-11-2002</h1>

@@ -32,4 +32,8 @@ class RecordIncome extends Model
     {
         DB::table('record_income')->where('id', $id)->update($data);
     }
+
+    public function getIncomeById($id){
+        DB::table('record_income')->where('user_id', $id)->get();
+    }
 }

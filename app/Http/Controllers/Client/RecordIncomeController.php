@@ -56,4 +56,6 @@ class RecordIncomeController extends Controller
         $this->RecordIncome->editData($id, $data);
         return redirect()->route('historyIncome')->with('pesan', 'Data Berhasil Terupdate');
     }
+
+   
 }
