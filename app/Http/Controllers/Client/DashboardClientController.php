@@ -23,19 +23,35 @@ class DashboardClientController extends Controller
     }
     
     public function viewDashboard(){
+        $id = Auth::id(); 
         $routeName = "Dashboard";
-        return view('clients.dashboard', compact('routeName'));
+        // $dataIncome = DB::table('record_income')->where('user_id', $id)->get();
+        $dataIncome = RecordIncome::where('user_id', $id)->sum('amount');
+        $dataExpense = RecordExpense::where('user_id', $id)->sum('amount');
+        $balance = $dataIncome-$dataExpense;
+        return view('clients.dashboard', compact('routeName','dataIncome', 'dataExpense', 'balance'));
     }
 
     public function viewHistoryIncome(){
         $id = Auth::id(); 
         $routeName = "History";
-        $data = DB::table('record_income')->where('user_id', $id)->get(); 
+        $data = RecordIncome::where('user_id', $id)->get(); 
         // $dataCategory = DB::table('category_income')->select('name')->where('id', $data->cat_income_id)->get(); 
         // $dataCategory = RecordIncome::with(['categoryIncome'])->first();
 
         // dd($dataCategory);
         return view('clients.historyIncome', compact('routeName', 'data'));
+    }
+
+    public function viewHistoryExpense(){
+        $id = Auth::id(); 
+        $routeName = "History";
+        $data = RecordExpense::where('user_id', $id)->get(); 
+        // $dataCategory = DB::table('category_income')->select('name')->where('id', $data->cat_income_id)->get(); 
+        // $dataCategory = RecordIncome::with(['categoryIncome'])->first();
+
+        // dd($dataCategory);
+        return view('clients.historyExpense', compact('routeName', 'data'));
     }
 
     public function viewAddData(){
@@ -59,6 +75,4 @@ class DashboardClientController extends Controller
         $routeName = "Setting";
         return view('clients.setting', compact('routeName'));
     }
-
-
 }

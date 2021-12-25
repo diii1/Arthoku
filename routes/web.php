@@ -47,13 +47,7 @@ Route::group(['client' => 'Dashboard', 'middleware' => ['auth:web','isClient'], 
 
     ///Routing untuk ADD DATA INCOME & EXPENSE
     Route::get('/income', [DashboardClientController::class, 'viewHistoryIncome'])->name('clientHistoryIncome');
-    Route::get('/expense', [DashboardClientController::class, 'viewHistoryIncome'])->name('clientHistoryExpense');
-    // Route::get('/history', [DashboardClientController::class, 'viewHistory'])->name('clientHistory');
-
-
-
-
-
+    Route::get('/expense', [DashboardClientController::class, 'viewHistoryExpense'])->name('clientHistoryExpense');
     
     Route::get('/recommendation', [DashboardClientController::class, 'viewRecommendation'])->name('clientRecommendation');
     Route::get('/settings', [DashboardClientController::class, 'viewSetting'])->name('clientSetting');

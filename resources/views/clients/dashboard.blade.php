@@ -11,7 +11,7 @@
                             Total Balance
                         </div>
                         <div class="cards card-body text-center">
-                            12000
+                            {{ $balance }}
                         </div>
                     </div>
                 </div>
@@ -33,7 +33,7 @@
                             Total Expense
                         </div>
                         <div class="cards card-body text-center">
-                            12000
+                            {{ $dataExpense }}
                         </div>
                     </div>
                 </div>
@@ -43,7 +43,7 @@
                             Total Income
                         </div>
                         <div class="cards card-body text-center">
-                            12000
+                            {{ $dataIncome }}
                         </div>
                     </div>
                 </div>

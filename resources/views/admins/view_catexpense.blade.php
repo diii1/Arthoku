@@ -55,8 +55,8 @@
                             <td>{{ $ce->name}}</td>
                             <td>{{ $ce->description}}</td>
                             <td> 
-                                <button data-toggle="modal" data-target="#expenseModalEdit_{{ $ci->id }}" class="btn btn-warning">Edit</button>
-                                <a href="/admin/categoryExpense/delete/{{ $ci->id }}" class="btn btn-danger">Hapus</a>
+                                <button data-toggle="modal" data-target="#expenseModalEdit_{{ $ce->id }}" class="btn btn-warning">Edit</button>
+                                <a href="/admin/categoryExpense/delete/{{ $ce->id }}" class="btn btn-danger">Hapus</a>
                             </td>
                         </tr>
                     @endforeach
