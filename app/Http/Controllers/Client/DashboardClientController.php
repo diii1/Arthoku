@@ -27,16 +27,15 @@ class DashboardClientController extends Controller
         return view('clients.dashboard', compact('routeName'));
     }
 
-    public function viewHistory(){
+    public function viewHistoryIncome(){
         $id = Auth::id(); 
         $routeName = "History";
-        $data = 
-        
-        
-        $this->RecordIncome->getIncomeById($id, $data);
-        dd($data);
-     
-        return view('clients.history', compact('routeName', 'data'));
+        $data = DB::table('record_income')->where('user_id', $id)->get(); 
+        // $dataCategory = DB::table('category_income')->select('name')->where('id', $data->cat_income_id)->get(); 
+        // $dataCategory = RecordIncome::with(['categoryIncome'])->first();
+
+        // dd($dataCategory);
+        return view('clients.historyIncome', compact('routeName', 'data'));
     }
 
     public function viewAddData(){

@@ -11,10 +11,10 @@
                 <a class="nav-link" href="{{ route('clientAddData') }}">Add Data</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ route('clientHistory') }}">History Income</a>
+                <a class="nav-link" href="{{ route('clientHistoryIncome') }}">History Income</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ route('clientHistory') }}">History Expense</a>
+                <a class="nav-link" href="{{ route('clientHistoryExpense') }}">History Expense</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('clientRecommendation') }}">Recommendation</a>

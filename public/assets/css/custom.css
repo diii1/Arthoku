@@ -24,6 +24,8 @@
     background-color: #868E6C;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+    overflow: auto;
+    height: 655px;
 }
 
 .card1{

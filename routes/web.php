@@ -46,7 +46,9 @@ Route::group(['client' => 'Dashboard', 'middleware' => ['auth:web','isClient'], 
     Route::post('/addData/expense', [RecordExpenseController::class, 'insert'])->name('AddDataExpense');
 
     ///Routing untuk ADD DATA INCOME & EXPENSE
-    Route::get('/history', [DashboardClientController::class, 'viewHistory'])->name('clientHistory');
+    Route::get('/income', [DashboardClientController::class, 'viewHistoryIncome'])->name('clientHistoryIncome');
+    Route::get('/expense', [DashboardClientController::class, 'viewHistoryIncome'])->name('clientHistoryExpense');
+    // Route::get('/history', [DashboardClientController::class, 'viewHistory'])->name('clientHistory');
 
 
 
