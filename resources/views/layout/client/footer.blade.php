@@ -9,9 +9,9 @@
                     <a href="#"class="px-2"><i class="fab fa-github"></i></a>
                 </div>
                 <div class="col-6 col-xs-12 text-center services">
-                    <a href="#" class="px-3">Terms of Service </a><span>|</span>
-                    <a href="#" class="px-3">Privacy Policy </a><span>|</span>
-                    <a href="#" class="px-3">Licenses </a>
+                    <a href="#" class="px-1">Terms of Service </a><span>|</span>
+                    <a href="#" class="px-1">Privacy Policy </a><span>|</span>
+                    <a href="#" class="px-1">Licenses </a>
                 </div>
                 <div class="col-3 col-xs-12 text-end copyright">
                     <span>Copyright &copy; 2021 ArthoKu</span>

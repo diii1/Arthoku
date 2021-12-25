@@ -44,14 +44,14 @@
 
 .card3{
     height: 245px;
-    background-color: #9A9483;
+    background-color: #fec5bb;
     margin-top: 20px;
     border-radius: 20px;
 }
 
 .card4{
     height: 245px;
-    background-color: #8590c5;
+    background-color: #8ecae6;
     margin-top: 20px;
     border-radius: 20px;
 }
@@ -59,7 +59,7 @@
 .title-page{
     margin-top: 10px;
     font-size: 32px;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 .nav-item{
@@ -129,6 +129,16 @@
 .form-control{
     border-radius: 10px !important;
 }
+
+.setting-title {
+    font-weight: 100;
+    margin-bottom: 50px;
+}
+
+.font-setting {
+    font-weight: bold;
+}
+
 
 .btn-add{
     border-radius: 10px !important;
