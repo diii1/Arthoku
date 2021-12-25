@@ -8,7 +8,7 @@
                 <h1>Nama</h1>
                 <div class="row">
                     <div class="col">
-                        <h2>Awkoww</h2>
+                        <h2>{{ Auth::user()->name }}</h2>
                     </div>
                     <div class="col d-flex flex-row-reverse">
                         <a data-bs-toggle="modal" data-bs-target="#editName" href="#editName"><i class="fas fa-edit edit-icon"></i></a>
@@ -19,14 +19,17 @@
                 <h1>Average monthly income</h1>
                 <div class="row">
                     <div class="col">
-                        <h2>999999999999</h2>
+                        <h2>{{ Auth::user()->avg_income }}</h2>
                     </div>
                     <div class="col d-flex flex-row-reverse">
                         <a data-bs-toggle="modal" data-bs-target="#editAvgIncome" href="#editAvgIncome"><i class="fas fa-edit edit-icon"></i></a>
                     </div>
                 </div>
             </div>
-            <button type="submit" class="btn btn-danger px-4 py-2 submit">Log Out</button>
+            <form action="{{ route('logout') }}" method="post">
+                @csrf
+                <button type="submit" class="btn btn-danger px-4 py-2 submit">Sign Out</button>
+            </form>
         </div>
     </div>
 
@@ -42,7 +45,7 @@
                     <form>
                         <div class="mb-3">
                             <label class="form-label">Name</label>
-                            <input type="text" class="form-control" placeholder="Edit Name" required>
+                            <input name="name" type="text" class="form-control" placeholder="Edit Name" required>
                         </div>
                         <div class="buttonSignIn d-flex justify-content-center">
                             <button type="submit" class="btn btn-primary btn-signIn">Update</button>

@@ -26,14 +26,14 @@
                             </li>
                         @else
                             <li class="nav-item">
-                                <a class="nav-link" href="<?= URL::to('/login'); ?>">Dashboard</a>
+                                <a class="nav-link" href="{{ route('login') }}">Dashboard</a>
                             </li>
                         @endauth
                     @endif
                 </ul>
                 <div class="d-flex">
                     @if (Route::has('login'))
-                        <a href="<?= URL::to('/login'); ?>" class="signIn btn btn-primary me-3">Sign in</a>
+                        <a href="{{ route('login') }}" class="signIn btn btn-primary me-3">Sign in</a>
                     @endif
     
                     @if (Route::has('register'))

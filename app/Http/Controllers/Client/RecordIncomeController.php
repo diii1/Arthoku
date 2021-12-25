@@ -12,9 +12,8 @@ class RecordIncomeController extends Controller
     {
         $this->middleware('auth');
         $this->RecordIncome = new RecordIncome();
-     
-
     }
+    
     public function viewRecordIncome(){
         //mengambil data income
         $routeName = "RecordIncome";
