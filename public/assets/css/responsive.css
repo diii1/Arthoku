@@ -1,4 +1,4 @@
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 369px) {
     .home {
         display: grid !important;
         grid-template-columns: repeat(1, 1fr) !important;
@@ -56,6 +56,11 @@
     .services {
         width: 100%;
         text-align: center !important;
+        font-size: 12px !important;
+    }
+
+    .services a {
+        font-size: 15px !important;
     }
 
     .service a {
@@ -65,7 +70,7 @@
     .copyright {
         width: 100%;
         text-align: center !important;
-        font-size: 20px !important;
+        font-size: 18px !important;
     }
 
     a {
@@ -122,6 +127,7 @@
 
     .sosmedIcon {
         width: 100%;
+        font-size: 20px !important;
         text-align: center !important;
     }
     
@@ -132,6 +138,11 @@
     .services {
         width: 100%;
         text-align: center !important;
+        font-size: 15px !important;
+    }
+
+    .services a {
+        font-size: 19px !important;
     }
 
     .service a {
@@ -141,7 +152,7 @@
     .copyright {
         width: 100%;
         text-align: center !important;
-        font-size: 20px !important;
+        font-size: 19px !important;
     }
 
     a {
@@ -150,7 +161,7 @@
     }
 }
 
-@media screen and (min-width: 425px) {
+@media screen and (min-width: 420px) {
     .home {
         display: grid !important;
         grid-template-columns: repeat(1, 1fr) !important;
@@ -198,6 +209,7 @@
 
     .sosmedIcon {
         width: 100%;
+        font-size: 20px !important;
         text-align: center !important;
     }
     
@@ -208,6 +220,11 @@
     .services {
         width: 100%;
         text-align: center !important;
+        font-size: 17px !important;
+    }
+
+    .services a {
+        font-size: 23px !important;
     }
 
     .service a {
@@ -217,7 +234,7 @@
     .copyright {
         width: 100%;
         text-align: center !important;
-        font-size: 25px !important;
+        font-size: 20px !important;
     }
 
     a {
@@ -301,6 +318,34 @@
 
     .btn-Try {
         border-radius: 5px;
+        font-size: 20px !important;
+    }
+
+    .sosmedIcon {
+        margin-top: 0 !important;
+        font-size: 20px !important;
+        text-align: center !important;
+    }
+
+    .services {
+        width: 100%;
+        text-align: center !important;
+        font-size: 10px !important;
+    }
+
+    .services a {
+        font-size: 20px !important;
+    }
+
+    .foot {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+
+    .copyright {
+        display: inline !important;
+        width: 100%;
+        text-align: center !important;
         font-size: 20px !important;
     }
 }

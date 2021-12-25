@@ -1,6 +1,10 @@
 @media screen and (max-width: 320px) {
-    .col-sidenav {
-        display: inline;
+    .col-3 {
+        width: 100% !important;
+    }
+
+    .col-9 {
+        width: 100% !important;
     }
 }
 
@@ -18,4 +22,8 @@
 
 @media screen and (min-width: 1020px) {
 	
+}
+
+@media screen and (min-width: 1400px) {
+
 }
