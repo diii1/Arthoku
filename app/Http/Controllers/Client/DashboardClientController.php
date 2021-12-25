@@ -35,11 +35,10 @@ class DashboardClientController extends Controller
     public function viewHistoryIncome(){
         $id = Auth::id(); 
         $routeName = "History";
-        $data = RecordIncome::where('user_id', $id)->get(); 
+        $data = RecordIncome::with('categoryIncome')->where('user_id', $id)->get(); 
         // $dataCategory = DB::table('category_income')->select('name')->where('id', $data->cat_income_id)->get(); 
-        // $dataCategory = RecordIncome::with(['categoryIncome'])->first();
 
-        // dd($dataCategory);
+        dd($data);
         return view('clients.historyIncome', compact('routeName', 'data'));
     }
 
@@ -48,7 +47,6 @@ class DashboardClientController extends Controller
         $routeName = "History";
         $data = RecordExpense::where('user_id', $id)->get(); 
         // $dataCategory = DB::table('category_income')->select('name')->where('id', $data->cat_income_id)->get(); 
-        // $dataCategory = RecordIncome::with(['categoryIncome'])->first();
 
         // dd($dataCategory);
         return view('clients.historyExpense', compact('routeName', 'data'));

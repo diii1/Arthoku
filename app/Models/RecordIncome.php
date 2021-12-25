@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 
 class RecordIncome extends Model
@@ -14,6 +15,10 @@ class RecordIncome extends Model
     protected $table ="record_income";
     protected $primaryKey = 'id';
     protected $fillable = ['user_id', 'amount', 'cat_income_id', 'date', 'note'];
+
+    public function categoryIncome(): BelongsTo{
+        return $this->belongsTo(CategoryIncome::class, 'foreign_key', 'other_key');
+    }
 
     public function addRecordIncome($data){
         DB::table('record_income')->insert($data);
