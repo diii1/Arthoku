@@ -9,6 +9,7 @@ use App\Http\Controllers\Admin\CategoryIncomeController;
 use App\Http\Controllers\Admin\CategoryExpenseController;
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Client\RecordIncomeController;
+use App\Http\Controllers\Client\SettingController;
 
 
 /*
@@ -42,16 +43,9 @@ Route::group(['client' => 'Dashboard', 'middleware' => ['auth:web','isClient'], 
     Route::get('/history', [DashboardClientController::class, 'viewHistory'])->name('clientHistory');
     Route::get('/recommendation', [DashboardClientController::class, 'viewRecommendation'])->name('clientRecommendation');
     Route::get('/settings', [DashboardClientController::class, 'viewSetting'])->name('clientSetting');
+    Route::post('/settings/updateName/{id}', [SettingController::class, 'updateName'])->name('clientUpdateName');
+    Route::post('/settings/updateAverage/{id}', [SettingController::class, 'updateAverage'])->name('clientUpdateAverage');
 });
-
-
-
-
-
-
-
-
-
 
 Route::group(['admin' => 'Dashboard', 'middleware' => ['auth:web','isAdmin'], 'prefix' => 'admin'], function () {
     // Route::get('/', [HomeController::class, 'indexAdmin'])->name('admin');  

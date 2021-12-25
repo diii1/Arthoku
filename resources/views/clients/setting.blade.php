@@ -42,10 +42,11 @@
                 </div>
                 <div class="modal-body text-white">
                     <h1 class="modal-title text-white text-center" id="exampleModalLabel">Edit</h1>
-                    <form>
+                    <form action="/settings/updateName/{id}" method="POST">
+                        @csrf
                         <div class="mb-3">
                             <label class="form-label">Name</label>
-                            <input name="name" type="text" class="form-control" placeholder="Edit Name" required>
+                            <input name="name" type="text" class="form-control" placeholder="Edit Name" value="{{ Auth::user()->name }}" required>
                         </div>
                         <div class="buttonSignIn d-flex justify-content-center">
                             <button type="submit" class="btn btn-primary btn-signIn">Update</button>
@@ -65,10 +66,11 @@
                 </div>
                 <div class="modal-body text-white">
                     <h1 class="modal-title text-white text-center" id="exampleModalLabel">Edit</h1>
-                    <form>
+                    <form action="/settings/updateAverage/{id}" method="POST">
+                        @csrf
                         <div class="mb-3">
                             <label class="form-label">Average Income</label>
-                            <input type="number" class="form-control" placeholder="Edit Average Income" required>
+                            <input name="avg_income" type="number" class="form-control" placeholder="Edit Average Income" value="{{ Auth::user()->avg_income }}" required>
                         </div>
                         <div class="buttonSignIn d-flex justify-content-center">
                             <button type="submit" class="btn btn-primary btn-signIn">Update</button>

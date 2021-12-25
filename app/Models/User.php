@@ -23,6 +23,7 @@ class User extends Authenticatable
         'email',
         'password',
         'isAdmin',
+        'avg_income',
     ];
 
     /**
@@ -44,13 +45,19 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
   
-    public function updateAdmin($id, $data)
-    {
+    public function updateAdmin($id, $data){
         DB::table('users')->where('id', $id)->update($data);
     }
 
-    public function deleteData($id)
-    {
+    public function updateName($id, $data){
+        DB::table('users')->where('id', $id)->update($data);
+    }
+
+    public function updateAverage($id, $data){
+        DB::table('users')->where('id', $id)->update($data);
+    }
+
+    public function deleteData($id){
         DB::table('users')->where('id', $id)->delete();
     }
 }

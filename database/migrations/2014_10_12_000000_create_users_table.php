@@ -20,7 +20,7 @@ class CreateUsersTable extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->tinyInteger('isAdmin');
-            $table->bigInteger('avg_income')->nullable();
+            $table->bigInteger('avg_income');
             $table->rememberToken();
             $table->timestamps();
         });
