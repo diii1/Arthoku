@@ -21,7 +21,7 @@
                             Needs (50%)
                         </div>
                         <div class="cards card-body text-center">
-                            Ini Graph
+                            {{ $needs }}
                         </div>
                     </div>
                 </div>
@@ -33,7 +33,7 @@
                             Wants (30%)
                         </div>
                         <div class="cards card-body text-center">
-                            12000
+                            {{ $wants }}
                         </div>
                     </div>
                 </div>
@@ -43,7 +43,7 @@
                             Saving (20%)
                         </div>
                         <div class="cards card-body text-center">
-                            12000
+                            {{ $savings }}
                         </div>
                     </div>
                 </div>
