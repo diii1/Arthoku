@@ -14,6 +14,10 @@ class CategoryExpense extends Model
     protected $primaryKey = 'id';
     protected $fillable = ['name', 'description'];
 
+    public function recordExpense(){
+        return $this->hasMany(RecordExpense::class);
+    }
+
     public function addCatExpense($data){
         DB::table('category_expense')->insert($data);
     }

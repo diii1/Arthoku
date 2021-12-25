@@ -9,7 +9,7 @@
                 <h1>{{ $ci->date }}</h1>
                 <div class="row">
                     <div class="col">
-                        <h2>{{ $ci->cat_income_id }}</h2>
+                        <h2>{{ $ci->categoryIncome->name }}</h2>
                     </div>
                     <div class="col d-flex flex-row-reverse">
                         <h2>{{ $ci->amount }}</h2> 

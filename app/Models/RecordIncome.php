@@ -17,7 +17,7 @@ class RecordIncome extends Model
     protected $fillable = ['user_id', 'amount', 'cat_income_id', 'date', 'note'];
 
     public function categoryIncome(): BelongsTo{
-        return $this->belongsTo(CategoryIncome::class, 'foreign_key', 'other_key');
+        return $this->belongsTo(CategoryIncome::class, 'cat_income_id', 'id');
     }
 
     public function addRecordIncome($data){

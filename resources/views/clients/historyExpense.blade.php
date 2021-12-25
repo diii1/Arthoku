@@ -4,12 +4,12 @@
     <div class="col-9 col-sidenav-right">
         <div class="container">
             <div class="text-white title-page">{{ $routeName }}</div>
-            <div class="text-white mt-5 mb-3">
             @foreach($data as $ce)               
+            <div class="text-white mt-5 mb-3">
                 <h1>{{ $ce->date }}</h1>
                 <div class="row">
                     <div class="col">
-                        <h2>{{ $ce->cat_expense_id }}</h2>
+                        <h2>{{ $ce->categoryExpense->name }}</h2>
                     </div>
                     <div class="col d-flex flex-row-reverse">
                         <h2>{{ $ce->amount }}</h2> 

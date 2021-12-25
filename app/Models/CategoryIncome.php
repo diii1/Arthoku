@@ -14,6 +14,10 @@ class CategoryIncome extends Model
     protected $primaryKey = 'id';
     protected $fillable = ['name', 'description'];
 
+    public function recordIncome(){
+        return $this->hasMany(RecordIncome::class);
+    }
+
     public function addCatIncome($data){
         DB::table('category_income')->insert($data);
     }

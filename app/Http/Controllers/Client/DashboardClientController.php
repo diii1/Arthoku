@@ -38,14 +38,14 @@ class DashboardClientController extends Controller
         $data = RecordIncome::with('categoryIncome')->where('user_id', $id)->get(); 
         // $dataCategory = DB::table('category_income')->select('name')->where('id', $data->cat_income_id)->get(); 
 
-        dd($data);
+        // dd($data[0]->categoryIncome->name);
         return view('clients.historyIncome', compact('routeName', 'data'));
     }
 
     public function viewHistoryExpense(){
         $id = Auth::id(); 
         $routeName = "History";
-        $data = RecordExpense::where('user_id', $id)->get(); 
+        $data = RecordExpense::with('categoryExpense')->where('user_id', $id)->get();
         // $dataCategory = DB::table('category_income')->select('name')->where('id', $data->cat_income_id)->get(); 
 
         // dd($dataCategory);
