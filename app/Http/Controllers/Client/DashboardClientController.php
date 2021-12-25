@@ -6,6 +6,7 @@ use App\Models\CategoryIncome;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Auth;
 
 
 class DashboardClientController extends Controller
@@ -36,7 +37,11 @@ class DashboardClientController extends Controller
 
     public function viewRecommendation(){
         $routeName = "Recommendation";
-        return view('clients.recommendation', compact('routeName'));
+        $avg_income = Auth::user()->avg_income;
+        $needs = (50*$avg_income)/100;
+        $wants = (30*$avg_income)/100;
+        $savings = (20*$avg_income)/100;
+        return view('clients.recommendation', compact('routeName','needs', 'wants', 'savings'));
     }
 
     
