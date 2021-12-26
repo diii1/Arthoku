@@ -26,5 +26,4 @@
     </div>
     @include('sweetalert::alert')
 </body>
-@include('layout.client.chart')
 </html>

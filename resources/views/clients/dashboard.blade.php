@@ -52,4 +52,5 @@
             </div>
         </div>
     </div>
+    @include('layout.client.chart')
 @endsection
