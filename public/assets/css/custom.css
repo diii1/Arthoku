@@ -163,6 +163,10 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
+.btn-icon{
+    padding: 0 !important;
+}
+
 /* @media (min-width: 680px) and (max-width: 960px){
     .col-sidenav{
         display: none;

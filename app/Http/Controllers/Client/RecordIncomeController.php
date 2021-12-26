@@ -41,7 +41,7 @@ class RecordIncomeController extends Controller
 
     public function delete($id){
         $this->RecordIncome->deleteData($id);
-        return redirect()->route('historyIncome')->with('pesan', 'Data Berhasil Dihapus');;
+        return redirect()->route('clientHistoryIncome')->withSuccess('Income deleted!');
     }
 
     public function update($id)
@@ -56,7 +56,7 @@ class RecordIncomeController extends Controller
         ];
 
         $this->RecordIncome->editData($id, $data);
-        return redirect()->route('historyIncome')->with('pesan', 'Data Berhasil Terupdate');
+        return redirect()->route('clientHistoryIncome')->withSuccess('Income updated!');
     }
 
 
