@@ -21,7 +21,9 @@
                             Graph
                         </div>
                         <div class="cards card-body text-center">
-                            Ini Graph
+                            <div>
+                             <canvas id="myChart"></canvas>
+                            </div>
                         </div>
                     </div>
                 </div>

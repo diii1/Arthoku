@@ -25,11 +25,12 @@ class DashboardClientController extends Controller
     public function viewDashboard(){
         $id = Auth::id(); 
         $routeName = "Dashboard";
-        // $dataIncome = DB::table('record_income')->where('user_id', $id)->get();
         $dataIncome = RecordIncome::where('user_id', $id)->sum('amount');
         $dataExpense = RecordExpense::where('user_id', $id)->sum('amount');
+        $countIncome = RecordIncome::where('user_id', $id)->count();
+        $countExpense = RecordExpense::where('user_id', $id)->count();
         $balance = $dataIncome-$dataExpense;
-        return view('clients.dashboard', compact('routeName','dataIncome', 'dataExpense', 'balance'));
+        return view('clients.dashboard', compact('routeName','dataIncome', 'dataExpense', 'balance', 'countIncome', 'countExpense'));
     }
 
     public function viewHistoryIncome(){
