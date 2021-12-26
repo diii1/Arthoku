@@ -41,7 +41,7 @@
 
 .card2{
     height: 245px;
-    background-color: #F5CB64;
+    background-color: #e7bc91;
     margin-top: 20px;
     border-radius: 20px;
 }
@@ -167,8 +167,6 @@ input[type=number] {
     padding: 0 !important;
 }
 
-/* @media (min-width: 680px) and (max-width: 960px){
-    .col-sidenav{
-        display: none;
-    }
-} */
+#myChart {
+    margin-bottom: 50px !important;
+}

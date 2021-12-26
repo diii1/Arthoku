@@ -20,9 +20,9 @@
                         <div class="cards card-title text-center">
                             Graph
                         </div>
-                        <div class="cards card-body text-center">
+                        <div class="cards text-center">
                             <div>
-                             <canvas id="myChart"></canvas>
+                                <canvas id="myChart"></canvas>
                             </div>
                         </div>
                     </div>
