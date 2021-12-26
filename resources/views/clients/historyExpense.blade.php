@@ -12,7 +12,7 @@
                         <h2>{{ $ce->categoryExpense->name }}</h2>
                     </div>
                     <div class="col d-flex flex-row-reverse">
-                        <h2>{{ $ce->amount }}</h2> 
+                        <h2>Rp{{ $ce->amount }}</h2> 
                     </div>
                 </div>
                 <div class="row">

@@ -72,6 +72,13 @@
     color: black !important;
 }
 
+.card-login {
+    margin-top: 2rem;
+    color: white;
+    background-color: #F5CC63;
+    border-radius: 20px;
+}
+
 .brand-arthoku{
     font-size: 48px;
 }
