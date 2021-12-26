@@ -5,11 +5,17 @@
         <section class="hero-image mt-5 pt-5 h-75" id="home">
           <div class="row mb-3 home">
               <div class="col d-flex justify-content-center align-items-center">
+              @if (Route::has('login'))
                 <div class="content">
                   <h2 class="brand-arthoku">ArthoKu</h2>
                   <p class="slug-arthoku">the best way to manage your money</p>
-                  <button type="button" class="btn btn-primary btn-Try px-4">Let's Try</button>
+                  @auth
+                    <a class="btn btn-primary btn-Try px-4" href="{{ route('clientDashboard') }}">Let's Try</a>
+                  @else
+                  <a class="btn btn-primary btn-Try px-4" href="{{ route('login') }}">Let's Try</a>
+                  @endauth
                 </div>
+              @endif
               </div>
               <div class="col d-flex justify-content-center align-items-center">
                 <div class="img">
