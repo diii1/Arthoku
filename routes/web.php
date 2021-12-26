@@ -54,6 +54,8 @@ Route::group(['client' => 'Dashboard', 'middleware' => ['auth:web','isClient'], 
 
     ///Routing untuk HISTORY EXPENSE
     Route::get('/expense', [DashboardClientController::class, 'viewHistoryExpense'])->name('clientHistoryExpense');
+    Route::post('/expense/update/{id}', [RecordExpenseController::class, 'update'])->name('updateHistoryExpense');
+    Route::get('/expense/delete/{id}', [RecordExpenseController::class, 'delete'])->name('deleteHistoryExpense');
 
 
 

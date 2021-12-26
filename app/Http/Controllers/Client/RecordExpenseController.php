@@ -41,14 +41,14 @@ class RecordExpenseController extends Controller
 
     public function delete($id){
         $this->RecordExpense->deleteData($id);
-        return redirect()->route('historyExpense')->with('pesan', 'Data Berhasil Dihapus');;
+        return redirect()->route('clientHistoryExpense')->withSuccess('Expense deleted!');
     }
 
     public function update($id)
     {   
-        $id = Auth::id();
+        $idUser = Auth::id();
         $data = [
-            'user_id' => $id,
+            'user_id' => $idUser,
             'amount' => Request()->amount,
             'cat_expense_id' => Request()->cat_expense_id,
             'date' => Request()->date,
@@ -56,6 +56,6 @@ class RecordExpenseController extends Controller
         ];
 
         $this->RecordExpense->editData($id, $data);
-        return redirect()->route('historyExpense')->with('pesan', 'Data Berhasil Terupdate');
+        return redirect()->route('clientHistoryExpense')->withSuccess('Expense updated!');
     }
 }

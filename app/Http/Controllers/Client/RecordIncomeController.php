@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers\Client;
 use App\Models\RecordIncome;
-
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use RealRashid\SweetAlert\Facades\Alert;
@@ -44,22 +43,17 @@ class RecordIncomeController extends Controller
         return redirect()->route('clientHistoryIncome')->withSuccess('Income deleted!');
     }
 
-    public function update($id)
-    {   
-        $id = Auth::id();
+    public function update($id){   
+        $idUser = Auth::id();
         $data = [
-            'user_id' => $id,
+            'user_id' => $idUser,
             'amount' => Request()->amount,
             'cat_income_id' => Request()->cat_income_id,
             'date' => Request()->date,
-            'note' => Request()->note,
+            'note' => Request()->note
         ];
-
+        // dd($data);
         $this->RecordIncome->editData($id, $data);
         return redirect()->route('clientHistoryIncome')->withSuccess('Income updated!');
     }
-
-
-
-   
 }
