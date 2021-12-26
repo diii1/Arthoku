@@ -19,7 +19,7 @@
                 <h1 class="setting-title">Average monthly income</h1>
                 <div class="row">
                     <div class="col">
-                        <h2 class="font-setting">{{ Auth::user()->avg_income }}</h2>
+                        <h2 class="font-setting">Rp{{ Auth::user()->avg_income }}</h2>
                     </div>
                     <div class="col d-flex flex-row-reverse">
                         <a data-bs-toggle="modal" data-bs-target="#editAvgIncome" href="#editAvgIncome"><i class="fas fa-edit edit-icon"></i></a>

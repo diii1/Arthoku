@@ -12,6 +12,7 @@
                         </div>
                         <div class="cards card-body text-center">
                             50/30/20 rule
+                            <h4>Rp{{ Auth::user()->avg_income }}</</h4>
                         </div>
                     </div>
                 </div>

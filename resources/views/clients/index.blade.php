@@ -91,7 +91,7 @@
           <div class="text-center">
             <h1>About</h1>
             <p class="py-5">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+            The application made is a web-based application. The name of the application is "ArthoKu" which is taken from the word "arta" in Javanese which means money. This application is in the form of a planner which includes several parts, namely income, expense, balance, and graph. With this application, it is hoped that it will help tracking your expenses and income towards a prosperous economy.
             </p>
           </div>
         </section>
