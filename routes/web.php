@@ -45,9 +45,30 @@ Route::group(['client' => 'Dashboard', 'middleware' => ['auth:web','isClient'], 
     Route::post('/addData/income', [RecordIncomeController::class, 'insert'])->name('AddDataIncome');
     Route::post('/addData/expense', [RecordExpenseController::class, 'insert'])->name('AddDataExpense');
 
-    ///Routing untuk ADD DATA INCOME & EXPENSE
+    ///Routing untuk HISTORY INCOME 
     Route::get('/income', [DashboardClientController::class, 'viewHistoryIncome'])->name('clientHistoryIncome');
+    Route::get('/income/{id}', [RecordIncomeController::class, 'update'])->name('updateHistoryIncome');
+
+    Route::get('/income/delete/{id}', [CategoryIncomeController::class, 'delete'])->name('clientHistoryIncome');
+
+
+
+    ///Routing untuk HISTORY EXPENSE
     Route::get('/expense', [DashboardClientController::class, 'viewHistoryExpense'])->name('clientHistoryExpense');
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
     
     Route::get('/recommendation', [DashboardClientController::class, 'viewRecommendation'])->name('clientRecommendation');
     Route::get('/settings', [DashboardClientController::class, 'viewSetting'])->name('clientSetting');

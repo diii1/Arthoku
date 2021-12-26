@@ -25,7 +25,7 @@
                             <a data-bs-toggle="modal" data-bs-target="#editHistory" href="#editHistory"><i class="fas fa-edit edit-icon"></i></a>
                             </div>
                             <div class="col">
-                                <a data-bs-toggle="modal" data-bs-target="#editName" href="#editName"><i class="fas fa-trash edit-icon"></i></a>
+                                <a href="/income/delete/{{ $ci->id }}"><i class="fas fa-trash edit-icon"></i></a>
                             </div>
                         </div>
                         
@@ -38,7 +38,7 @@
         </div>
     </div>
 
-    <!-- Modal edit name -->
+    <!-- Modal edit History Income -->
     <div class="modal fade" id="editHistory" tabindex="-1" aria-labelledby="editHistoryLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content modal-card edit">
@@ -47,33 +47,45 @@
                 </div>
                 <div class="modal-body text-white">
                     <h1 class="modal-title text-white text-center" id="exampleModalLabel">Edit</h1>
-                    <form>
-                        <div class="mb-3">
-                            <label class="form-label">Ammount</label>
-                            <input type="number" class="form-control" placeholder="10000" required>
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label" for="category">Category</label>
-                            <select class="form-control" id="">
-                                <option value="" selected disabled hidden>Select</option>
-                                <option value="">Investment</option>
-                                <option value="">Education</option>
-                                <option value="">Health</option>
-                                <option value="">Hobby</option>
-                            </select>
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">Date</label>
-                            <input type="date" class="form-control" placeholder="HH/BB/TTTT" required>
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">Note</label>
-                            <input type="note" class="form-control" placeholder="This note.." required>
-                        </div>
-                        <div class="buttonSignIn d-flex justify-content-center">
-                            <button type="submit" class="btn btn-primary btn-signIn">Update</button>
-                        </div>
-                    </form>
+                    @foreach($data as $zi)   
+                    <form action="income/update/{{ $zi->id }}" method = "POST">
+                   
+                                @csrf
+                                <div class="form-group mt-3 mb-3">
+                                    <label for="amount">Amount</label>
+    
+                                    <input name ="amount" type="number" class="form-control" placeholder="Input Your Expense"  value ="{{ $zi->amount}}" required>
+                                </div>
+                            
+                                <div class="form-group mb-3">
+                                    <label for="category">Category</label>
+                                    <select class="form-control" name="cat_expense_id" id="">
+                                        <option value="" selected disabled hidden>Select</option>
+                                        @foreach($category_income as $xi)
+                                            @if($xi->id==$zi->cat_income_id)
+                                            <option value="{{ $xi->id }}" selected>{{ $xi->name }}</option>
+                                            @else
+                                            <option value="{{ $xi->id }}">{{ $xi->name }}</option>
+                                            @endif
+                                        @endforeach
+
+                                    </select>
+                                </div>
+
+                                <div class="form-group mb-3">
+                                    <label for="date">Date</label>
+                                    <input name ="date" type="date" class="form-control" placeholder="Chose Date ..." value ="{{ $zi->date}}" required>
+                                </div>
+
+                                <div class="form-group mb-3">
+                                    <label for="note">Note</label>
+                                    <input name ="note"  type="text" class="form-control" placeholder="Note ..." value ="{{ $zi->note}}" required>
+                                </div>
+
+                                <button type="submit" class="btn btn-success btn-add w-100">Submit</button>
+
+                            </form>
+                            @endforeach
                 </div>
             </div>
         </div>

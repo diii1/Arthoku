@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Client;
 use App\Models\RecordIncome;
+
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use RealRashid\SweetAlert\Facades\Alert;
@@ -57,6 +58,8 @@ class RecordIncomeController extends Controller
         $this->RecordIncome->editData($id, $data);
         return redirect()->route('historyIncome')->with('pesan', 'Data Berhasil Terupdate');
     }
+
+
 
    
 }
