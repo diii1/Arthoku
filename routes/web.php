@@ -47,9 +47,8 @@ Route::group(['client' => 'Dashboard', 'middleware' => ['auth:web','isClient'], 
 
     ///Routing untuk HISTORY INCOME 
     Route::get('/income', [DashboardClientController::class, 'viewHistoryIncome'])->name('clientHistoryIncome');
-    Route::get('/income/{id}', [RecordIncomeController::class, 'update'])->name('updateHistoryIncome');
-
-    Route::get('/income/delete/{id}', [CategoryIncomeController::class, 'delete'])->name('clientHistoryIncome');
+    Route::post('/income/update/{id}', [RecordIncomeController::class, 'update'])->name('updateHistoryIncome');
+    Route::get('/income/delete/{id}', [RecordIncomeController::class, 'delete'])->name('deleteHistoryIncome');
 
 
 
