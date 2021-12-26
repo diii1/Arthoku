@@ -66,10 +66,12 @@
     border-color: #F5CC63;
     border-radius: 10px;
     font-size: 24px;
+    color: white;
 }
 
 .btn-Try:hover{
-    color: black !important;
+    font-weight: bold;
+    color: white !important;
 }
 
 .card-login {

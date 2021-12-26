@@ -10,9 +10,9 @@
                   <h2 class="brand-arthoku">ArthoKu</h2>
                   <p class="slug-arthoku">the best way to manage your money</p>
                   @auth
-                    <a class="btn btn-primary btn-Try px-4" href="{{ route('clientDashboard') }}">Let's Try</a>
+                    <a class="btn btn-Try px-4" href="{{ route('clientDashboard') }}">Let's Try</a>
                   @else
-                  <a class="btn btn-primary btn-Try px-4" href="{{ route('login') }}">Let's Try</a>
+                  <a class="btn btn-Try px-4" href="{{ route('login') }}">Let's Try</a>
                   @endauth
                 </div>
               @endif
@@ -97,7 +97,7 @@
           <div class="text-center">
             <h1>About</h1>
             <p class="py-5">
-            The application made is a web-based application. The name of the application is "ArthoKu" which is taken from the word "arta" in Javanese which means money. This application is in the form of a planner which includes several parts, namely income, expense, balance, and graph. With this application, it is hoped that it will help tracking your expenses and income towards a prosperous economy.
+            The application made is a web-based application. The name of the application is "ArthoKu" which is taken from the word "artho" in Javanese which means money. This application is in the form of a planner which includes several parts, namely income, expense, balance, and graph. With this application, it is hoped that it will help tracking your expenses and income towards a prosperous economy.
             </p>
           </div>
         </section>
