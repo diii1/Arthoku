@@ -52,7 +52,7 @@
                             @csrf
                             <div class="form-group mt-3 mb-3">
                                 <label for="amount">Amount</label>
-                                <input name ="amount" type="number" class="form-control" placeholder="Input Your Expense"  value ="{{ $datas->amount}}" required>
+                                <input name ="amount" type="number" class="form-control" placeholder="Input Your Income"  value ="{{ $datas->amount}}" required>
                             </div>
                         
                             <div class="form-group mb-3">
