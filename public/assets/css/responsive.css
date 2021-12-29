@@ -1,0 +1,351 @@
+@media screen and (max-width: 369px) {
+    .home {
+        display: grid !important;
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+
+    .box-feature {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+
+    .box-tips {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+
+    #feature {
+        margin-bottom: 300px;
+    }
+
+    #tips {
+        margin-bottom: 300px;;
+    }
+
+    h2 {
+        font-size: 18px !important;
+    }
+
+    p {
+        font-size: 12px !important;
+    }
+
+    .btn-Try {
+        border-radius: 5px;
+        font-size: 14px !important;
+    }
+
+    img {
+        width: 90%;
+    }
+
+    .foot {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+
+    .sosmedIcon {
+        width: 100%;
+        text-align: center !important;
+    }
+    
+    .sosmedIcon i {
+        display: inline !important;
+    }
+
+    .services {
+        width: 100%;
+        text-align: center !important;
+        font-size: 12px !important;
+    }
+
+    .services a {
+        font-size: 15px !important;
+    }
+
+    .service a {
+        display: inline !important;
+    }
+    
+    .copyright {
+        width: 100%;
+        text-align: center !important;
+        font-size: 18px !important;
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 23px !important;
+    }
+}
+
+@media screen and (min-width: 370px) {
+    .home {
+        display: grid !important;
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+
+    .box-feature {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+
+    .box-tips {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+
+    #feature {
+        margin-bottom: 400px;
+    }
+
+    #tips {
+        margin-bottom: 400px;;
+    }
+
+    h2 {
+        font-size: 18px !important;
+    }
+
+    p {
+        font-size: 12px !important;
+    }
+
+    .btn-Try {
+        border-radius: 5px;
+        font-size: 14px !important;
+    }
+
+    img {
+        width: 90%;
+    }
+
+    .foot {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+
+    .sosmedIcon {
+        width: 100%;
+        font-size: 20px !important;
+        text-align: center !important;
+    }
+    
+    .sosmedIcon i {
+        display: inline !important;
+    }
+
+    .services {
+        width: 100%;
+        text-align: center !important;
+        font-size: 15px !important;
+    }
+
+    .services a {
+        font-size: 19px !important;
+    }
+
+    .service a {
+        display: inline !important;
+    }
+    
+    .copyright {
+        width: 100%;
+        text-align: center !important;
+        font-size: 19px !important;
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 23px !important;
+    }
+}
+
+@media screen and (min-width: 420px) {
+    .home {
+        display: grid !important;
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+
+    .box-feature {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+
+    .box-tips {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+
+    #feature {
+        margin-bottom: 500px;
+    }
+
+    #tips {
+        margin-bottom: 600px;
+    }
+
+    h2 {
+        font-size: 40px !important;
+    }
+
+    p {
+        font-size: 20px !important;
+    }
+
+    .btn-Try {
+        border-radius: 5px;
+        font-size: 20px !important;
+    }
+
+    img {
+        width: 90%;
+    }
+
+    .foot {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+
+    .sosmedIcon {
+        width: 100%;
+        font-size: 20px !important;
+        text-align: center !important;
+    }
+    
+    .sosmedIcon i {
+        display: inline !important;
+    }
+
+    .services {
+        width: 100%;
+        text-align: center !important;
+        font-size: 17px !important;
+    }
+
+    .services a {
+        font-size: 23px !important;
+    }
+
+    .service a {
+        display: inline !important;
+    }
+    
+    .copyright {
+        width: 100%;
+        text-align: center !important;
+        font-size: 20px !important;
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 25px !important;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .body {
+        width: 100% !important;
+    }
+
+    .home {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    .box-feature {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+
+    .box-tips {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr) !important;
+    }   
+    
+    img {
+        width: 90%;
+    }
+
+    #home {
+        margin-bottom: 300px;
+    }
+
+    #feature {
+        margin-bottom: 500px;
+    }
+
+    #tips {
+        margin-bottom: 500px;;
+    }
+}
+
+@media screen and (min-width: 1020px) {
+	body {
+        max-width: 100%;
+    }
+
+    .signIn {
+        font-size: 21px !important;
+    }
+
+    .signUp {
+        font-size: 21px !important;
+    }
+
+    h2 {
+        font-size: 40px !important;
+    }
+
+    p {
+        font-size: 20px !important;
+    }
+
+    .btn-Try {
+        border-radius: 5px;
+        font-size: 20px !important;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    h2 {
+        font-size: 45px !important;
+    }
+
+    p {
+        font-size: 25px !important;
+    }
+
+    .btn-Try {
+        border-radius: 5px;
+        font-size: 20px !important;
+    }
+
+    .sosmedIcon {
+        margin-top: 0 !important;
+        font-size: 20px !important;
+        text-align: center !important;
+    }
+
+    .services {
+        width: 100%;
+        text-align: center !important;
+        font-size: 10px !important;
+    }
+
+    .services a {
+        font-size: 20px !important;
+    }
+
+    .foot {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+
+    .copyright {
+        display: inline !important;
+        width: 100%;
+        text-align: center !important;
+        font-size: 20px !important;
+    }
+}

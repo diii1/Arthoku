@@ -1,0 +1,139 @@
+@media screen and (max-width: 320px) {
+    .mt-5 {
+        margin-top: 0 !important;
+    } 
+
+    .col-3 {
+        width: 100% !important;
+    }
+
+    .col-9 {
+        width: 100% !important;
+    }
+
+    .col-sidenav {
+        border-radius: 0 !important;
+    }
+    
+    .col-sidenav-right {
+        border-radius: 0 !important;
+    }
+    
+    .form-expense {
+        margin-bottom: 20px;
+    }
+
+    .card4 {
+        margin-bottom: 20px !important;
+    }
+}
+
+@media screen and (min-width: 370px) {
+    .mt-5 {
+        margin-top: 0 !important;
+    } 
+
+    .col-3 {
+        width: 100% !important;
+    }
+
+    .col-9 {
+        width: 100% !important;
+    }
+
+    .col-sidenav {
+        border-radius: 0 !important;
+    }
+    
+    .col-sidenav-right {
+        border-radius: 0 !important;
+    }
+    
+    .form-expense {
+        margin-bottom: 20px;
+    }
+
+    .card4 {
+        margin-bottom: 20px !important;
+    }
+}
+
+@media screen and (min-width: 425px) {
+    .mt-5 {
+        margin-top: 0 !important;
+    } 
+
+    .col-3 {
+        width: 100% !important;
+    }
+
+    .col-9 {
+        width: 100% !important;
+    }
+
+    .col-sidenav {
+        border-radius: 0 !important;
+    }
+    
+    .col-sidenav-right {
+        border-radius: 0 !important;
+    }
+    
+    .form-expense {
+        margin-bottom: 20px;
+    }
+
+    .card4 {
+        margin-bottom: 20px !important;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .mt-5 {
+        margin-top: 3rem !important;
+    } 
+
+    .col-3 {
+        width: 30% !important;
+    }
+
+    .col-9 {
+        width: 70% !important;
+    }
+
+    .col-sidenav {
+        border-radius: 20px 0 0 20px !important;
+    }
+    
+    .col-sidenav-right {
+        border-radius: 0 20px 20px 0 !important;
+    }
+
+    .logo {
+        width: 130px;
+    }
+
+    .navbar-nav {
+        font-size: 18px !important;
+    }
+
+    .card4 {
+        margin-bottom: 20px !important;
+    }
+}
+
+@media screen and (min-width: 1020px) {
+	.navbar-nav {
+        font-size: 21px !important;
+    }
+
+    .card1 .card-body {
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .navbar-nav {
+        font-size: 25px !important;
+    }
+}

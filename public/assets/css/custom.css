@@ -1,0 +1,187 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.body-app{
+    background-color: #EFECDA;
+}
+
+.bg-container{
+    height: 655px;
+    border-radius: 20px;
+}
+
+.logo{
+    width: 200px;
+}
+
+.col-sidenav{
+    background-color: #C4D3A5;
+    height: 655px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding-top: 24px;
+    font-size: 24px;
+}
+
+.col-sidenav-right{
+    background-color: #868E6C;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    overflow: auto;
+    height: 655px;
+}
+
+.card1{
+    height: 245px;
+    background-color: #cbabcf;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+.card2{
+    height: 245px;
+    background-color: #e7bc91;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+.card3{
+    height: 245px;
+    background-color: #fec5bb;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+.card4{
+    height: 245px;
+    background-color: #8ecae6;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+.title-page{
+    margin-top: 10px;
+    font-size: 32px;
+    font-weight: bolder;
+}
+
+.nav-item{
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.nav-link{
+    color: white !important;
+}
+
+.nav-link:hover{
+    color: grey !important;
+}
+
+.active {
+    color: grey !important;
+}
+
+.cards{
+    font-weight: bold;
+    color: white;
+}
+
+.card-title{
+    font-size: 24px;
+    padding-top: 10px;
+}
+
+.card-body{
+    font-size: 38px;
+    margin-top: 40px;
+}
+
+.form-income{
+    height: 550px;
+    background-color: #8590c5;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+.form-expense{
+    height: 550px;
+    background-color: #F5CB64;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+.edit{
+    background-color: #9A9483 !important;
+}
+
+.modal-header{
+    border-bottom: none !important;
+}
+
+.edit-icon{
+    font-size: 1.7rem;
+    color: white;
+}
+
+.edit-icon:hover{
+    font-weight: bold;
+    color: #03045e;
+}
+
+.form-control{
+    border-radius: 10px !important;
+}
+
+.setting-title {
+    font-weight: lighter !important ;
+    font-size: 20pt !important;
+    font-style: italic !important;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+    margin-bottom: 50px;
+}
+
+.setting-title1 {
+    font-weight: lighter !important ;
+    font-size: 20pt !important;
+    font-style: italic !important;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+.font-setting {
+    font-weight: bold;
+}
+
+
+.btn-add{
+    border-radius: 10px !important;
+    margin-top: 110px;
+}
+
+.submit{
+    border-radius: 10px !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.btn-icon{
+    padding: 0 !important;
+}
+
+#myChart {
+    margin-bottom: 50px !important;
+}
