@@ -106,8 +106,8 @@ A. Website Client ArthoKu
 2. Log In untuk masuk ke website Arthoku --> ![Tampilan_Login](https://github.com/diii1/Arthoku/blob/dev/images/Tampilan%20Log%20In%20Client.png)
 3. Dashboard awal dengan fitur grafik pengeluaran dan pemasukan pengguna --> ![Tampilan_Dashboard](https://github.com/diii1/Arthoku/blob/dev/images/Tampilan%20Dashboard%20Client%20.png)
 4. Tambah Data pengeluaran dan Tambah Data Pemasukan -->![Tampilan_Add_Data_Expense & Add_Data_Income](https://github.com/diii1/Arthoku/blob/dev/images/Tampilan_AddIncome_AddExtense.PNG)
-5. View Data pengeluaran --> ![Tampilan_History_Income] https://github.com/diii1/Arthoku/blob/dev/images/History_Income.PNG)
-6. View Data Pemasukan --> ![Tampilan_History_Income] https://github.com/diii1/Arthoku/blob/dev/images/History_Expense.PNG)
+5. View Data pengeluaran --> ![Tampilan_History_Income](https://github.com/diii1/Arthoku/blob/dev/images/History_Income.PNG)
+6. View Data Pemasukan --> ![Tampilan_History_Income](https://github.com/diii1/Arthoku/blob/dev/images/History_Expense.PNG)
 7. Edit Data Pengeluaran 
 8. Edit Data Pemasukan
 9. Hapus Data Pengeluaran
