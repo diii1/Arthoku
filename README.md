@@ -150,19 +150,14 @@ B. Website Admin ArthoKu
 8. Controller_Client_Dashboard--> ![Controller_Client_Dashboard](https://github.com/diii1/Arthoku/blob/main/images/code/c-client-dashboard.png)
 9. Controller_Client_Home--> ![Controller_Client_Home](https://github.com/diii1/Arthoku/blob/main/images/code/c-client-home.png)
 10. Controller_Client_Expense--> ![Controller_Client_Expense](https://github.com/diii1/Arthoku/blob/main/images/code/c-client-record-expense.png)
-
-
-
-
-![ini code gan]()
-![ini code gan](https://github.com/diii1/Arthoku/blob/main/images/code/c-client-record-income.png)
-![ini code gan](https://github.com/diii1/Arthoku/blob/main/images/code/c-client-setting.png)
-![ini code gan](https://github.com/diii1/Arthoku/blob/main/images/code/m-cagory-expense.png)
-![ini code gan](https://github.com/diii1/Arthoku/blob/main/images/code/m-cagory-income.png)
-![ini code gan](https://github.com/diii1/Arthoku/blob/main/images/code/m-record-expense.png)
-![ini code gan](https://github.com/diii1/Arthoku/blob/main/images/code/m-record-income.png)
-![ini code gan](https://github.com/diii1/Arthoku/blob/main/images/code/m-users.png)
-![ini code gan](https://github.com/diii1/Arthoku/blob/main/images/code/route.png)
+11. Controller_Client_Income--> ![Controller_Client_Income](https://github.com/diii1/Arthoku/blob/main/images/code/c-client-record-income.png)
+12. Controller_Client_Setting--> ![Controller_Client_Setting](https://github.com/diii1/Arthoku/blob/main/images/code/c-client-setting.png)
+13. Model_Category_Expense--> ![Model_Category_Expense](https://github.com/diii1/Arthoku/blob/main/images/code/m-cagory-expense.png)
+14. Model_Category_Income--> ![Model_Category_Income](https://github.com/diii1/Arthoku/blob/main/images/code/m-cagory-income.png)
+15. Model_Record_Expense--> ![Model_Record_Expense](https://github.com/diii1/Arthoku/blob/main/images/code/m-record-expense.png)
+16. Model_Record_Income--> ![Model_Record_Income](https://github.com/diii1/Arthoku/blob/main/images/code/m-record-income.png)
+17. Model_User--> ![Model_User](https://github.com/diii1/Arthoku/blob/main/images/code/m-users.png)
+18. Route--> ![Route](https://github.com/diii1/Arthoku/blob/main/images/code/route.png)
 
 # Pengembang proyek
 :monocle_face: <a href="https://github.com/diii1">Raviy Bayu S (19081010010)</a><br>
