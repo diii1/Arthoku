@@ -139,6 +139,26 @@ B. Website Admin ArthoKu
 11. . Hapus Data Kategori Pemasukan --> ![Tampilan_Hapus_Category_Income](https://github.com/diii1/Arthoku/blob/main/images/admin/Hapus_Category_Income.png)
 12. . Logout --> ![Tampilan_Log_Out](https://github.com/diii1/Arthoku/blob/main/images/admin/logout-admin.PNG)
 
+# CODE INTI
+https://github.com/diii1/Arthoku/blob/dev/images/code/c-admin-category-expense.png
+https://github.com/diii1/Arthoku/blob/dev/images/code/c-admin-category-income.png
+https://github.com/diii1/Arthoku/blob/dev/images/code/c-admin-dashboard.png
+https://github.com/diii1/Arthoku/blob/dev/images/code/c-admin-user.png
+https://github.com/diii1/Arthoku/blob/dev/images/code/c-auth-login.png
+https://github.com/diii1/Arthoku/blob/dev/images/code/c-auth-register.png
+https://github.com/diii1/Arthoku/blob/dev/images/code/c-client-app.png
+https://github.com/diii1/Arthoku/blob/dev/images/code/c-client-dashboard.png
+https://github.com/diii1/Arthoku/blob/dev/images/code/c-client-home.png
+https://github.com/diii1/Arthoku/blob/dev/images/code/c-client-record-expense.png
+https://github.com/diii1/Arthoku/blob/dev/images/code/c-client-record-income.png
+https://github.com/diii1/Arthoku/blob/dev/images/code/c-client-setting.png
+https://github.com/diii1/Arthoku/blob/dev/images/code/m-cagory-expense.png
+https://github.com/diii1/Arthoku/blob/dev/images/code/m-cagory-income.png
+https://github.com/diii1/Arthoku/blob/dev/images/code/m-record-expense.png
+https://github.com/diii1/Arthoku/blob/dev/images/code/m-record-income.png
+https://github.com/diii1/Arthoku/blob/dev/images/code/m-users.png
+https://github.com/diii1/Arthoku/blob/dev/images/code/route.png
+
 # Pengembang proyek
 :monocle_face: <a href="https://github.com/diii1">Raviy Bayu S (19081010010)</a><br>
 :smile: <a href="https://github.com/alyasaf">Alya Safira (19081010015)</a><br>
