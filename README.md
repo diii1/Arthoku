@@ -36,7 +36,7 @@ php artisan migrate
 ```
 php artisan serve
 ```
-# 1 gambar screenshot halaman utama aplikasi 
+# 1 Halaman utama aplikasi 
 ![tampilan-utama](https://github.com/diii1/Arthoku/blob/dev/images/tampilan-utama.PNG)
 
 
