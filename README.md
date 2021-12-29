@@ -37,7 +37,7 @@ php artisan migrate
 php artisan serve
 ```
 # 1 gambar screenshot halaman utama aplikasi 
-![Alt text]( "a title")
+![tampilan-utama](https://github.com/diii1/Arthoku/blob/dev/images/tampilan-utama.PNG)
 
 
 
