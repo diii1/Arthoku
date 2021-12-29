@@ -108,13 +108,14 @@ A. Website Client ArthoKu
 4. Tambah Data pengeluaran dan Tambah Data Pemasukan -->![Tampilan_Add_Data_Expense & Add_Data_Income](https://github.com/diii1/Arthoku/blob/dev/images/Tampilan_AddIncome_AddExtense.PNG)
 5. View Data pengeluaran --> ![Tampilan_History_Income](https://github.com/diii1/Arthoku/blob/dev/images/History_Income.PNG)
 6. View Data Pemasukan --> ![Tampilan_History_Income](https://github.com/diii1/Arthoku/blob/dev/images/History_Expense.PNG)
-7. Edit Data Pengeluaran 
-8. Edit Data Pemasukan
-9. Hapus Data Pengeluaran
-10.Hapus Data Pemasukan
-11. Rekomendasi untuk kebutuhan, keinginan, dan tabungan yang ideal yaitu dengan prinsip 50/30/20. 
-14. Setting Nama dan juga Pendapatan bulanan rata-rata. 
-15. Logout akun ArthoKu
+7. Edit Data Pengeluaran --> ![Tampilan_Edit_Data_Expense](https://github.com/diii1/Arthoku/blob/dev/images/Edit_Data_Expense.PNG)
+8. Edit Data Pemasukan --> ![Tampilan_Edit_Data_Income](https://github.com/diii1/Arthoku/blob/dev/images/Edit_Data_Income.PNG)
+9. Hapus Data Pengeluaran --> ![Tampilan_Hapus_Data_Expense](https://github.com/diii1/Arthoku/blob/dev/images/Hapus_Data_Expense.png)
+10.Hapus Data Pemasukan --> ![Tampilan_Hapus_Data_Income](https://github.com/diii1/Arthoku/blob/dev/images/Hapus_Data_Income.png)
+11. Rekomendasi untuk kebutuhan, keinginan, dan tabungan yang ideal yaitu dengan prinsip 50/30/20 --> ![Tampilan_Recommendation](https://github.com/diii1/Arthoku/blob/dev/images/Tampilan_Recommendation.png)
+14. View Setting  --> ![Tampilan_Setting](https://github.com/diii1/Arthoku/blob/dev/images/Setting.png)
+15. Edit Nama setting --> ![Tampilan_Edit_Name](https://github.com/diii1/Arthoku/blob/dev/images/Edit_Name.png)
+16. Edit Pendapatan bulanan rata-rata --> ![Tampilan_Average_Income](https://github.com/diii1/Arthoku/blob/dev/images/Tampilan_Average_Income.png)
 
 
 
