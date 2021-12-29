@@ -3,7 +3,7 @@
 @section('content')
     <div class="col-9 col-sidenav-right">
         <div class="container">
-            <div class="text-white title-page">{{ $routeName }}</div>
+            <div class="text-white title-page">{{ $routeName }} Income</div>
             @foreach($data as $ci)               
             <div class="text-white mt-5 mb-3">
                 <h1 class="setting-title1">{{ $ci->date }}</h1>
@@ -47,7 +47,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body text-white">
-                        <h1 class="modal-title text-white text-center" id="exampleModalLabel">Edit</h1>
+                        <h1 class="modal-title text-white text-center" id="exampleModalLabel">Edit Data Income</h1>
                         <form action="income/update/{{ $datas->id }}" method = "POST">   
                             @csrf
                             <div class="form-group mt-3 mb-3">
