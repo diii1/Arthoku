@@ -123,18 +123,17 @@ B. Website Admin ArthoKu
 
 
 1. Log In Sebagai Admin  
-2. Show Data Pengguna 
-3. Edit Data pengguna dengan menekan tombol isadmin untuk menjadikan admin 
+2. Show Data Pengguna --> ![Tampilan_Data_User_Account](https://github.com/diii1/Arthoku/blob/dev/images/admin/data-user.PNG)
+3. Edit Data pengguna dengan menekan tombol isadmin untuk menjadikan admin  --> ![Tampilan_Edit_Data_User_Account](https://github.com/diii1/Arthoku/blob/dev/images/admin/adit-data-pengguna-jadi-admin.PNG)
 4. Hapus Data Pengguna
-5. Tambah Data Kategori Pengeluaran
-6. Show Data Kategori Pengeluaran
-7. Edit Data Kategori Pengeluaran
-8. Hapus Data Kategori Pengeluaran
-9. Tambah Data Kategori Pemasukan
-10. Tambah Data Kategori Pemasukan
-11. Show Data Kategori Pemasukan
-12. Edit Data Kategori Pemasukan
-13. Hapus Data Kategori Pemasukan
+5. Tambah Data Kategori Pengeluaran --> ![Tampilan_add-category-expense](https://github.com/diii1/Arthoku/blob/dev/images/admin/add-categoty-expense.PNG)
+6. Show Data Kategori Pengeluaran --> ![Tampilan_Show-category-expense](https://github.com/diii1/Arthoku/blob/dev/images/admin/Show_Category_Expense.png)
+7. Edit Data Kategori Pengeluaran --> ![Tampilan_Edit_Category_Expense](https://github.com/diii1/Arthoku/blob/dev/images/admin/Edit_Category_Expense.png)
+8. Hapus Data Kategori Pengeluaran --> ![Tampilan_Hapus_Category_Expense](https://github.com/diii1/Arthoku/blob/dev/images/admin/Hapus_Category_Expense.png)
+9. Tambah Data Kategori Pemasukan --> ![Tampilan_Tambah_Category_Income](https://github.com/diii1/Arthoku/blob/dev/images/admin/add-categoty-income.PNG)
+11. Show Data Kategori Pemasukan --> ![Tampilan_Show_Category_Income](https://github.com/diii1/Arthoku/blob/dev/images/admin/Show_Category_Income%20(1).png)
+12. Edit Data Kategori Pemasukan --> ![Tampilan_Edit_Category_Income](https://github.com/diii1/Arthoku/blob/dev/images/admin/Edit_Category_Income.png)
+13. Hapus Data Kategori Pemasukan --> ![Tampilan_Hapus_Category_Income](https://github.com/diii1/Arthoku/blob/dev/images/admin/Hapus_Category_Income.png)
 14. Logout
 
 # Pengembang proyek
