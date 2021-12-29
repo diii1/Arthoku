@@ -1,6 +1,6 @@
 # ArthoKu
 
-# Instalation
+# INSTALATION
 
 ArthoKu requires [Xampp](https://www.apachefriends.org/download.html), [Composer](https://getcomposer.org/download/), [Node.js](https://nodejs.org/en/download/).
 
@@ -40,20 +40,20 @@ php artisan migrate
 ```
 php artisan serve
 ```
-# Halaman utama aplikasi 
+# HALAMAN UTAMA APLIKASI
 ![tampilan-utama](https://github.com/diii1/Arthoku/blob/main/images/tampilan-utama.PNG)
 
 
 
-# Deskripsi Aplikasi 
+# DESKRIPSI APLIKASI
 Aplikasi yang dibuat adalah aplikasi berbasis web. Nama aplikasinya adalah “ArthoKu” yang diambil dari kata “artho” dalam bahasa Jawa yang berarti uang. Aplikasi ini berbentuk planner yang meliputi beberapa bagian yaitu pemasukan, pengeluaran, neraca, dan grafik. Dengan adanya aplikasi ini diharapkan dapat membantu melacak pengeluaran dan pemasukan Anda menuju ekonomi yang sejahtera.
 
-# Sitemap/hirarki menu aplikasi beserta penjelasanya
+# SITEMAP
 
 ArthoKu
 ![Sitemap_Arthoku](https://github.com/diii1/Arthoku/blob/main/images/sitemap.png)
 
-# Teknologi yang digunakan
+# TEKNOLOGI
 1. Visual Studi Code : Sebagai text editor
 2. CSS : Untuk mengatur responsive program 
 3. Bahasa pemrograman PHP : Sebagai bahasa utama dalam pembuatan program Arthoku 
@@ -62,7 +62,7 @@ ArthoKu
 6. Bootsrap 4 dan 5 : Framework bagian CSS yang digunakan dalam pembuatan aplikasi 
 7. Xampp : Sebagai tempat database bagi aplikasi yang telah dibuat.  
 
-# Cara penggunaan aplikasi beserta penjelasanya
+# CARA PENGUNAAN APLIKASI BESERTA PENJELANNYA
 A. Website Client ArthoKu
 Wesbite ArthoKu dibuat untuk membantu penggunanya agar dapat melakukan manajemen pengeluaran uang yang digunakan untuk tiap hari, minggu, bulan, hingga tahunan. Sehingga pengguna dapat menggunakan uang yang dimilikinya secara efesien, tepat, dan menguntunkan di kemudian hari.
 
@@ -140,26 +140,26 @@ B. Website Admin ArthoKu
 12. . Logout --> ![Tampilan_Log_Out](https://github.com/diii1/Arthoku/blob/main/images/admin/logout-admin.PNG)
 
 # CODE INTI
-https://github.com/diii1/Arthoku/blob/dev/images/code/c-admin-category-expense.png
-https://github.com/diii1/Arthoku/blob/dev/images/code/c-admin-category-income.png
-https://github.com/diii1/Arthoku/blob/dev/images/code/c-admin-dashboard.png
-https://github.com/diii1/Arthoku/blob/dev/images/code/c-admin-user.png
-https://github.com/diii1/Arthoku/blob/dev/images/code/c-auth-login.png
-https://github.com/diii1/Arthoku/blob/dev/images/code/c-auth-register.png
-https://github.com/diii1/Arthoku/blob/dev/images/code/c-client-app.png
-https://github.com/diii1/Arthoku/blob/dev/images/code/c-client-dashboard.png
-https://github.com/diii1/Arthoku/blob/dev/images/code/c-client-home.png
-https://github.com/diii1/Arthoku/blob/dev/images/code/c-client-record-expense.png
-https://github.com/diii1/Arthoku/blob/dev/images/code/c-client-record-income.png
-https://github.com/diii1/Arthoku/blob/dev/images/code/c-client-setting.png
-https://github.com/diii1/Arthoku/blob/dev/images/code/m-cagory-expense.png
-https://github.com/diii1/Arthoku/blob/dev/images/code/m-cagory-income.png
-https://github.com/diii1/Arthoku/blob/dev/images/code/m-record-expense.png
-https://github.com/diii1/Arthoku/blob/dev/images/code/m-record-income.png
-https://github.com/diii1/Arthoku/blob/dev/images/code/m-users.png
-https://github.com/diii1/Arthoku/blob/dev/images/code/route.png
+![ini code gan](https://github.com/diii1/Arthoku/blob/dev/images/code/c-admin-category-expense.png)
+![ini code gan](https://github.com/diii1/Arthoku/blob/dev/images/code/c-admin-category-income.png)
+![ini code gan](https://github.com/diii1/Arthoku/blob/dev/images/code/c-admin-dashboard.png)
+![ini code gan](https://github.com/diii1/Arthoku/blob/dev/images/code/c-admin-user.png)
+![ini code gan](https://github.com/diii1/Arthoku/blob/dev/images/code/c-auth-login.png)
+![ini code gan](https://github.com/diii1/Arthoku/blob/dev/images/code/c-auth-register.png)
+![ini code gan](https://github.com/diii1/Arthoku/blob/dev/images/code/c-client-app.png)
+![ini code gan](https://github.com/diii1/Arthoku/blob/dev/images/code/c-client-dashboard.png)
+![ini code gan](https://github.com/diii1/Arthoku/blob/dev/images/code/c-client-home.png)
+![ini code gan](https://github.com/diii1/Arthoku/blob/dev/images/code/c-client-record-expense.png)
+![ini code gan](https://github.com/diii1/Arthoku/blob/dev/images/code/c-client-record-income.png)
+![ini code gan](https://github.com/diii1/Arthoku/blob/dev/images/code/c-client-setting.png)
+![ini code gan](https://github.com/diii1/Arthoku/blob/dev/images/code/m-cagory-expense.png)
+![ini code gan](https://github.com/diii1/Arthoku/blob/dev/images/code/m-cagory-income.png)
+![ini code gan](https://github.com/diii1/Arthoku/blob/dev/images/code/m-record-expense.png)
+![ini code gan](https://github.com/diii1/Arthoku/blob/dev/images/code/m-record-income.png)
+![ini code gan](https://github.com/diii1/Arthoku/blob/dev/images/code/m-users.png)
+![ini code gan](https://github.com/diii1/Arthoku/blob/dev/images/code/route.png)
 
-# Pengembang proyek
+# PENGEMBANG PROYEK
 :monocle_face: <a href="https://github.com/diii1">Raviy Bayu S (19081010010)</a><br>
 :smile: <a href="https://github.com/alyasaf">Alya Safira (19081010015)</a><br>
 :sunglasses: <a href="https://github.com/alfyandoo">Muhammad Alfyando (19081010037)</a><br>
