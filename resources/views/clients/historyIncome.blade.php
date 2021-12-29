@@ -3,7 +3,7 @@
 @section('content')
     <div class="col-9 col-sidenav-right">
         <div class="container">
-            <div class="text-white title-page">{{ $routeName }}</div>
+            <div class="text-white title-page">{{ $routeName }} Income</div>
             @foreach($data as $ci)               
             <div class="text-white mt-5 mb-3">
                 <h1 class="setting-title1">{{ $ci->date }}</h1>
