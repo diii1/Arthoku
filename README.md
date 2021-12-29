@@ -145,20 +145,6 @@ B. Website Admin ArthoKu
 3. Controller_Admin_Dashboard --> ![Controller_Admin_Dashboard](https://github.com/diii1/Arthoku/blob/dev/images/code/c-admin-dashboard.png)
 4. Controller_Admin_User --> ![Controller_Admin_User](https://github.com/diii1/Arthoku/blob/dev/images/code/c-admin-user.png)
 
-https://github.com/diii1/Arthoku/blob/dev/images/code/c-auth-login.png
-https://github.com/diii1/Arthoku/blob/dev/images/code/c-auth-register.png
-https://github.com/diii1/Arthoku/blob/dev/images/code/c-client-app.png
-https://github.com/diii1/Arthoku/blob/dev/images/code/c-client-dashboard.png
-https://github.com/diii1/Arthoku/blob/dev/images/code/c-client-home.png
-https://github.com/diii1/Arthoku/blob/dev/images/code/c-client-record-expense.png
-https://github.com/diii1/Arthoku/blob/dev/images/code/c-client-record-income.png
-https://github.com/diii1/Arthoku/blob/dev/images/code/c-client-setting.png
-https://github.com/diii1/Arthoku/blob/dev/images/code/m-cagory-expense.png
-https://github.com/diii1/Arthoku/blob/dev/images/code/m-cagory-income.png
-https://github.com/diii1/Arthoku/blob/dev/images/code/m-record-expense.png
-https://github.com/diii1/Arthoku/blob/dev/images/code/m-record-income.png
-https://github.com/diii1/Arthoku/blob/dev/images/code/m-users.png
-https://github.com/diii1/Arthoku/blob/dev/images/code/route.png
 
 # Pengembang proyek
 :monocle_face: <a href="https://github.com/diii1">Raviy Bayu S (19081010010)</a><br>
