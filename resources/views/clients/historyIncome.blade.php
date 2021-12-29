@@ -47,7 +47,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body text-white">
-                        <h1 class="modal-title text-white text-center" id="exampleModalLabel">Edit</h1>
+                        <h1 class="modal-title text-white text-center" id="exampleModalLabel">Edit Data Income</h1>
                         <form action="income/update/{{ $datas->id }}" method = "POST">   
                             @csrf
                             <div class="form-group mt-3 mb-3">
