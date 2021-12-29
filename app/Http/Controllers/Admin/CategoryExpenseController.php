@@ -8,7 +8,6 @@ use Illuminate\Support\Facades\DB;
 
 class CategoryExpenseController extends Controller
 {
-    //
     public function __construct(){
 
         $this->middleware('auth');
