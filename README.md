@@ -11,7 +11,7 @@ git clone https://github.com/diii1/Arthoku.git
 ```
 
 ```
-cd ArthoKu
+cd Arthoku
 ```
 
 set .env file
