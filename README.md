@@ -138,7 +138,7 @@ B. Website Admin ArthoKu
 13. Hapus Data Kategori Pemasukan
 14. Logout
 
-:wink: Pengembang proyek
+## :wink: Pengembang proyek
 :monocle_face: <a href="">Raviy Bayu S (19081010010)</a><br>
 :smile: <a href="">Alya Safira (19081010015)</a><br>
 :sunglasses: <a href="">Muhammad Alfyando (19081010037)</a><br>
