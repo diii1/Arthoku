@@ -52,7 +52,6 @@ class RecordIncomeController extends Controller
             'date' => Request()->date,
             'note' => Request()->note
         ];
-        // dd($data);
         $this->RecordIncome->editData($id, $data);
         return redirect()->route('clientHistoryIncome')->withSuccess('Income updated!');
     }
