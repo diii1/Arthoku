@@ -121,10 +121,7 @@ A. Website Client ArthoKu
 15. Edit Nama setting --> ![Tampilan_Edit_Name](https://github.com/diii1/Arthoku/blob/main/images/Edit_Name.png)
 16. Edit Pendapatan bulanan rata-rata --> ![Tampilan_Average_Income](https://github.com/diii1/Arthoku/blob/main/images/Tampilan_Average_Income.png)
 
-
-
 B. Website Admin ArthoKu
-
 
 1. Log In Sebagai Admin  -->  ![Tampilan_LogIn_Admin](https://github.com/diii1/Arthoku/blob/main/images/admin/LogIn%20Admin.png)
 2. Show Data Pengguna --> ![Tampilan_Data_User_Account](https://github.com/diii1/Arthoku/blob/main/images/admin/data-user.PNG)
@@ -140,6 +137,9 @@ B. Website Admin ArthoKu
 12. . Logout --> ![Tampilan_Log_Out](https://github.com/diii1/Arthoku/blob/main/images/admin/logout-admin.PNG)
 
 # CODE INTI
+
+A. Controller : komponen inti dari MVC yang berfungsi sebagai penghubung antara request user (View) ke model yang nantinya akan di kembalikan lagi ke View dalam bentuk response. Controller ini akan banyak berisi logika – logika dalam menyusun suatu fungsi tertentu.
+
 1. Controller_Category_Expense --> ![Controller_Category_Expense](https://github.com/diii1/Arthoku/blob/main/images/code/c-admin-category-expense.png)
 2. Controller_Category_Expense --> ![Controller_Category_Income](https://github.com/diii1/Arthoku/blob/main/images/code/c-admin-category-income.png)
 3. Controller_Admin_Dashboard --> ![Controller_Admin_Dashboard](https://github.com/diii1/Arthoku/blob/main/images/code/c-admin-dashboard.png)
@@ -151,13 +151,15 @@ B. Website Admin ArthoKu
 9. Controller_Client_Home--> ![Controller_Client_Home](https://github.com/diii1/Arthoku/blob/main/images/code/c-client-home.png)
 10. Controller_Client_Expense--> ![Controller_Client_Expense](https://github.com/diii1/Arthoku/blob/main/images/code/c-client-record-expense.png)
 11. Controller_Client_Income--> ![Controller_Client_Income](https://github.com/diii1/Arthoku/blob/main/images/code/c-client-record-income.png)
-12. Controller_Client_Setting--> ![Controller_Client_Setting](https://github.com/diii1/Arthoku/blob/main/images/code/c-client-setting.png)
-13. Model_Category_Expense--> ![Model_Category_Expense](https://github.com/diii1/Arthoku/blob/main/images/code/m-cagory-expense.png)
-14. Model_Category_Income--> ![Model_Category_Income](https://github.com/diii1/Arthoku/blob/main/images/code/m-cagory-income.png)
-15. Model_Record_Expense--> ![Model_Record_Expense](https://github.com/diii1/Arthoku/blob/main/images/code/m-record-expense.png)
-16. Model_Record_Income--> ![Model_Record_Income](https://github.com/diii1/Arthoku/blob/main/images/code/m-record-income.png)
-17. Model_User--> ![Model_User](https://github.com/diii1/Arthoku/blob/main/images/code/m-users.png)
-18. Route--> ![Route](https://github.com/diii1/Arthoku/blob/main/images/code/route.png)
+12. Controller_Client_Setting--> ![Controller_Client_Setting](https://github.com/diii1/Arthoku/blob/main/images/code/c-client-setting.png)    
+
+B. Model : 
+1. Model_Category_Expense--> ![Model_Category_Expense](https://github.com/diii1/Arthoku/blob/main/images/code/m-cagory-expense.png)
+2. Model_Category_Income--> ![Model_Category_Income](https://github.com/diii1/Arthoku/blob/main/images/code/m-cagory-income.png)
+3. Model_Record_Expense--> ![Model_Record_Expense](https://github.com/diii1/Arthoku/blob/main/images/code/m-record-expense.png)
+4. Model_Record_Income--> ![Model_Record_Income](https://github.com/diii1/Arthoku/blob/main/images/code/m-record-income.png)
+5. Model_User--> ![Model_User](https://github.com/diii1/Arthoku/blob/main/images/code/m-users.png)
+6. Route--> ![Route](https://github.com/diii1/Arthoku/blob/main/images/code/route.png)
 
 # Pengembang proyek
 :monocle_face: <a href="https://github.com/diii1">Raviy Bayu S (19081010010)</a><br>
