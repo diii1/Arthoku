@@ -139,9 +139,9 @@ B. Website Admin ArthoKu
 14. Logout
 
 ## :wink: Pengembang proyek
-:man: <a href="">Raviy Bayu S (19081010010)</a><br>
+:monocle_face: <a href="">Raviy Bayu S (19081010010)</a><br>
 :smile: <a href="">Alya Safira (19081010015)</a><br>
-:boy: <a href="">Muhammad Alfyando (19081010037)</a><br>
+:sunglasses: <a href="">Muhammad Alfyando (19081010037)</a><br>
 :boy: <a href="">M. Mushthafainal (19081010042)</a><br>
 :man: <a href="">Kristian Rolando (19081010085)</a><br>
 :smile: <a href="">Maurisa A (19081010192)</a><br>
