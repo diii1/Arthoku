@@ -3,12 +3,12 @@
 @section('content')
     <div class="col-9 col-sidenav-right">
         <div class="container">
-            <div class="text-white title-page">{{ $routeName }}</div>
+            <div  class="text-white title-page"><h1>{{ $routeName }}</h1></div>
             <div class="text-white mt-5 mb-5">
-                <h1 class="setting-title">Nama</h1>
+                <p class="setting-title">Nama</p>
                 <div class="row">
                     <div class="col">
-                        <h2 class="font-setting">{{ Auth::user()->name }}</h2>
+                        <h3 class="font-setting">{{ Auth::user()->name }}</h3>
                     </div>
                     <div class="col d-flex flex-row-reverse">
                         <a data-bs-toggle="modal" data-bs-target="#editName" href="#editName"><i class="fas fa-edit edit-icon"></i></a>

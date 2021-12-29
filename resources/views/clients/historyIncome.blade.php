@@ -6,7 +6,7 @@
             <div class="text-white title-page">{{ $routeName }}</div>
             @foreach($data as $ci)               
             <div class="text-white mt-5 mb-3">
-                <h1>{{ $ci->date }}</h1>
+                <h1 class="setting-title1">{{ $ci->date }}</h1>
                 <div class="row">
                     <div class="col">
                         <h2>{{ $ci->categoryIncome->name }}</h2>
@@ -17,7 +17,7 @@
                 </div>
                 <div class="row">
                     <div class="col">
-                        <h2>{{ $ci->note }}</h2>
+                        <h2 class="setting-title1">{{ $ci->note }}</h2>
                     </div>
                     <div class="col d-flex flex-row-reverse">
                         <div class="row">
