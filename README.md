@@ -139,10 +139,10 @@ B. Website Admin ArthoKu
 14. Logout
 
 ## :wink: Pengembang proyek
-:monocle_face: <a href="">Raviy Bayu S (19081010010)</a><br>
-:smile: <a href="">Alya Safira (19081010015)</a><br>
-:sunglasses: <a href="">Muhammad Alfyando (19081010037)</a><br>
-:boy: <a href="">M. Mushthafainal (19081010042)</a><br>
-:man: <a href="">Kristian Rolando (19081010085)</a><br>
-:smile: <a href="">Maurisa A (19081010192)</a><br>
+:monocle_face: <a href="https://github.com/diii1">Raviy Bayu S (19081010010)</a><br>
+:smile: <a href="https://github.com/alyasaf">Alya Safira (19081010015)</a><br>
+:sunglasses: <a href="https://github.com/alfyandoo">Muhammad Alfyando (19081010037)</a><br>
+:boy: <a href="https://github.com/">M. Mushthafainal (19081010042)</a><br>
+:man: <a href="https://github.com/">Kristian Rolando (19081010085)</a><br>
+:smile: <a href="https://github.com/">Maurisa A (19081010192)</a><br>
 Terima kasih atas kerja sama selama pengerjaan proyek ini!
