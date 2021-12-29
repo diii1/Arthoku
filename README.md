@@ -85,7 +85,9 @@ B. Website Admin ArthoKu
 Website admin berguna untuk manajemen data client yang menggunakan webiste ArthoK. Website admin juga digunakan untuk manajemen kategori expens (pengeluaran) dan kategori income (pemasukan) yang mana data kategori tersebut dapat dipilih oleh client ketikan menambahkan data pengeluaran dan pemasukkannya. Cara penggunaan Website Admin ArthoKu ialah sebagai berikut : 
 
 - [x] Login Sebagai Admin --> Jika bukan admin tidak dapat mengakses website admin 
+
 - [x] Pada halaman dashboard admin terdapat grafik data client yang baru melakukan proses register. 
+
 - [x] Kemudian, pada halaman Data User Account terdapat data yang dapat dilihat, dijadikan admin dengan menekan button isAdmin, dan dihapus oleh admin. Pada halaman ini disajikan tabel data yang terdiri dari ID, Name, Email, Password dan Action. Pada halaman ini admin dapat melakukan pengurutan secara ascending dan descending. Kemudian admin juga dapat menggunakan form pencarian untuk mencari data User Account.
 
 - [x] Selanjutnya , pada halaman Data Category Income disajikan tabel data yang terdiri dari ID, Name, Description dan Action. Pada halaman ini admin dapat melakukan pengurutan secara ascending dan descending, menambahkan data, mengubah data, serta menghapus data Category Income. Kemudian admin juga dapat menggunakan form pencarian untuk mencari data Category Income.
@@ -96,24 +98,23 @@ Website admin berguna untuk manajemen data client yang menggunakan webiste Artho
 - [x] Dan terakhir, terdapat log out guna keluar dari website Admin ArthoKu
 
 
-
-
 # Fitur-fitur yang ditawarkan beserta screenshot program
 
 A. Website Client ArthoKu
-- [x] 
-0. Login dan register untuk masuk ke dalam ArthoKu
-1. Dashboard awal dengan fitur grafik pengeluaran dan pemasukan pengguna.
-2. Tambah Data pengeluaran dan Tambah Data Pemasukan 
-3. View Data pengeluaran
-4. View Data Pemasukan 
-5. Edit Data Pengeluaran 
-6. Edit Data Pemasukan
-7. Hapus Data Pengeluaran
-8. Hapus Data Pemasukan
-9. Rekomendasi untuk kebutuhan, keinginan, dan tabungan yang ideal yaitu dengan prinsip 50/30/20. 
-10. Setting Nama dan juga Pendapatan bulanan rata-rata. 
-11. Logout akun ArthoKu
+
+1. Register untuk membuat akun  ArthoKu --> ![Tampilan_Register](https://github.com/diii1/Arthoku/blob/dev/images/Tampilan%20Register.png)
+2. Log In untuk masuk ke website Arthoku --> ![Tampilan_Login](https://github.com/diii1/Arthoku/blob/dev/images/Tampilan%20Log%20In%20Client.png)
+3. Dashboard awal dengan fitur grafik pengeluaran dan pemasukan pengguna --> ![Tampilan_Dashboard](https://github.com/diii1/Arthoku/blob/dev/images/Tampilan%20Dashboard%20Client%20.png)
+4. Tambah Data pengeluaran dan Tambah Data Pemasukan 
+5. View Data pengeluaran
+6. View Data Pemasukan 
+7. Edit Data Pengeluaran 
+8. Edit Data Pemasukan
+9. Hapus Data Pengeluaran
+10.Hapus Data Pemasukan
+11. Rekomendasi untuk kebutuhan, keinginan, dan tabungan yang ideal yaitu dengan prinsip 50/30/20. 
+14. Setting Nama dan juga Pendapatan bulanan rata-rata. 
+15. Logout akun ArthoKu
 
 
 
