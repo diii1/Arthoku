@@ -110,8 +110,8 @@ A. Website Client ArthoKu
 2. Log In untuk masuk ke website Arthoku --> ![Tampilan_Login](https://github.com/diii1/Arthoku/blob/dev/images/Tampilan%20Log%20In%20Client.png)
 3. Dashboard awal dengan fitur grafik pengeluaran dan pemasukan pengguna --> ![Tampilan_Dashboard](https://github.com/diii1/Arthoku/blob/dev/images/Tampilan%20Dashboard%20Client%20.png)
 4. Tambah Data pengeluaran dan Tambah Data Pemasukan -->![Tampilan_Add_Data_Expense & Add_Data_Income](https://github.com/diii1/Arthoku/blob/dev/images/Tampilan_AddIncome_AddExtense.PNG)
-5. View Data pengeluaran --> ![Tampilan_History_Income](https://github.com/diii1/Arthoku/blob/dev/images/History_Income.PNG)
-6. View Data Pemasukan --> ![Tampilan_History_Income](https://github.com/diii1/Arthoku/blob/dev/images/History_Expense.PNG)
+5. View Data pengeluaran --> ![Tampilan_History_Income](https://github.com/diii1/Arthoku/blob/dev/images/History_Expense.PNG) 
+6. View Data Pemasukan --> ![Tampilan_History_Income](https://github.com/diii1/Arthoku/blob/dev/images/History_Income.PNG)
 7. Edit Data Pengeluaran --> ![Tampilan_Edit_Data_Expense](https://github.com/diii1/Arthoku/blob/dev/images/Edit_Data_Expense.PNG)
 8. Edit Data Pemasukan --> ![Tampilan_Edit_Data_Income](https://github.com/diii1/Arthoku/blob/dev/images/Edit_Data_Income.PNG)
 9. Hapus Data Pengeluaran --> ![Tampilan_Hapus_Data_Expense](https://github.com/diii1/Arthoku/blob/dev/images/Hapus_Data_Expense.png)
@@ -129,16 +129,15 @@ B. Website Admin ArthoKu
 1. Log In Sebagai Admin  
 2. Show Data Pengguna --> ![Tampilan_Data_User_Account](https://github.com/diii1/Arthoku/blob/dev/images/admin/data-user.PNG)
 3. Edit Data pengguna dengan menekan tombol isadmin untuk menjadikan admin  --> ![Tampilan_Edit_Data_User_Account](https://github.com/diii1/Arthoku/blob/dev/images/admin/adit-data-pengguna-jadi-admin.PNG)
-4. Hapus Data Pengguna
-5. Tambah Data Kategori Pengeluaran --> ![Tampilan_add-category-expense](https://github.com/diii1/Arthoku/blob/dev/images/admin/add-categoty-expense.PNG)
-6. Show Data Kategori Pengeluaran --> ![Tampilan_Show-category-expense](https://github.com/diii1/Arthoku/blob/dev/images/admin/Show_Category_Expense.png)
-7. Edit Data Kategori Pengeluaran --> ![Tampilan_Edit_Category_Expense](https://github.com/diii1/Arthoku/blob/dev/images/admin/Edit_Category_Expense.png)
-8. Hapus Data Kategori Pengeluaran --> ![Tampilan_Hapus_Category_Expense](https://github.com/diii1/Arthoku/blob/dev/images/admin/Hapus_Category_Expense.png)
-9. Tambah Data Kategori Pemasukan --> ![Tampilan_Tambah_Category_Income](https://github.com/diii1/Arthoku/blob/dev/images/admin/add-categoty-income.PNG)
-11. Show Data Kategori Pemasukan --> ![Tampilan_Show_Category_Income](https://github.com/diii1/Arthoku/blob/dev/images/admin/Show_Category_Income%20(1).png)
-12. Edit Data Kategori Pemasukan --> ![Tampilan_Edit_Category_Income](https://github.com/diii1/Arthoku/blob/dev/images/admin/Edit_Category_Income.png)
-13. Hapus Data Kategori Pemasukan --> ![Tampilan_Hapus_Category_Income](https://github.com/diii1/Arthoku/blob/dev/images/admin/Hapus_Category_Income.png)
-14. Logout
+4. . Tambah Data Kategori Pengeluaran --> ![Tampilan_add-category-expense](https://github.com/diii1/Arthoku/blob/dev/images/admin/add-categoty-expense.PNG)
+5. . Show Data Kategori Pengeluaran --> ![Tampilan_Show-category-expense](https://github.com/diii1/Arthoku/blob/dev/images/admin/Show_Category_Expense.png)
+6. . Edit Data Kategori Pengeluaran --> ![Tampilan_Edit_Category_Expense](https://github.com/diii1/Arthoku/blob/dev/images/admin/Edit_Category_Expense.png)
+7. . Hapus Data Kategori Pengeluaran --> ![Tampilan_Hapus_Category_Expense](https://github.com/diii1/Arthoku/blob/dev/images/admin/Hapus_Category_Expense.png)
+8. . Tambah Data Kategori Pemasukan --> ![Tampilan_Tambah_Category_Income](https://github.com/diii1/Arthoku/blob/dev/images/admin/add-categoty-income.PNG)
+9. . Show Data Kategori Pemasukan --> ![Tampilan_Show_Category_Income](https://github.com/diii1/Arthoku/blob/dev/images/admin/Show_Category_Income%20(1).png)
+10. . Edit Data Kategori Pemasukan --> ![Tampilan_Edit_Category_Income](https://github.com/diii1/Arthoku/blob/dev/images/admin/Edit_Category_Income.png)
+11. . Hapus Data Kategori Pemasukan --> ![Tampilan_Hapus_Category_Income](https://github.com/diii1/Arthoku/blob/dev/images/admin/Hapus_Category_Income.png)
+12. . Logout --> ![Tampilan_Log_Out](https://github.com/diii1/Arthoku/blob/dev/images/admin/logout-admin.PNG)
 
 # Pengembang proyek
 :monocle_face: <a href="https://github.com/diii1">Raviy Bayu S (19081010010)</a><br>
