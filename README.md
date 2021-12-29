@@ -140,21 +140,21 @@ B. Website Admin ArthoKu
 12. . Logout --> ![Tampilan_Log_Out](https://github.com/diii1/Arthoku/blob/main/images/admin/logout-admin.PNG)
 
 # CODE INTI
-1. Controller_Category_Expense --> ![Controller_Category_Expense](https://github.com/diii1/Arthoku/blob/dev/images/code/c-admin-category-expense.png)
-2. Controller_Category_Expense --> ![Controller_Category_Income](https://github.com/diii1/Arthoku/blob/dev/images/code/c-admin-category-income.png)
-3. Controller_Admin_Dashboard --> ![Controller_Admin_Dashboard](https://github.com/diii1/Arthoku/blob/dev/images/code/c-admin-dashboard.png)
-4. Controller_Admin_User --> ![Controller_Admin_User](https://github.com/diii1/Arthoku/blob/dev/images/code/c-admin-user.png)
+1. Controller_Category_Expense --> ![Controller_Category_Expense](https://github.com/diii1/Arthoku/blob/main/images/code/c-admin-category-expense.png)
+2. Controller_Category_Expense --> ![Controller_Category_Income](https://github.com/diii1/Arthoku/blob/main/images/code/c-admin-category-income.png)
+3. Controller_Admin_Dashboard --> ![Controller_Admin_Dashboard](https://github.com/diii1/Arthoku/blob/main/images/code/c-admin-dashboard.png)
+4. Controller_Admin_User --> ![Controller_Admin_User](https://github.com/diii1/Arthoku/blob/main/images/code/c-admin-user.png)
+5. Controller_Auth_Login --> ![Controller_Auth_Login](https://github.com/diii1/Arthoku/blob/main/images/code/c-auth-login.png)
+6. Controller_Auth_Register--> ![Controller_Auth_Register](https://github.com/diii1/Arthoku/blob/main/images/code/c-auth-register.png)
+7. Controller_Client_App--> ![Controller_Client_App](https://github.com/diii1/Arthoku/blob/main/images/code/c-client-app.png)
+8. Controller_Client_Dashboard--> ![Controller_Client_Dashboard](https://github.com/diii1/Arthoku/blob/main/images/code/c-client-dashboard.png)
+9. Controller_Client_Home--> ![Controller_Client_Home](https://github.com/diii1/Arthoku/blob/main/images/code/c-client-home.png)
+10. Controller_Client_Expense--> ![Controller_Client_Expense](https://github.com/diii1/Arthoku/blob/main/images/code/c-client-record-expense.png)
 
-![ini code gan](https://github.com/diii1/Arthoku/blob/main/images/code/c-admin-category-expense.png)
-![ini code gan](https://github.com/diii1/Arthoku/blob/main/images/code/c-admin-category-income.png)
-![ini code gan](https://github.com/diii1/Arthoku/blob/main/images/code/c-admin-dashboard.png)
-![ini code gan](https://github.com/diii1/Arthoku/blob/main/images/code/c-admin-user.png)
-![ini code gan](https://github.com/diii1/Arthoku/blob/main/images/code/c-auth-login.png)
-![ini code gan](https://github.com/diii1/Arthoku/blob/main/images/code/c-auth-register.png)
-![ini code gan](https://github.com/diii1/Arthoku/blob/main/images/code/c-client-app.png)
-![ini code gan](https://github.com/diii1/Arthoku/blob/main/images/code/c-client-dashboard.png)
-![ini code gan](https://github.com/diii1/Arthoku/blob/main/images/code/c-client-home.png)
-![ini code gan](https://github.com/diii1/Arthoku/blob/main/images/code/c-client-record-expense.png)
+
+
+
+![ini code gan]()
 ![ini code gan](https://github.com/diii1/Arthoku/blob/main/images/code/c-client-record-income.png)
 ![ini code gan](https://github.com/diii1/Arthoku/blob/main/images/code/c-client-setting.png)
 ![ini code gan](https://github.com/diii1/Arthoku/blob/main/images/code/m-cagory-expense.png)
