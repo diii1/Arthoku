@@ -24,19 +24,11 @@ use App\Http\Controllers\Client\SettingController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-Route::get('/history', function () {
-        return view('clients.history');
-});
 Route::get('/', [HomeController::class, 'viewIndex'])->name('home');
-// Route::get('/home', [HomeController::class, 'viewIndex'])->name('homeDashboard');
 
 Auth::routes();
 
 Route::group(['client' => 'Dashboard', 'middleware' => ['auth:web','isClient'], 'prefix' => '/'], function () {
-    // Route::get('/home', [HomeController::class, 'indexClient'])->name('home');
     Route::get('/home', [DashboardClientController::class, 'indexDashboardClient'])->name('clientHome');
     Route::get('/dashboard', [DashboardClientController::class, 'viewDashboard'])->name('clientDashboard');
 
@@ -50,26 +42,10 @@ Route::group(['client' => 'Dashboard', 'middleware' => ['auth:web','isClient'], 
     Route::post('/income/update/{id}', [RecordIncomeController::class, 'update'])->name('updateHistoryIncome');
     Route::get('/income/delete/{id}', [RecordIncomeController::class, 'delete'])->name('deleteHistoryIncome');
 
-
-
     ///Routing untuk HISTORY EXPENSE
     Route::get('/expense', [DashboardClientController::class, 'viewHistoryExpense'])->name('clientHistoryExpense');
     Route::post('/expense/update/{id}', [RecordExpenseController::class, 'update'])->name('updateHistoryExpense');
     Route::get('/expense/delete/{id}', [RecordExpenseController::class, 'delete'])->name('deleteHistoryExpense');
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
     
     Route::get('/recommendation', [DashboardClientController::class, 'viewRecommendation'])->name('clientRecommendation');
     Route::get('/settings', [DashboardClientController::class, 'viewSetting'])->name('clientSetting');
@@ -77,8 +53,7 @@ Route::group(['client' => 'Dashboard', 'middleware' => ['auth:web','isClient'], 
     Route::post('/settings/updateAverage/{id}', [SettingController::class, 'updateAverage'])->name('clientUpdateAverage');
 });
 
-Route::group(['admin' => 'Dashboard', 'middleware' => ['auth:web','isAdmin'], 'prefix' => 'admin'], function () {
-    // Route::get('/', [HomeController::class, 'indexAdmin'])->name('admin');  
+Route::group(['admin' => 'Dashboard', 'middleware' => ['auth:web','isAdmin'], 'prefix' => 'admin'], function () { 
     Route::get('/', [DashboardAdminController::class, 'indexDashboardAdmin'])->name('admin');
 
     //Routing untuk kategori Income di Admin
@@ -87,23 +62,14 @@ Route::group(['admin' => 'Dashboard', 'middleware' => ['auth:web','isAdmin'], 'p
     Route::post('/categoryIncome/update/{id}', [CategoryIncomeController::class, 'update'])->name('adminUpdateDataCatIncome');
     Route::get('/categoryIncome/delete/{id}', [CategoryIncomeController::class, 'delete'])->name('adminDeleteDataCatIncome');
 
-
     //Routing untuk kategori Expense di Admin
     Route::get('/categoryExpense', [CategoryExpenseController::class, 'view_catexpense'])->name('adminExpense');
     Route::post('/categoryExpense/insert', [CategoryExpenseController::class, 'insert'])->name('adminAddDataCatExpense');
     Route::post('/categoryExpense/update/{id}', [CategoryExpenseController::class, 'update'])->name('adminUpdateDataCatExpense');
     Route::get('/categoryExpense/delete/{id}', [CategoryExpenseController::class, 'delete'])->name('adminDeleteDataCatExpense');
   
-
-
-
-
-
-
-
     //Routing untuk kategori User di Admin
     Route::get('/client', [UserController::class, 'view_User'])->name('adminUser');
     Route::post('/client/update/{id}', [UserController::class, 'update'])->name('updateAdminUser');
     Route::get('/client/delete/{id}', [UserController::class, 'delete'])->name('deleteAdminUser');
-  
 });
