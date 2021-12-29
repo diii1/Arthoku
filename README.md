@@ -126,7 +126,7 @@ A. Website Client ArthoKu
 B. Website Admin ArthoKu
 
 
-1. Log In Sebagai Admin  
+1. Log In Sebagai Admin  -->  ![Tampilan_LogIn_Admin](https://github.com/diii1/Arthoku/blob/dev/images/admin/LogIn%20Admin.png)
 2. Show Data Pengguna --> ![Tampilan_Data_User_Account](https://github.com/diii1/Arthoku/blob/dev/images/admin/data-user.PNG)
 3. Edit Data pengguna dengan menekan tombol isadmin untuk menjadikan admin  --> ![Tampilan_Edit_Data_User_Account](https://github.com/diii1/Arthoku/blob/dev/images/admin/adit-data-pengguna-jadi-admin.PNG)
 4. . Tambah Data Kategori Pengeluaran --> ![Tampilan_add-category-expense](https://github.com/diii1/Arthoku/blob/dev/images/admin/add-categoty-expense.PNG)
