@@ -154,6 +154,7 @@ A. Controller : komponen inti dari MVC yang berfungsi sebagai penghubung antara 
 12. Controller_Client_Setting--> ![Controller_Client_Setting](https://github.com/diii1/Arthoku/blob/main/images/code/c-client-setting.png)    
 
 B. Model : 
+Model / Eloquent pada laravel digunakan untuk mewakili pemanggilan tabel. Dengan demikian, model merupakan bagian yang utama dimana kita akan berinteraksi ke tabel yang bersangkutan melalui model yang dibuat.
 1. Model_Category_Expense--> ![Model_Category_Expense](https://github.com/diii1/Arthoku/blob/main/images/code/m-cagory-expense.png)
 2. Model_Category_Income--> ![Model_Category_Income](https://github.com/diii1/Arthoku/blob/main/images/code/m-cagory-income.png)
 3. Model_Record_Expense--> ![Model_Record_Expense](https://github.com/diii1/Arthoku/blob/main/images/code/m-record-expense.png)
