@@ -50,8 +50,11 @@ Aplikasi yang dibuat adalah aplikasi berbasis web. Nama aplikasinya adalah “Ar
 
 # Sitemap/hirarki menu aplikasi beserta penjelasanya
 
-ArthoKu
 ![Sitemap_Arthoku](https://github.com/diii1/Arthoku/blob/main/images/sitemap.png)
+
+# Desain Database
+
+![desain db](https://github.com/diii1/Arthoku/blob/main/images/db.png)
 
 # Teknologi yang digunakan
 1. Visual Studi Code : Sebagai text editor
