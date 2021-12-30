@@ -167,6 +167,6 @@ Model / Eloquent pada laravel digunakan untuk mewakili pemanggilan tabel. Dengan
 :smile: <a href="https://github.com/alyasaf">Alya Safira (19081010015)</a><br>
 :sunglasses: <a href="https://github.com/alfyandoo">Muhammad Alfyando (19081010037)</a><br>
 :boy: <a href="https://github.com/">M. Mushthafainal (19081010042)</a><br>
-:man: <a href="https://github.com/">Kristian Rolando (19081010085)</a><br>
-:smile: <a href="https://github.com/">Maurisa A (19081010192)</a><br>
+:man: <a href="https://github.com/aldolim66">Kristian Rolando (19081010085)</a><br>
+:smile: <a href="https://github.com/maurisaarimbi">Maurisa A (19081010192)</a><br>
 Terima kasih atas kerja sama selama pengerjaan proyek ini!
